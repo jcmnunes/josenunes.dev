@@ -5,6 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --hot --history-api-fallback --open --config webpack.config.dev.js",
+    "remove-dist": "rimraf dist",
+    "clean-dist": "npm run remove-dist && mkdir dist",
+    "prebuild": "npm-run-all clean-dist",
     "build": "babel-node tools/build.js",
     "intl": "python collect_languages.py"
   },
