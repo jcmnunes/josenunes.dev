@@ -82,6 +82,7 @@
     "webpack-dev-server": "^2.4.2"
   },
   "dependencies": {
+    "@atlaskit/css-reset": "^1.0.5",
     "babel-polyfill": "^6.22.0",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
@@ -91,6 +92,8 @@
     "react-router": "^3.0.2",
     "react-router-redux": "^4.0.7",
     "redux": "^3.6.0",
-    "redux-thunk": "^2.2.0"
+    "redux-thunk": "^2.2.0",
+    "typeface-montserrat": "0.0.24",
+    "typeface-open-sans": "0.0.22"
   }
 }

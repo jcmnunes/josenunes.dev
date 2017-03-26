@@ -1,0 +1,9 @@
+@import "../../../assets/styles/config.css";
+
+.root {
+  color: var(--jn-black);
+  text-transform: uppercase;
+  font-family: 'openSans', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}

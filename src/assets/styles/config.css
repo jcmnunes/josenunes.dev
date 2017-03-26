@@ -1,0 +1,24 @@
+:root {
+  /* --xlText: 3em;
+  --lText: 2em;
+  --mText: 1.5em;
+  --sText: 1.15em;
+  --xsText: 1em; */
+  --jn-white: #fff;
+  --jn-black: #000;
+  --jn-blue: #52b3dd;
+
+  /* --jn-text: #2e2e4c;
+  --jn-canvas: #f7faff;
+  --jn-yellow: #faeb19;
+  --jn-green: #13bf38;
+  --jn-red: #f24130;
+  --jn-orange: #ffd70d;
+  --jn-purple: #5e75c3;
+  --jn-warning: #ffd70d; */
+  --jn-radius: 4px;
+
+  /* @custom-media --small-viewport (min-width: 1170px);
+  @custom-media --smaller-viewport (min-width: 992px);
+  @custom-media --tiny-viewport (min-width: 768px); */
+}

@@ -1,0 +1,5 @@
+.root {
+  width: 100%;
+  flex: 1;
+  background-image: url('../../../patterns/ignasi.png');
+}
