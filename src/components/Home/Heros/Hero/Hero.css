@@ -1,0 +1,47 @@
+@import "../../../../assets/styles/config.css";
+
+.root {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+
+  &.visible {
+    opacity: 1;
+    z-index: 10;
+  }
+
+  .textContainer {
+    width: 100%;
+    margin-bottom: 40px;
+
+    .text {
+      width: 500px;
+      margin-left: 50px;
+
+      h1 {
+        color: color(var(--jn-black) tint(30%));
+        font-family: 'montserrat', Helvetica, Arial, sans-serif;
+        font-size: 36px;
+        font-weight: 300;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+      }
+
+      p {
+        text-align: justify;
+        text-justify: inter-word;
+        font-family: 'openSans', Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        font-weight: 300;
+      }
+    }
+  }
+}

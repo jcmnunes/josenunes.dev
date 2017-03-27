@@ -1,16 +1,6 @@
 {
-  "presets": [
-    [
-      "latest", {
-        "es2015": {
-          "modules": false
-        }
-      }
-    ],
-    "react"
-  ],
+  "presets": ["react", "es2015", "stage-2"],
   "plugins": [
-    ["babel-root-slash-import", { "rootPathSuffix": "src" }],
-    "react-hot-loader/babel"
+    ["babel-root-slash-import", { "rootPathSuffix": "src" }]
   ]
 }

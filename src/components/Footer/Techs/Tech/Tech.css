@@ -1,0 +1,17 @@
+.root {
+  .tech {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+  }
+
+  .name {
+    text-align: center;
+    font-family: 'openSans', Helvetica, Arial, sans-serif;
+    font-size: 7px;
+    text-transform: uppercase;
+  }
+}

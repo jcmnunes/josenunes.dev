@@ -1,4 +1,12 @@
 .root {
   height: 120px;
   width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  .logos {
+    display: flex;
+  }
 }

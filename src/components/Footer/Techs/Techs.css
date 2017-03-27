@@ -1,0 +1,14 @@
+.root {
+  h1 {
+    font-family: 'openSans', Helvetica, Arial, sans-serif;
+    font-size: 9px;
+    margin-bottom: 7px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid black;
+  }
+
+  .techs {
+    display: flex;
+    flex-direction: row;
+  }
+}
