@@ -1,4 +1,4 @@
-@import "../../../assets/styles/config.css";
+@import "../../../../assets/styles/config.css";
 
 .root {
   list-style-type: none;
@@ -8,9 +8,8 @@
   .item {
     display: inline;
     margin-right: 30px;
-    font-family: 'montserrat', Helvetica, Arial, sans-serif;
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
     font-size: 16px;
-    font-weight: 300;
 
     &:hover {
       cursor: pointer;

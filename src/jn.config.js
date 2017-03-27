@@ -28,15 +28,20 @@ module.exports = {
     },
   ],
   pages: [
-    { name: 'BLOG' },
-    { name: 'REACT' },
-    { name: 'RPi' },
-    { name: 'MAC APPS' },
-    { name: 'SNIPPETS' },
-    { name: 'ABOUT' },
+    { name: 'blog' },
+    { name: 'react' },
+    { name: 'rpi' },
+    { name: 'apps' },
+    { name: 'snippets' },
+    { name: 'about' },
   ],
   navIcons: [
     { name: 'github', img: 'github', size: 20 },
     { name: 'linkedin', img: 'linkedin', size: 20 },
+  ],
+  // Code and display name
+  languages: [
+    { code: 'en', name: 'EN' },
+    { code: 'pt', name: 'PT' },
   ],
 };

@@ -1,5 +1,6 @@
 import React from 'react';
 import Hero from './Hero';
+import LangMenu from '/components/common/LangMenu';
 import styles from './Heros.css';
 import { heros } from '/jn.config';
 
@@ -37,6 +38,11 @@ class Heros extends React.Component {
             <Hero key={hero.title} visible={index === ii} hero={hero} />,
           )
         }
+        <div className={styles.langMenu}>
+          <div className="container" style={{ textAlign: 'right' }}>
+            <LangMenu />
+          </div>
+        </div>
       </div>
     );
   }

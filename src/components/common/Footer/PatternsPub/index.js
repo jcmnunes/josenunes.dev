@@ -1,12 +1,11 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import Tech from '../Techs/Tech';
 import styles from './PatternsPub.css';
 
-const PatternsPub = () =>
+const PatternsPub = ({ string }) =>
   <div className={styles.root}>
-    <h1>
-      Patterns from:
-    </h1>
+    <h1>{string}</h1>
     <div className={styles.techs}>
       <Tech
         sty={{ marginRight: 0 }}
@@ -17,4 +16,8 @@ const PatternsPub = () =>
     </div>
   </div>;
 
-export default PatternsPub;
+const mapStateToProps = state => ({
+  string: state.intl.messages.footer.patterns,
+});
+
+export default connect(mapStateToProps)(PatternsPub);

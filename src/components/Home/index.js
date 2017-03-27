@@ -1,7 +1,7 @@
 import React from 'react';
-import NavBar from '/components/NavBar';
-import Heros from '/components/Home/Heros';
-import Footer from '/components/Footer';
+import NavBar from '/components/common/NavBar';
+import Heros from './Heros';
+import Footer from '/components/common/Footer';
 import styles from './Home.css';
 
 const Home = () =>

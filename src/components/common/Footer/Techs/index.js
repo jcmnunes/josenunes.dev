@@ -1,16 +1,15 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import Tech from './Tech';
 import styles from './Techs.css';
 import config from '/jn.config';
 
-/**
- * ESDoc comment.
- */
-const Techs = () =>
+const Techs = ({ strings }) =>
   <div className={styles.root}>
     <h1>
-      This <a href="http://google.com">website</a> uses the
-      awesome following technologies:
+      {strings.techs1}&nbsp;
+      <a href="http://google.com">{strings.techs2}</a>&nbsp;
+      {strings.techs3}
     </h1>
     <div className={styles.techs}>
       {
@@ -31,4 +30,9 @@ const Techs = () =>
     </div>
   </div>;
 
-export default Techs;
+
+const mapStateToProps = state => ({
+  strings: state.intl.messages.footer,
+});
+
+export default connect(mapStateToProps)(Techs);

@@ -28,9 +28,8 @@
 
       h1 {
         color: color(var(--jn-black) tint(30%));
-        font-family: 'montserrat', Helvetica, Arial, sans-serif;
+        font-family: 'Montserrat', Helvetica, Arial, sans-serif;
         font-size: 36px;
-        font-weight: 300;
         margin-bottom: 20px;
         text-transform: uppercase;
       }
@@ -38,9 +37,8 @@
       p {
         text-align: justify;
         text-justify: inter-word;
-        font-family: 'openSans', Helvetica, Arial, sans-serif;
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
         font-size: 14px;
-        font-weight: 300;
       }
     }
   }

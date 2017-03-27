@@ -1,7 +1,7 @@
 import React from 'react';
-import Logo from '/components/NavBar/Logo';
-import Nav from '/components/NavBar/Nav';
-import NavIcons from '/components/NavBar/NavIcons';
+import Logo from './Logo';
+import Nav from './Nav';
+import NavIcons from './NavIcons';
 import styles from './NavBar.css';
 
 /**

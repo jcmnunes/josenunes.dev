@@ -2,4 +2,11 @@
   position: relative;
   flex: 1;
   width: 100vw;
+
+  .langMenu {
+    position: absolute;
+    top: 20px;
+    z-index: 100;
+    width: 100%;
+  }
 }
