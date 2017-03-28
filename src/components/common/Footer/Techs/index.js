@@ -8,8 +8,13 @@ const Techs = ({ strings }) =>
   <div className={styles.root}>
     <h1>
       {strings.techs1}&nbsp;
-      <a href="http://google.com">{strings.techs2}</a>&nbsp;
-      {strings.techs3}
+      <a
+        href="https://github.com/jcmnunes/josenunesxyz"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {strings.techs2}
+      </a>&nbsp;{strings.techs3}
     </h1>
     <div className={styles.techs}>
       {
@@ -22,6 +27,7 @@ const Techs = ({ strings }) =>
               key={tech.name}
               name={tech.name}
               img={tech.img}
+              link={tech.link}
               width={tech.width}
             />
           );

@@ -11,6 +11,7 @@ const PatternsPub = ({ string }) =>
         sty={{ marginRight: 0 }}
         name="Subtle patterns"
         img={'subtle'}
+        link="https://www.toptal.com/designers/subtlepatterns/"
         width={30}
       />
     </div>

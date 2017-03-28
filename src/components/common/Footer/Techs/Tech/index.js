@@ -5,8 +5,14 @@ import styles from './Tech.css';
 /**
  * ESDoc comment.
  */
-const Tech = ({ name, img, width, sty }) =>
-  <span className={styles.root} style={sty}>
+const Tech = ({ name, img, link, width, sty }) =>
+  <a
+    href={link}
+    className={styles.root}
+    style={sty}
+    target="_blank"
+    rel="noopener noreferrer"
+  >
     <div className={styles.tech}>
       <img
         style={{ width }}
@@ -15,6 +21,6 @@ const Tech = ({ name, img, width, sty }) =>
       />
     </div>
     <div className={styles.name}>{name}</div>
-  </span>;
+  </a>;
 
 export default Tech;

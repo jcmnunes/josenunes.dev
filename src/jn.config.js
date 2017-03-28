@@ -1,29 +1,28 @@
 /* eslint-disable max-len */
 
 module.exports = {
+  // Time interval for the slider (ms)
+  sliderTime: 30000,
   techs: [
-    { name: 'react', img: 'react', width: 40 },
-    { name: 'redux', img: 'redux', width: 35 },
-    { name: 'webpack', img: 'webpack', width: 30 },
-    { name: 'npm', img: 'npm', width: 40 },
-    { name: 'babel', img: 'babel', width: 40 },
-    { name: 'js (es6)', img: 'js', width: 30 },
-    { name: 'react-router', img: 'react-router', width: 40 },
+    { name: 'react', img: 'react', link: 'https://facebook.github.io/react/', width: 40 },
+    { name: 'redux', img: 'redux', link: 'http://redux.js.org/', width: 35 },
+    { name: 'webpack', img: 'webpack', link: 'https://webpack.js.org/', width: 30 },
+    { name: 'npm', img: 'npm', link: 'https://www.npmjs.com/', width: 40 },
+    { name: 'babel', img: 'babel', link: 'https://babeljs.io/', width: 40 },
+    { name: 'js (es6)', img: 'js', link: 'https://www.javascript.com/', width: 30 },
+    { name: 'react-router', img: 'react-router', link: 'https://reacttraining.com/react-router/', width: 40 },
   ],
   heros: [
     {
-      title: 'Welcome',
-      paragraph: 'Nullam id dolor id nibh ultricies vehicula ut id elit. Curabitur blandit tempus porttitor. Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet fermentum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.',
+      stringKey: 'home',
       pattern: 'ignasi',
     },
     {
-      title: 'Blog',
-      paragraph: 'Nullam id dolor id nibh ultricies vehicula ut id elit. Curabitur blandit tempus porttitor. Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet fermentum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.',
+      stringKey: 'blog',
       pattern: 'geometry',
     },
     {
-      title: 'React Ecosystem',
-      paragraph: 'Nullam id dolor id nibh ultricies vehicula ut id elit. Curabitur blandit tempus porttitor. Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet fermentum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.',
+      stringKey: 'react',
       pattern: 'connect',
     },
   ],

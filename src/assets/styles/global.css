@@ -46,6 +46,10 @@ a {
   &:hover {
     color: var(--jn-blue);
   }
+
+  &:focus {
+    outline: none;
+  }
 }
 
 :global(.container) {

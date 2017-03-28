@@ -2,7 +2,7 @@ import React from 'react';
 import Hero from './Hero';
 import LangMenu from '/components/common/LangMenu';
 import styles from './Heros.css';
-import { heros } from '/jn.config';
+import { heros, sliderTime } from '/jn.config';
 
 class Heros extends React.Component {
   constructor(props) {
@@ -21,7 +21,7 @@ class Heros extends React.Component {
       } else {
         this.setState({ ...this.state, ii: this.state.ii + 1 });
       }
-    }, 10000);
+    }, sliderTime);
     this.setState({ ...this.state, interval });
   }
 
@@ -35,9 +35,15 @@ class Heros extends React.Component {
       <div className={styles.root}>
         {
           heros.map((hero, index) =>
-            <Hero key={hero.title} visible={index === ii} hero={hero} />,
+            <Hero key={hero.stringKey} visible={index === ii} hero={hero} />,
           )
         }
+        <div className={styles.bar}>
+          <div
+            className={styles.progress}
+            style={{ right: 0 }}
+          />
+        </div>
         <div className={styles.langMenu}>
           <div className="container" style={{ textAlign: 'right' }}>
             <LangMenu />

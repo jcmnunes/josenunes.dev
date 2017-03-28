@@ -1,4 +1,9 @@
+@import "../../../../../assets/styles/config.css";
+
 .root {
+  color: var(--jn-black) !important;
+  text-decoration: none !important;
+
   .tech {
     display: flex;
     align-items: center;
