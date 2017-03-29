@@ -43,3 +43,14 @@
     }
   }
 }
+
+@media (--medium-screen) {
+  .root {
+    .textContainer {
+      .text {
+        width: 500px;
+        margin-left: 0;
+      }
+    }
+  }
+}

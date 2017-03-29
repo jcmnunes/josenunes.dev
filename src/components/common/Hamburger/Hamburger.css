@@ -1,9 +1,11 @@
 /* https://codepen.io/designcouch/pen/Atyop?editors=0100 */
+@import "../../../assets/styles/config.css";
+
 .root {
-  width: 60px;
-  height: 45px;
+  display: none;
+  width: 20px;
+  height: 15px;
   position: relative;
-  margin: 50px auto;
   transform: rotate(0deg);
   cursor: pointer;
   transition: 0.5s ease-in-out;
@@ -11,9 +13,9 @@
   span {
     display: block;
     position: absolute;
-    height: 9px;
+    height: 3px;
     width: 50%;
-    background: #d3531a;
+    background: #000;
     opacity: 1;
     transform: rotate(0deg);
     transition: 0.25s ease-in-out;
@@ -39,25 +41,24 @@
 
   span:nth-child(3),
   span:nth-child(4) {
-    top: 18px;
+    top: 6px;
   }
 
   span:nth-child(5),
   span:nth-child(6) {
-    top: 36px;
+    top: 12px;
   }
 
   &.open {
     span:nth-child(1) {
       transform: rotate(45deg);
-      left: 5px;
-      top: 7px;
+      top: 2px;
     }
 
     span:nth-child(2) {
       transform: rotate(-45deg);
-      left: calc(50% - 5px);
-      top: 7px;
+      left: calc(50% - 3px);
+      top: 2px;
     }
 
     span:nth-child(3) {
@@ -72,14 +73,21 @@
 
     span:nth-child(5) {
       transform: rotate(-45deg);
-      left: 5px;
-      top: 29px;
+      top: 8.7px;
     }
 
     span:nth-child(6) {
       transform: rotate(45deg);
-      left: calc(50% - 5px);
-      top: 29px;
+      left: calc(50% - 3px);
+      top: 8.7px;
     }
+  }
+}
+
+@media (--medium-screen) {
+  .root {
+    display: block;
+    position: absolute;
+    right: 50px;
   }
 }

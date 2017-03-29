@@ -1,9 +1,13 @@
+@import "../../../assets/styles/config.css";
+
 .root {
   height: 75px;
   width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
+  z-index: 10000;
+  background: var(--jn-white);
 
   .menu {
     flex: 1;
@@ -13,5 +17,13 @@
     justify-content: flex-end;
     height: 30px;
     align-items: center;
+  }
+}
+
+@media (--medium-screen) {
+  .root {
+    .menu {
+      display: none;
+    }
   }
 }

@@ -4,4 +4,7 @@ export default {
     locale: 'en',
     messages: {},
   },
+  global: {
+    menuOpen: false,
+  },
 };

@@ -19,6 +19,6 @@
   --jn-radius: 4px;
 
   @custom-media --large-screen (max-width: 1300px);
-  @custom-media --medium-screen (min-width: 992px);
+  @custom-media --medium-screen (max-width: 992px);
   @custom-media --small-screen (min-width: 768px);
 }

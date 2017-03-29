@@ -14,7 +14,6 @@ const NavIcons = () =>
           style={{
             width: icon.size,
             height: icon.size,
-            marginLeft: 7,
           }}
         />,
       )

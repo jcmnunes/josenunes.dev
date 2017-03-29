@@ -1,0 +1,39 @@
+@import "../../../../assets/styles/config.css";
+
+.root {
+  display: none;
+  position: absolute;
+  top: -300px;
+  width: 100vw;
+  background: white;
+  z-index: 1000;
+  border-bottom: 1px solid black;
+  padding: 10px 0;
+  transition: top 0.65s ease;
+
+  &.open {
+    top: 75px;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0 50px;
+    text-align: center;
+
+    li {
+      padding: 7px 0;
+      font-size: 16px;
+
+      &:hover {
+        background: color(var(--jn-white) shade(5%));
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media (--medium-screen) {
+  .root {
+    display: block;
+  }
+}
