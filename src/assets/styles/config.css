@@ -18,7 +18,7 @@
   --jn-warning: #ffd70d; */
   --jn-radius: 4px;
 
-  /* @custom-media --small-viewport (min-width: 1170px);
-  @custom-media --smaller-viewport (min-width: 992px);
-  @custom-media --tiny-viewport (min-width: 768px); */
+  @custom-media --large-screen (max-width: 1300px);
+  @custom-media --medium-screen (min-width: 992px);
+  @custom-media --small-screen (min-width: 768px);
 }

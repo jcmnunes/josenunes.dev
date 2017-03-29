@@ -4,9 +4,6 @@ import Nav from './Nav';
 import NavIcons from './NavIcons';
 import styles from './NavBar.css';
 
-/**
- * ESDoc comment.
- */
 const NavBar = () =>
   <div className={`${styles.root} container`}>
     <Logo />

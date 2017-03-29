@@ -4,7 +4,6 @@ import enStrings from '/locales/en-us/translation.json';
 import ptStrings from '/locales/pt/translation.json';
 
 let locale = loadItem('jn_language') || 'en';
-locale = 'pt';
 let messages;
 
 switch (locale) {
