@@ -1,7 +1,7 @@
 @import "../../../../assets/styles/config.css";
 
 .root {
-  width: 180px;
+  width: 200px;
 
   .main {
     display: flex;
@@ -17,13 +17,13 @@
 
       h1 {
         font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-        font-size: 10px;
+        font-size: 12px;
         font-weight: bold;
       }
 
       h2 {
         font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-        font-size: 10px;
+        font-size: 12px;
         margin-top: 5px;
       }
     }
@@ -37,7 +37,7 @@
 
     .madeIn {
       font-family: 'Montserrat', Helvetica, Arial, sans-serif;
-      font-size: 7px;
+      font-size: 9px;
       flex: 1;
     }
   }
