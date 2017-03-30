@@ -1,3 +1,5 @@
+@import "../../../assets/styles/config.css";
+
 .root {
   height: 120px;
   width: 100%;
@@ -8,5 +10,13 @@
 
   .logos {
     display: flex;
+  }
+}
+
+@media (--small-screen) {
+  .root {
+    .logos {
+      display: none;
+    }
   }
 }

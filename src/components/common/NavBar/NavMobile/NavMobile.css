@@ -3,13 +3,14 @@
 .root {
   display: none;
   position: absolute;
-  top: -300px;
+  top: -225px;
   width: 100vw;
   background: white;
   z-index: 1000;
   border-bottom: 1px solid black;
   padding: 10px 0;
-  transition: top 0.65s ease;
+  transition: top 0.3s ease;
+  box-shadow: 0 4px 8px 0 rgba(173, 173, 173, 1);
 
   &.open {
     top: 75px;
