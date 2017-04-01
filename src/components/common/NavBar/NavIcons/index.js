@@ -3,7 +3,7 @@ import React from 'react';
 import { navIcons } from '/jn.config';
 import styles from './NavIcons.css';
 
-const NavIcons = () =>
+const NavIcons = ({ mobile }) =>
   <div className={styles.root}>
     {
       navIcons.map(icon =>
@@ -14,6 +14,7 @@ const NavIcons = () =>
           style={{
             width: icon.size,
             height: icon.size,
+            marginLeft: !mobile && 5,
           }}
         />,
       )

@@ -1,6 +1,7 @@
 import React from 'react';
 import FooterMe from './FooterMe';
 import Techs from './Techs';
+import TechsMobile from './TechsMobile';
 import PatternsPub from './PatternsPub';
 import styles from './Footer.css';
 
@@ -11,6 +12,7 @@ const Footer = () =>
       <Techs />
       <PatternsPub />
     </div>
+    <TechsMobile />
   </div>;
 
 // // Props validation

@@ -19,7 +19,7 @@ const NavMobile = ({ strings, open }) =>
         )
       }
     </ul>
-    <NavIcons sty={{ justifyContent: 'center' }} />
+    <NavIcons sty={{ justifyContent: 'center' }} mobile />
   </div>;
 
 NavMobile.propTypes = {

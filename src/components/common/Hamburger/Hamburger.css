@@ -91,3 +91,9 @@
     right: 50px;
   }
 }
+
+@media (--mobile-screen) {
+  .root {
+    right: 20px;
+  }
+}

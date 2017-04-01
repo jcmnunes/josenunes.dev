@@ -4,6 +4,12 @@
   color: var(--jn-black) !important;
   text-decoration: none !important;
 
+  &.mobile {
+    .name {
+      font-size: 10px;
+    }
+  }
+
   .tech {
     display: flex;
     align-items: center;
