@@ -2,7 +2,7 @@
 
 module.exports = {
   // Time interval for the slider (ms)
-  sliderTime: 30000,
+  sliderTime: 3000,
   techs: [
     { name: 'react', img: 'react', link: 'https://facebook.github.io/react/', width: 40 },
     { name: 'redux', img: 'redux', link: 'http://redux.js.org/', width: 35 },
@@ -24,6 +24,14 @@ module.exports = {
     {
       stringKey: 'react',
       pattern: 'connect',
+    },
+    {
+      stringKey: 'rpi',
+      pattern: 'tree_bark',
+    },
+    {
+      stringKey: 'apps',
+      pattern: 'photography',
     },
   ],
   pages: [
