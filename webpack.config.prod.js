@@ -6,8 +6,10 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer')
   .BundleAnalyzerPlugin;
 
-const extractVendorCSS = new ExtractTextPlugin('stylesheets/vendor.css');
-const extractCSS = new ExtractTextPlugin('stylesheets/styles.css');
+const extractVendorCSS =
+  new ExtractTextPlugin('stylesheets/vendor.[contenthash].css');
+const extractCSS =
+  new ExtractTextPlugin('stylesheets/styles.[contenthash].css');
 
 const PRODUCTION = {
   'process.env.NODE_ENV': JSON.stringify('production'),
@@ -83,7 +85,7 @@ module.exports = {
           {
             loader: 'url-loader',
             options: {
-              name: 'assetsr/fonts/[name].[ext]',
+              name: 'assets/fonts/[name].[ext]',
               limit: 65000,
               mimetype: 'application/vnd.ms-fontobject',
             },
@@ -96,7 +98,7 @@ module.exports = {
           {
             loader: 'url-loader',
             options: {
-              name: 'assetsr/fonts/[name].[ext]',
+              name: 'assets/fonts/[name].[ext]',
               limit: 5000,
             },
           },
@@ -108,7 +110,7 @@ module.exports = {
           {
             loader: 'url-loader',
             options: {
-              name: 'assetsr/fonts/[name].[ext]',
+              name: 'assets/fonts/[name].[ext]',
               limit: 10000,
               mimetype: 'application/octet-stream',
             },
@@ -122,10 +124,9 @@ module.exports = {
             loader: 'url-loader',
             options: {
               limit: 40000,
-              name: 'assetsr/images/[hash].[ext]',
+              name: 'assets/images/[hash].[ext]',
             },
           },
-          'image-webpack-loader',
         ],
       },
       {

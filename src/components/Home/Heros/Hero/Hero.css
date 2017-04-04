@@ -40,6 +40,11 @@
         font-family: 'Open Sans', Helvetica, Arial, sans-serif;
         font-size: 14px;
       }
+
+      .btnContainer {
+        text-align: right;
+        margin-top: 20px;
+      }
     }
   }
 }
@@ -62,6 +67,15 @@
         width: auto;
         margin-left: 0;
         padding: 0 20px;
+        text-align: center;
+
+        p {
+          display: none;
+        }
+
+        .btnContainer {
+          text-align: center;
+        }
       }
     }
   }

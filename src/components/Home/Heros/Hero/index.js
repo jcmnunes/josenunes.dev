@@ -16,7 +16,7 @@ const Hero = ({ visible, hero, strings }) => {
         <div className={styles.text}>
           <h1>{title}</h1>
           <p>{par}</p>
-          <div style={{ textAlign: 'right', marginTop: 20 }}>
+          <div className={styles.btnContainer}>
             <PrimaryLargeBtn
               onClick={() => alert('hello')}
             >

@@ -1,8 +1,8 @@
 /* eslint-disable max-len */
 
 module.exports = {
-  // Time interval for the slider (ms)
-  sliderTime: 3000,
+  // Time interval for the slider (s)
+  sliderTime: 25,
   techs: [
     { name: 'react', img: 'react', link: 'https://facebook.github.io/react/', width: 40 },
     { name: 'redux', img: 'redux', link: 'http://redux.js.org/', width: 35 },

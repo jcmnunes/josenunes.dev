@@ -3,7 +3,6 @@
 .root {
   position: relative;
   flex: 1;
-  width: 100vw;
 
   .bar {
     position: absolute;
@@ -20,7 +19,7 @@
       left: 0;
       right: 0;
       background: color(var(--jn-black) tint(70%));
-      animation: bar 30s linear infinite;
+      animation: bar 25s linear infinite;
     }
   }
 

@@ -50,7 +50,6 @@ module.exports = {
               name: 'assetsr/images/[hash].[ext]',
             },
           },
-          'image-webpack-loader',
         ],
       },
       {

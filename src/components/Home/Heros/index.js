@@ -21,7 +21,7 @@ class Heros extends React.Component {
       } else {
         this.setState({ ...this.state, ii: this.state.ii + 1 });
       }
-    }, sliderTime);
+    }, sliderTime * 1000);
     this.setState({ ...this.state, interval });
   }
 
@@ -41,7 +41,10 @@ class Heros extends React.Component {
         <div className={styles.bar}>
           <div
             className={styles.progress}
-            style={{ right: 0 }}
+            style={{
+              animationDuration: `${sliderTime}s`,
+              right: 0,
+            }}
           />
         </div>
         <div className={styles.langMenu}>

@@ -46,7 +46,7 @@ webpack(webpackConfig).run((err, stats) => {
 
   if (!(stats.hasErrors() || stats.hasWarnings())) {
     console.log('\n');
-    console.log(lineup.icon('success'), 'No warnings or errors were generated during the build process!'.green);
+    console.log(lineup.icon('success'), 'No warnings or errors were generated during the build process!\n'.green);
   }
 
   console.log(lineup.icon('success'), 'doDOC app has been compiled in production mode and written to /dist.\n'.underline.green);
