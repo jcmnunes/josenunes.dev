@@ -1,60 +1,74 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import Hero from './Hero';
 import LangMenu from '/components/common/LangMenu';
+import Bullets from '/components/Home/Bullets';
 import styles from './Heros.css';
-import { heros, sliderTime } from '/jn.config';
+import { startTimer, stopTimer } from '/actions/home';
+import { heros } from '/jn.config';
 
 class Heros extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      ii: 0,
-      interval: '',
-    };
-  }
-
   componentWillMount() {
-    const len = heros.length - 1;
-    const interval = window.setInterval(() => {
-      if (this.state.ii === len) {
-        this.setState({ ...this.state, ii: 0 });
-      } else {
-        this.setState({ ...this.state, ii: this.state.ii + 1 });
-      }
-    }, sliderTime * 1000);
-    this.setState({ ...this.state, interval });
+    this.props.startTimer();
   }
 
   componentWillUnmount() {
-    clearInterval(this.state.interval);
+    this.props.stopTimer();
   }
 
   render() {
-    const { ii } = this.state;
+    const { activeHero } = this.props;
     return (
       <div className={styles.root}>
         {
-          heros.map((hero, index) =>
-            <Hero key={hero.stringKey} visible={index === ii} hero={hero} />,
+          heros.map(hero =>
+            <Hero
+              key={hero.stringKey}
+              visible={hero.stringKey === activeHero}
+              hero={hero}
+            />,
           )
         }
-        <div className={styles.bar}>
+        {/* <div className={styles.bar}>
           <div
             className={styles.progress}
             style={{
-              animationDuration: `${sliderTime}s`,
               right: 0,
+              animationDuration: `${sliderTime}s`,
             }}
           />
-        </div>
+        </div> */}
         <div className={styles.langMenu}>
           <div className="container" style={{ textAlign: 'right' }}>
             <LangMenu />
           </div>
         </div>
+        <div
+          onClick={() => this.props.startTimer(null, true)}
+          className={`${styles.arrow} ${styles.left}`}
+        >
+          <span />
+          <span />
+        </div>
+        <div
+          onClick={() => this.props.startTimer()}
+          className={`${styles.arrow} ${styles.right}`}
+        >
+          <span />
+          <span />
+        </div>
+        <Bullets />
       </div>
     );
   }
 }
 
-export default Heros;
+/**
+ * Maps the state.home.activeHero from the store
+ * to the component's prop activeHero.
+ */
+export const mapStateToProps = state => ({
+  activeHero: state.home.activeHero,
+});
+
+export default connect(mapStateToProps, { startTimer, stopTimer })(Heros);

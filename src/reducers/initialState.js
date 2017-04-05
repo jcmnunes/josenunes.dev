@@ -7,4 +7,7 @@ export default {
   global: {
     menuOpen: false,
   },
+  home: {
+    activeHero: 'apps',
+  },
 };

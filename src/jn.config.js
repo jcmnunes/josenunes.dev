@@ -2,7 +2,7 @@
 
 module.exports = {
   // Time interval for the slider (s)
-  sliderTime: 25,
+  sliderTime: 5,
   techs: [
     { name: 'react', img: 'react', link: 'https://facebook.github.io/react/', width: 40 },
     { name: 'redux', img: 'redux', link: 'http://redux.js.org/', width: 35 },
