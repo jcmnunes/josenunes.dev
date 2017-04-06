@@ -5,11 +5,23 @@ import LangMenu from '/components/common/LangMenu';
 import Bullets from '/components/Home/Bullets';
 import styles from './Heros.css';
 import { startTimer, stopTimer } from '/actions/home';
-import { heros } from '/jn.config';
+import { heros, sliderTime } from '/jn.config';
 
 class Heros extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { anim: true };
+  }
+
   componentWillMount() {
     this.props.startTimer();
+  }
+
+  componentDidUpdate() {
+    document.getElementById('bar').classList.remove(styles.anim);
+    setTimeout(() => {
+      document.getElementById('bar').classList.add(styles.anim);
+    }, 50);
   }
 
   componentWillUnmount() {
@@ -18,6 +30,7 @@ class Heros extends React.Component {
 
   render() {
     const { activeHero } = this.props;
+    const { anim } = this.state;
     return (
       <div className={styles.root}>
         {
@@ -29,15 +42,19 @@ class Heros extends React.Component {
             />,
           )
         }
-        {/* <div className={styles.bar}>
+        <div className={styles.bar}>
           <div
-            className={styles.progress}
+            id="bar"
+            className={`
+              ${styles.progress}
+              ${anim && styles.anim}
+            `}
             style={{
               right: 0,
               animationDuration: `${sliderTime}s`,
             }}
           />
-        </div> */}
+        </div>
         <div className={styles.langMenu}>
           <div className="container" style={{ textAlign: 'right' }}>
             <LangMenu />
