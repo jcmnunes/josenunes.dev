@@ -74,6 +74,28 @@ a {
   }
 }
 
+/*******************************************************************************
+** React Slick
+*******************************************************************************/
+
+/* https://github.com/akiran/react-slick/issues/27 (Growl answer) */
+
+:global(.slick-slider) {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+:global(.slick-slide) {
+  position: relative;
+  display: inline-block;
+  height: 100%;
+  width: 100vw !important;
+}
+
 :global(.slick-dots) {
   bottom: 5px;
 }

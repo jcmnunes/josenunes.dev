@@ -13,10 +13,10 @@ const Heros = () => {
   );
   const settings = {
     dots: true,
-    autoplay: false,
-    autoplaySpeed: 1000,
+    autoplay: true,
+    autoplaySpeed: 10000,
     infinite: true,
-    speed: 500,
+    speed: 300,
     slidesToShow: 1,
     slidesToScroll: 1,
   };
