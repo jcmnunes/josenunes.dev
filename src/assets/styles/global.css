@@ -73,3 +73,11 @@ a {
     padding: 0 20px;
   }
 }
+
+:global(.slick-dots) {
+  bottom: 5px;
+}
+
+:global(.slick-dots) li button::before {
+  font-size: 12px;
+}
