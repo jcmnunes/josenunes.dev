@@ -4,28 +4,6 @@
   position: relative;
   flex: 1;
 
-  .bar {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 3px;
-    z-index: 100;
-
-    .progress {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: color(var(--jn-black) tint(70%));
-
-      &.anim {
-        animation: bar 25s linear infinite;
-      }
-    }
-  }
-
   .langMenu {
     position: absolute;
     top: 20px;
@@ -88,9 +66,4 @@
       cursor: pointer;
     }
   }
-}
-
-@keyframes bar {
-  0% { right: 0; }
-  100% { right: 100vw; }
 }
