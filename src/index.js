@@ -9,6 +9,8 @@ import en from 'react-intl/locale-data/en';
 import pt from 'react-intl/locale-data/pt';
 import routes from '/routes';
 import '@atlaskit/css-reset';
+import '../node_modules/slick-carousel/slick/slick.css';
+import '../node_modules/slick-carousel/slick/slick-theme.css';
 import '/assets/styles/global.css';
 
 addLocaleData([...en, ...pt]);
