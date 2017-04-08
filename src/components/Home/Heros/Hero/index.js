@@ -3,13 +3,13 @@ import { connect } from 'react-redux';
 import { PrimaryLargeBtn } from '/components/common/Buttons';
 import styles from './Hero.css';
 
-const Hero = ({ visible, hero, strings }) => {
+const Hero = ({ hero, strings }) => {
   const { stringKey, pattern } = hero;
   const { title, par, btn } = strings[stringKey];
   const img = require(`../../../../patterns/${pattern}.png`);
   return (
     <div
-      className={`${styles.root} ${visible && styles.visible}`}
+      className={styles.root}
       style={{ backgroundImage: `url(${img})` }}
     >
       <div className={`${styles.textContainer} container`}>
