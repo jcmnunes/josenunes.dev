@@ -23,7 +23,7 @@ module.exports = {
     },
     {
       stringKey: 'react',
-      pattern: 'connect',
+      pattern: 'react',
     },
     {
       stringKey: 'rpi',
@@ -32,6 +32,10 @@ module.exports = {
     {
       stringKey: 'apps',
       pattern: 'photography',
+    },
+    {
+      stringKey: 'snippets',
+      pattern: 'connect',
     },
   ],
   pages: [

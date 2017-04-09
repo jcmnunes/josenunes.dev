@@ -1,6 +1,7 @@
 @import "../../../assets/styles/config.css";
 
 .root {
+  z-index: 1000;
   height: 120px;
   width: 100%;
   display: flex;

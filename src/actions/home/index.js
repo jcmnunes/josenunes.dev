@@ -24,8 +24,8 @@ export const startTimer = (activeHero = null, reverse = false) =>
     newHero = heros[index].stringKey;
   }
   dispatch(changeActiveHero(newHero));
-  clearInterval(timer);
-  timer = setInterval(() => dispatch(startTimer()), sliderTime * 1000);
+  // clearInterval(timer);
+  // timer = setInterval(() => dispatch(startTimer()), sliderTime * 1000);
 };
 
 export const stopTimer = () => dispatch => {
