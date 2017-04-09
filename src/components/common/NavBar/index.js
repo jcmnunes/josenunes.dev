@@ -6,13 +6,15 @@ import Hamburger from '/components/common/Hamburger';
 import styles from './NavBar.css';
 
 const NavBar = () =>
-  <div className={`${styles.root} container`}>
-    <Logo />
-    <div className={styles.menu}>
-      <Nav />
-      <NavIcons />
+  <div className={styles.root}>
+    <div className={`${styles.container} container`}>
+      <Logo />
+      <div className={styles.menu}>
+        <Nav />
+        <NavIcons />
+      </div>
+      <Hamburger />
     </div>
-    <Hamburger />
   </div>;
 
 export default NavBar;
