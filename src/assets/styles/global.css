@@ -105,6 +105,10 @@ a {
   bottom: 5px;
 }
 
+:global(.slick-dots) li {
+  margin: 0 5px !important;
+}
+
 :global(.slick-dots) li button::before {
   font-size: 12px;
 }
