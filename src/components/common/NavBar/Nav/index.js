@@ -4,15 +4,19 @@ import { pages } from '/jn.config';
 import styles from './nav.css';
 
 const Nav = ({ strings }) =>
-  <ul className={styles.root}>
+  <div className={styles.root}>
     {
       pages.map(page =>
-        <li key={page.name} className={styles.item}>
+        <a
+          key={page.name}
+          className={styles.item}
+          alt={strings[page.name]}
+        >
           {strings[page.name]}
-        </li>,
+        </a>,
       )
     }
-  </ul>;
+  </div>;
 
 Nav.propTypes = {
   strings: React.PropTypes.object.isRequired,
