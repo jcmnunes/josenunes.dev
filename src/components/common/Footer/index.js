@@ -6,13 +6,15 @@ import PatternsPub from './PatternsPub';
 import styles from './Footer.css';
 
 const Footer = () =>
-  <div className={`${styles.root} container`}>
-    <FooterMe />
-    <div className={styles.logos}>
-      <Techs />
-      <PatternsPub />
+  <div className={styles.root}>
+    <div className={`${styles.container} container`}>
+      <FooterMe />
+      <div className={styles.logos}>
+        <Techs />
+        <PatternsPub />
+      </div>
+      <TechsMobile />
     </div>
-    <TechsMobile />
   </div>;
 
 // // Props validation

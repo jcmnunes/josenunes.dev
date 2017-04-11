@@ -16,63 +16,7 @@
   .langMenu {
     position: absolute;
     top: 20px;
-    z-index: 100;
+    z-index: 1;
     width: 100%;
-  }
-
-  .arrow {
-    display: flex;
-    opacity: 0;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    width: 30px;
-    z-index: 1000;
-    top: 0;
-    bottom: 0;
-    background: transparent;
-    transition: all 500ms ease;
-
-    span {
-      display: block;
-      width: 15px;
-      height: 3px;
-      background: gray;
-
-      &:nth-child(1) {
-        margin-bottom: -12px;
-      }
-    }
-
-    &.left {
-      left: 0;
-
-      span:nth-child(1) {
-        transform: rotate(45deg);
-      }
-
-      span:nth-child(2) {
-        transform: rotate(-45deg);
-      }
-    }
-
-    &.right {
-      right: 0;
-
-      span:nth-child(1) {
-        transform: rotate(-45deg);
-      }
-
-      span:nth-child(2) {
-        transform: rotate(45deg);
-      }
-    }
-
-    &:hover {
-      opacity: 1;
-      background: rgba(0, 0, 0, 0.2);
-      cursor: pointer;
-    }
   }
 }

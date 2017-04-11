@@ -2,27 +2,20 @@
 
 .root {
   display: none;
-  visibility: hidden;
-  opacity: 0;
   position: absolute;
-  top: -225px;
+  top: -260px;
   width: 100vw;
   background: white;
-  z-index: 1000;
+  z-index: 1;
   padding: 10px 0;
   transition: all 0.3s ease;
   box-shadow: 3px 6px 23px -5px rgba(163, 163, 163, 1);
-
-  &.open {
-    top: 75px;
-    visibility: visible;
-    opacity: 1;
-  }
 
   ul {
     list-style: none;
     padding: 0 50px;
     text-align: center;
+    opacity: 0;
 
     li {
       padding: 7px 0;
@@ -32,6 +25,14 @@
         background: color(var(--jn-white) shade(5%));
         cursor: pointer;
       }
+    }
+  }
+
+  &.open {
+    top: 75px;
+
+    ul {
+      opacity: 1;
     }
   }
 }
