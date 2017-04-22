@@ -38,10 +38,23 @@
 
 * {
   box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  color: var(--jn-black);
 }
 
 body {
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+  font-size: 26px;
+  color: color(var(--jn-black) tint(30%));
+}
+
+p {
+  font-size: 14px;
+  line-height: 24px;
 }
 
 a {

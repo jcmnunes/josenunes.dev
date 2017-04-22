@@ -10,7 +10,10 @@ process.env.NODE_ENV = 'production';
 const Spinner = require('cli-spinner').Spinner;
 const LineUp = require('lineup');
 
-const spinner = new Spinner('Generating doDOC\'s minified bundle for production. This will take a moment...'.cyan);
+const spinner = new Spinner(
+  "Generating doDOC's minified bundle for production. This will take a moment..."
+    .cyan,
+);
 spinner.setSpinnerString(18);
 spinner.start();
 console.log('\n');
@@ -34,7 +37,10 @@ webpack(webpackConfig).run((err, stats) => {
   if (stats.hasErrors()) {
     spinner.stop();
     console.log('\n');
-    console.log(lineup.icon('error'), 'Webpack generated the following errors: \n'.bold.red);
+    console.log(
+      lineup.icon('error'),
+      'Webpack generated the following errors: \n'.bold.red,
+    );
     return jsonStats.errors.map(error => console.log(error.red));
   }
 
@@ -46,10 +52,17 @@ webpack(webpackConfig).run((err, stats) => {
 
   if (!(stats.hasErrors() || stats.hasWarnings())) {
     console.log('\n');
-    console.log(lineup.icon('success'), 'No warnings or errors were generated during the build process!\n'.green);
+    console.log(
+      lineup.icon('success'),
+      'No warnings or errors were generated during the build process!\n'.green,
+    );
   }
 
-  console.log(lineup.icon('success'), 'doDOC app has been compiled in production mode and written to /dist.\n'.underline.green);
+  console.log(
+    lineup.icon('success'),
+    '\ndoDOC app has been compiled in production mode and written to /dist.\n'
+      .underline.green,
+  );
 
   spinner.stop();
   return 0;

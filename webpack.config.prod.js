@@ -6,10 +6,12 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer')
   .BundleAnalyzerPlugin;
 
-const extractVendorCSS =
-  new ExtractTextPlugin('stylesheets/vendor.[contenthash].css');
-const extractCSS =
-  new ExtractTextPlugin('stylesheets/styles.[contenthash].css');
+const extractVendorCSS = new ExtractTextPlugin(
+  'stylesheets/vendor.[contenthash].css',
+);
+const extractCSS = new ExtractTextPlugin(
+  'stylesheets/styles.[contenthash].css',
+);
 
 const PRODUCTION = {
   'process.env.NODE_ENV': JSON.stringify('production'),
@@ -30,13 +32,8 @@ const VENDOR_LIBS = [
 
 const LOCAL_NAME = '[hash:base64:5]';
 
-const srcPath = [
-  path.join(__dirname, 'src'),
-];
-const cssGlobals = [
-  path.join(__dirname, 'node_modules'),
-  './src/assets',
-];
+const srcPath = [path.join(__dirname, 'src')];
+const cssGlobals = [path.join(__dirname, 'node_modules'), './src/assets'];
 
 module.exports = {
   devtool: 'source-map',

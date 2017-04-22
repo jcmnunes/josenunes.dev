@@ -1,10 +1,15 @@
 import React from 'react';
+import { Link } from 'react-router';
 import styles from './Logo.css';
 
 /**
  * ESDoc comment.
  */
-const Logo = () => <div className={styles.root}>Jose Nunes</div>;
+const Logo = () => (
+  <div className={styles.root}>
+    <Link to="/" className={styles.link}>Jose Nunes</Link>
+  </div>
+);
 
 // Default props
 Logo.defaultProps = {
