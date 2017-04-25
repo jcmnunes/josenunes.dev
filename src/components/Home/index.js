@@ -4,11 +4,12 @@ import Heros from './Heros';
 import Footer from '/components/common/Footer';
 import styles from './Home.css';
 
-const Home = () =>
+const Home = () => (
   <div className={styles.root}>
-    <NavBar />
+    <NavBar home />
     <Heros />
-    <Footer />
-  </div>;
+    <Footer home />
+  </div>
+);
 
 export default Home;

@@ -5,8 +5,8 @@ import NavIcons from './NavIcons';
 import Hamburger from '/components/common/Hamburger';
 import styles from './NavBar.css';
 
-const NavBar = () =>
-  <div className={styles.root}>
+const NavBar = ({ home }) => (
+  <div className={`${styles.root} ${home && styles.home}`}>
     <div className={`${styles.container} container`}>
       <Logo />
       <div className={styles.menu}>
@@ -15,6 +15,7 @@ const NavBar = () =>
       </div>
       <Hamburger />
     </div>
-  </div>;
+  </div>
+);
 
 export default NavBar;

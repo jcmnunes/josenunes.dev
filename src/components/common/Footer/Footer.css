@@ -6,7 +6,12 @@
   height: 120px;
   z-index: 2;
   background: var(--jn-white);
-  box-shadow: rgba(0, 0, 0, 0.5) 0 0 15px;
+  border-top: 1px solid black;
+
+  &.home {
+    box-shadow: rgba(0, 0, 0, 0.5) 0 0 15px;
+    border-top: none;
+  }
 
   .container {
     width: 100%;

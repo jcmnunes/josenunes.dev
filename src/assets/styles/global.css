@@ -39,11 +39,11 @@
 * {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
-  color: var(--jn-black);
 }
 
 body {
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  color: var(--jn-black);
 }
 
 h1 {

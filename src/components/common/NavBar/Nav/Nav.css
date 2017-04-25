@@ -1,10 +1,83 @@
 @import "../../../../assets/styles/config.css";
 
 .root {
-  font-family: Raleway;
+  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+  font-size: 16px;
   text-align: center;
+  height: 18px;
+  overflow: hidden;
 
-  .item {
+  a {
+    color: var(--jn-black);
+    text-decoration: none;
+    margin: 0 10px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+    padding: 0 4px;
+  }
+
+  a span {
+    position: relative;
+    display: inline-block;
+    transition: transform 0.3s;
+  }
+
+  a span::before {
+    position: absolute;
+    top: 100%;
+    content: attr(data-hover);
+    font-weight: 700;
+    transform: translate3d(0, 0, 0);
+  }
+
+  a:hover span,
+  a:focus span {
+    transform: translateY(-100%);
+    color: var(--jn-black);
+  }
+
+  /* a {
+    -webkit-transition: color 0.3s;
+    -moz-transition: color 0.3s;
+    transition: color 0.3s;
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    color: var(--jn-black);
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 10px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+  }
+
+  a::before {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    color: var(--jn-transparent);
+    content: '•';
+    text-shadow: 0 0 transparent;
+    font-size: 1.2em;
+    transition: text-shadow 0.3s, color 0.3s;
+    transform: translateX(-50%);
+    pointer-events: none;
+  }
+
+  a:hover::before,
+  a:focus::before {
+    color: var(--jn-black);
+    text-shadow: 10px 0 var(--jn-black), -10px 0 var(--jn-black);
+  }
+
+  a:hover,
+  a:focus {
+    color: color(var(--jn-black) tint(70%));
+    text-decoration: none;
+  } */
+
+  /* .item {
     font-family: 'Montserrat', Helvetica, Arial, sans-serif;
     font-size: 16px;
     color: color(var(--jn-black) alpha(50%));
@@ -36,5 +109,5 @@
     &:active {
       color: var(--jn-black);
     }
-  }
+  } */
 }

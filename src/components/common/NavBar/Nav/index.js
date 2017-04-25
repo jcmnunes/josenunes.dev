@@ -13,7 +13,7 @@ const Nav = ({ strings }) => (
         alt={strings[page.name]}
         to="blog"
       >
-        {strings[page.name]}
+        <span data-hover={strings[page.name]}>{strings[page.name]}</span>
       </Link>
     ))}
   </div>

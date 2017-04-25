@@ -5,8 +5,8 @@ import TechsMobile from './TechsMobile';
 import PatternsPub from './PatternsPub';
 import styles from './Footer.css';
 
-const Footer = () =>
-  <div className={styles.root}>
+const Footer = ({ home }) => (
+  <div className={`${styles.root} ${home && styles.home}`}>
     <div className={`${styles.container} container`}>
       <FooterMe />
       <div className={styles.logos}>
@@ -15,7 +15,8 @@ const Footer = () =>
       </div>
       <TechsMobile />
     </div>
-  </div>;
+  </div>
+);
 
 // // Props validation
 // Footer.propTypes = {
