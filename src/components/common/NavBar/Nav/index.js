@@ -4,20 +4,20 @@ import { Link } from 'react-router';
 import { pages } from '/jn.config';
 import styles from './nav.css';
 
-const Nav = ({ strings }) => (
+const Nav = ({ strings }) =>
   <div className={styles.root}>
-    {pages.map(page => (
+    {pages.map(page =>
       <Link
         key={page.name}
         className={styles.item}
+        activeClassName={styles.active}
         alt={strings[page.name]}
-        to="blog"
+        to={page.name}
       >
-        <span data-hover={strings[page.name]}>{strings[page.name]}</span>
-      </Link>
-    ))}
-  </div>
-);
+        {strings[page.name]}
+      </Link>,
+    )}
+  </div>;
 
 Nav.propTypes = {
   strings: React.PropTypes.object.isRequired,
