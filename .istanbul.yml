@@ -1,0 +1,8 @@
+instrumentation:
+  excludes:
+    - '*.spec.js'
+    - '**/tools/**'
+    - '**/localStorage/**'
+    - 'dodoc.config*'
+    - 'profiler.js'
+    - 'detector.js'

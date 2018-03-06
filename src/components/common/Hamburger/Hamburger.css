@@ -1,0 +1,103 @@
+/* https://codepen.io/designcouch/pen/Atyop?editors=0100 */
+
+/* http://codepen.io/trvr/pen/wFzkv */
+@import "../../../assets/styles/config.css";
+
+.root {
+  display: none;
+  width: 20px;
+  height: 15px;
+  position: relative;
+  transform: rotate(0deg);
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+
+  span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 50%;
+    background: #000;
+    opacity: 1;
+    transform: rotate(0deg);
+    transition: 0.25s ease-in-out;
+  }
+
+  span:nth-child(even) {
+    left: 50%;
+    border-radius: 0 9px 9px 0;
+  }
+
+  span:nth-child(odd) {
+    left: 0;
+    border-radius: 9px 0 0 9px;
+  }
+
+  span:nth-child(1) {
+    top: 0;
+  }
+
+  span:nth-child(2) {
+    top: 0;
+  }
+
+  span:nth-child(3),
+  span:nth-child(4) {
+    top: 6px;
+  }
+
+  span:nth-child(5),
+  span:nth-child(6) {
+    top: 12px;
+  }
+
+  &.open {
+    span:nth-child(1) {
+      transform: rotate(45deg);
+      top: 2px;
+    }
+
+    span:nth-child(2) {
+      transform: rotate(-45deg);
+      left: calc(50% - 3px);
+      top: 2px;
+    }
+
+    span:nth-child(3) {
+      left: -50%;
+      opacity: 0;
+    }
+
+    span:nth-child(4) {
+      left: 100%;
+      opacity: 0;
+    }
+
+    span:nth-child(5) {
+      transform: rotate(-45deg);
+      top: 9px;
+    }
+
+    span:nth-child(6) {
+      transform: rotate(45deg);
+      left: calc(50% - 3px);
+      top: 9px;
+    }
+  }
+}
+
+@media (--medium-screen) {
+  .root {
+    display: block;
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+@media (--mobile-screen) {
+  .root {
+    right: 20px;
+  }
+}

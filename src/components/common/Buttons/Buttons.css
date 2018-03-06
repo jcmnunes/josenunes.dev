@@ -1,0 +1,86 @@
+@import "../../../assets/styles/config.css";
+
+.btn {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  border-radius: var(--jn-radius);
+  padding: 10px;
+  line-height: normal;
+  display: inline;
+  color: color(var(--jn-black) tint(40%));
+  border: 1px solid color(var(--jn-black) tint(60%));
+  background: white;
+
+  &.btn-sm {
+    padding: 5px 20px;
+    font-size: 11px;
+  }
+
+  &:hover {
+    border: 1px solid color(var(--jn-black) tint(60%));
+    background: color(var(--jn-black) tint(98%));
+    cursor: pointer;
+  }
+
+  &:focus {
+    outline: none;
+    border: 1px solid color(var(--jn-black) tint(50%));
+    background: #fbfbfb;
+    box-shadow: 0 0 1px 4px rgba(var(--jn-black), 0.075);
+  }
+
+  &:active {
+    outline: none;
+    border: 1px solid color(var(--jn-black) tint(50%));
+    background: color(var(--jn-black) tint(95%));
+  }
+
+  &:disabled {
+    outline: none;
+    border: 1px solid color(var(--jn-black) tint(70%));
+    background: white;
+    color: color(var(--jn-black) tint(60%));
+    cursor: not-allowed;
+  }
+
+  /* Primary */
+
+  &.primary,
+  &.btn-primary {
+    color: var(--jn-white);
+    border: 1px solid color(var(--jn-blue) shade(15%));
+    background: color(var(--jn-blue) tint(10%));
+  }
+
+  &.primary:hover,
+  &.btn-primary:hover {
+    border: 1px solid color(var(--jn-blue) shade(25%));
+    background: color(var(--jn-blue) tint(0%));
+  }
+
+  &.primary:focus,
+  &.btn-primary:focus {
+    outline: none;
+    border: 1px solid color(var(--jn-blue) shade(20%));
+    background: color(var(--jn-blue) tint(5%));
+    box-shadow: 0 0 1px 4px rgba(var(--jn-blue), 0.3);
+  }
+
+  &.primary:active,
+  &.btn-primary:active {
+    outline: none;
+    border: 1px solid color(var(--jn-blue) shade(25%));
+    background: color(var(--jn-blue) shade(10%));
+  }
+
+  &.primary:disabled,
+  &.btn-primary:disabled {
+    outline: none;
+    border: 1px solid color(var(--jn-blue) tint(50%));
+    background: color(var(--jn-blue) tint(70%));
+  }
+
+  &.large {
+    width: 175px;
+  }
+}

@@ -1,0 +1,10 @@
+.root {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  min-height: 500px;
+  min-width: 300px;
+  overflow: auto;
+}

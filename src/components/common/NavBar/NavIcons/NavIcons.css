@@ -1,0 +1,22 @@
+@import "../../../../assets/styles/config.css";
+
+.root {
+  display: flex;
+  flex-direction: row;
+  margin-left: 7px;
+}
+
+@media (--medium-screen) {
+  .root {
+    margin: 10px 0 5px;
+    justify-content: center;
+
+    img {
+      margin: 0 4px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}

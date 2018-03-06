@@ -1,0 +1,6 @@
+--require mock-local-storage
+--require tools/testSetup.js
+--bail
+--reporter spec
+--recursive
+src/**/*.spec.js
