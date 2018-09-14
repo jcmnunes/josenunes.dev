@@ -9,7 +9,8 @@
     "clean-dist": "npm run remove-dist && mkdir dist",
     "prebuild": "npm-run-all clean-dist intl",
     "build": "babel-node tools/build.js",
-    "intl": "python collect_languages.py"
+    "intl": "python collect_languages.py",
+    "i18n": "babel-node tools/collectLanguages.js"
   },
   "repository": {
     "type": "git",
@@ -82,8 +83,10 @@
   },
   "dependencies": {
     "@atlaskit/css-reset": "^1.0.5",
+    "axios": "^0.18.0",
     "babel-polyfill": "^6.22.0",
     "classnames": "^2.2.5",
+    "node-poeditor": "1.0.7",
     "re-carousel": "^1.2.7",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
