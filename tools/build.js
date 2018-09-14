@@ -60,7 +60,7 @@ webpack(webpackConfig).run((err, stats) => {
 
   console.log(
     lineup.icon('success'),
-    '\ndoDOC app has been compiled in production mode and written to /dist.\n'
+    '\nWebsite has been compiled in production mode and written to /dist.\n'
       .underline.green,
   );
 
