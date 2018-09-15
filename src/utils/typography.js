@@ -1,6 +1,6 @@
 import Typography from 'typography';
-import fairyGatesTheme from 'typography-theme-fairy-gates';
+import grandViewTheme from 'typography-theme-grand-view';
 
-const typography = new Typography(fairyGatesTheme);
+const typography = new Typography(grandViewTheme);
 
 export default typography;
