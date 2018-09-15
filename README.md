@@ -1,2 +1,0 @@
-# josenunesxyz
-My personal website

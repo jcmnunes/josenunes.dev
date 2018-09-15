@@ -1,1 +1,0 @@
-export const CHANGE_ACTIVE_HERO = 'CHANGE_ACTIVE_HERO';
