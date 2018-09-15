@@ -3,8 +3,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 
-import './index.scss';
-
 const Layout = ({ children, data }) => (
   <div>
     <Helmet title={data.site.siteMetadata.title} />
