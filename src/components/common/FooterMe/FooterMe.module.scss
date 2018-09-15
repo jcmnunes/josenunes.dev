@@ -1,0 +1,26 @@
+.root {
+  display: inline-block;
+
+  .info {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    border-bottom: 1px solid black;
+
+    .name {
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    .job {
+      font-size: 14px;
+    }
+
+    img {
+      margin-bottom: 16px;
+    }
+  }
+
+  .footer {
+    font-size: 10px;
+  }
+}

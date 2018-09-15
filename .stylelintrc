@@ -1,0 +1,10 @@
+{
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-css-modules",
+    "stylelint-config-prettier"
+  ],
+  "ignoreFiles": [
+    "src/assets/styles/vendor/*.css"
+  ]
+}
