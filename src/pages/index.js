@@ -1,8 +1,10 @@
 import React from 'react';
-import styled from 'styled-components';
+import Nav from '../components/Nav';
+import Button from '../components/UI/Button';
 
-const Test = styled.div`
-  color: red;
-`;
-
-export default () => <Test>Hello world!</Test>;
+export default () => (
+  <div>
+    <Nav />
+    <Button />
+  </div>
+);
