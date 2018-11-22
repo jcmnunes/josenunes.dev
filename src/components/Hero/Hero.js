@@ -7,14 +7,19 @@ const StyledHero = styled.div`
   display: flex;
   flex-direction: row;
   max-width: 1400px;
+  z-index: 1;
+  height: 400px;
+
+  @media (max-width: ${props => props.theme.huge}) {
+    height: 350px;
+  }
 `;
 
 const BorderImage = styled.div`
   position: relative;
-  width: 87%;
   box-shadow: 4px 4px 15px 0 rgba(0, 0, 0, 0.1);
-  z-index: 1;
   flex: 1;
+  background: url('https://picsum.photos/450/580');
 
   :before {
     position: absolute;
@@ -26,10 +31,6 @@ const BorderImage = styled.div`
     border: 15px solid ${props => props.theme.gray1};
     display: inline-block;
     z-index: -1;
-  }
-
-  img {
-    margin-bottom: 0;
   }
 `;
 
@@ -61,9 +62,7 @@ class Hero extends Component {
   render() {
     return (
       <StyledHero>
-        <BorderImage>
-          <img src="https://picsum.photos/450/580" alt="test" />
-        </BorderImage>
+        <BorderImage />
         <Content>
           <h2>
             Hello, <br /> I Am Jose Nunes

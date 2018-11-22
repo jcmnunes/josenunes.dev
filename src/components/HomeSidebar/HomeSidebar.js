@@ -9,8 +9,7 @@ const Sidebar = styled.div`
   align-items: center;
   justify-content: space-between;
   padding: 40px 30px 20px;
-  flex: 0 0 25%;
-  max-width: 25%;
+  flex: 1;
   background: ${props => props.theme.gray1};
   height: 100%;
 `;

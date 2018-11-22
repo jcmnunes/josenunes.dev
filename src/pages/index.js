@@ -15,8 +15,7 @@ const Container = styled.div`
 const Main = styled.div`
   display: flex;
   align-items: center;
-  flex: 0 0 75%;
-  max-width: 75%;
+  flex: 4;
   background: ${props => props.theme.gray2};
 `;
 
