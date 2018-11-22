@@ -1,6 +1,6 @@
 <p align="center">
 <a href="https://josenunes.xyz">
-<img src="https://res.cloudinary.com/jcmnunes/image/upload/v1542884635/josenunesxyz/jn_logo.svg" alt="logo" />
+<img src="https://res.cloudinary.com/jcmnunes/image/upload/v1542884839/josenunesxyz/jn_logo.svg" alt="logo" />
 </a>
 <p>
 <h1 align="center">Personal website and vCard</h1>
