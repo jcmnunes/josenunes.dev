@@ -1,6 +1,7 @@
 import Typography from 'typography';
-import grandViewTheme from 'typography-theme-grand-view';
+import moragaTheme from 'typography-theme-moraga';
+moragaTheme.headerWeight = 'bold';
 
-const typography = new Typography(grandViewTheme);
+const typography = new Typography(moragaTheme);
 
 export default typography;
