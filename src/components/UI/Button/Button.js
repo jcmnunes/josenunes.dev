@@ -67,7 +67,11 @@ const StyledButton = styled.button`
 
 class Button extends Component {
   render() {
-    return <StyledButton intent={this.props.intent}>{this.props.children}</StyledButton>;
+    return (
+      <StyledButton onClick={this.props.action} intent={this.props.intent}>
+        {this.props.children}
+      </StyledButton>
+    );
   }
 }
 

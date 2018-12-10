@@ -3,9 +3,19 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
 import { ThemeProvider } from 'styled-components';
+
 import Nav from '../Nav';
+import Logo from '../Logo';
 
 import theme from '../../styles/theme';
+import Container from '../../styles/Container';
+import Header from '../../styles/Header';
+import Main from '../../styles/Main';
+import Footer from '../../styles/Footer';
+import IconLinks from '../../styles/IconLinks';
+
+import GithubIcon from '../../images/github';
+import LinkedInIcon from '../../images/linkedin';
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -35,10 +45,21 @@ const Layout = ({ children }) => (
           <html lang="en" />
         </Helmet>
         <ThemeProvider theme={theme}>
-          <div>
-            <Nav menuLinks={data.site.siteMetadata.menuLinks} />
-            {children}
-          </div>
+          <Container>
+            <Header>
+              <Logo />
+              <Nav menuLinks={data.site.siteMetadata.menuLinks} />
+            </Header>
+            <Main>{children}</Main>
+            <Footer>
+              <div>Copyright © 2018 Jose Nunes</div>
+              <IconLinks>
+                Follow Me:
+                <GithubIcon />
+                <LinkedInIcon />
+              </IconLinks>
+            </Footer>
+          </Container>
         </ThemeProvider>
       </>
     )}

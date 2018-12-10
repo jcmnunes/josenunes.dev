@@ -3,12 +3,12 @@ import { Link } from 'gatsby';
 import styled from 'styled-components';
 
 const StyledNav = styled.ul`
-  position: fixed;
+  position: relative;
   right: 0;
   top: 0;
   display: flex;
   justify-content: flex-end;
-  padding: 35px 50px;
+  margin: 0;
 `;
 
 const NavLink = styled(Link)`

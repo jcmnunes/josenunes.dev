@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import theme from '../styles/theme';
 
-const Logo = ({ color, width, height }) => {
+const LogoIcon = ({ color, width, height }) => {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width={width} height={height}>
       <path
@@ -13,16 +13,16 @@ const Logo = ({ color, width, height }) => {
   );
 };
 
-Logo.defaultProps = {
+LogoIcon.defaultProps = {
   color: theme.white,
   height: 50,
   width: 50,
 };
 
-Logo.propTypes = {
+LogoIcon.propTypes = {
   color: PropTypes.string,
   height: PropTypes.number,
   width: PropTypes.number,
 };
 
-export default Logo;
+export default LogoIcon;
