@@ -20,10 +20,11 @@ class Logo extends Component {
   };
 
   render() {
+    const { icon, text } = this.props;
     return (
       <StyledLogo onClick={this.goToHomepage}>
-        <LogoIcon />
-        <LogoText />
+        {icon && <LogoIcon />}
+        {text && <LogoText />}
       </StyledLogo>
     );
   }

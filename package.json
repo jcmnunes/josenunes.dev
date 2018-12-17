@@ -30,8 +30,7 @@
     "react-helmet": "^5.2.0",
     "react-typography": "^0.16.13",
     "styled-components": "^4.1.1",
-    "typography": "^0.16.17",
-    "typography-theme-moraga": "^0.15.10"
+    "typography": "^0.16.17"
   },
   "devDependencies": {
     "babel-eslint": "^9.0.0",
