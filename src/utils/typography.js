@@ -1,7 +1,10 @@
 import Typography from 'typography';
-import moragaTheme from 'typography-theme-moraga';
-moragaTheme.headerWeight = 'bold';
 
-const typography = new Typography(moragaTheme);
+const typography = new Typography({
+  baseFontSize: '18px',
+  baseLineHeight: 1.666,
+  headerFontFamily: ['Hack', 'sans-serif'],
+  bodyFontFamily: ['Hack', 'monospaced'],
+});
 
 export default typography;

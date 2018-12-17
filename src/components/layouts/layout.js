@@ -4,18 +4,13 @@ import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
 import { ThemeProvider } from 'styled-components';
 
-import Nav from '../Nav';
 import Logo from '../Logo';
 
 import theme from '../../styles/theme';
 import Container from '../../styles/Container';
 import Header from '../../styles/Header';
 import Main from '../../styles/Main';
-import Footer from '../../styles/Footer';
-import IconLinks from '../../styles/IconLinks';
-
-import GithubIcon from '../../images/github';
-import LinkedInIcon from '../../images/linkedin';
+import GlobalStyle from '../../styles/Global';
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -24,11 +19,6 @@ const Layout = ({ children }) => (
         site {
           siteMetadata {
             title
-            menuLinks {
-              id
-              name
-              link
-            }
           }
         }
       }
@@ -47,18 +37,10 @@ const Layout = ({ children }) => (
         <ThemeProvider theme={theme}>
           <Container>
             <Header>
-              <Logo />
-              <Nav menuLinks={data.site.siteMetadata.menuLinks} />
+              <Logo icon />
             </Header>
             <Main>{children}</Main>
-            <Footer>
-              <div>Copyright © 2018 Jose Nunes</div>
-              <IconLinks>
-                Follow Me:
-                <GithubIcon />
-                <LinkedInIcon />
-              </IconLinks>
-            </Footer>
+            <GlobalStyle />
           </Container>
         </ThemeProvider>
       </>

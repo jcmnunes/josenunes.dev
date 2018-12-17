@@ -1,28 +1,6 @@
 module.exports = {
   siteMetadata: {
     title: 'JN | Jose Nunes',
-    menuLinks: [
-      {
-        id: 'home',
-        name: 'Home',
-        link: '/',
-      },
-      {
-        id: 'about',
-        name: 'About Me',
-        link: '/about',
-      },
-      {
-        id: 'resume',
-        name: 'Resume',
-        link: '/resume',
-      },
-      {
-        id: 'blog',
-        name: 'Blog',
-        link: '/blog',
-      },
-    ],
   },
   plugins: [
     `gatsby-plugin-styled-components`,
@@ -38,7 +16,7 @@ module.exports = {
         logo: './src/favicon.png',
 
         appName: 'JN | Jose Nunes',
-        appDescription: 'Personal website/vCard',
+        appDescription: 'Personal website',
         developerName: 'Jose Nunes',
         developerURL: 'josenunes.xyz',
         dir: 'auto',
