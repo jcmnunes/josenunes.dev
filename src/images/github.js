@@ -14,7 +14,7 @@ const Github = ({ color, width, height }) => {
 };
 
 Github.defaultProps = {
-  color: theme.white,
+  color: theme.neutral200,
   height: 20,
   width: 20,
 };

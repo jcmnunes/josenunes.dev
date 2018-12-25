@@ -12,7 +12,7 @@ import Header from '../../styles/Header';
 import Main from '../../styles/Main';
 import GlobalStyle from '../../styles/Global';
 
-const Layout = ({ children }) => (
+const Homepage = ({ children }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -48,8 +48,8 @@ const Layout = ({ children }) => (
   />
 );
 
-Layout.propTypes = {
+Homepage.propTypes = {
   children: PropTypes.node.isRequired,
 };
 
-export default Layout;
+export default Homepage;

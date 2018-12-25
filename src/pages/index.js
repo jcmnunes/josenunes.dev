@@ -1,30 +1,28 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import Layout from '../components/layouts/layout';
+import Homepage from '../components/layouts/Homepage';
+import Manifest from '../components/Manifest';
+import LinkButton from '../components/LinkButton';
 
 import iconCloudDownload from '../images/icon-cloud-download.svg';
-import iconCheveronRight from '../images/icon-cheveron-right.svg';
 import iconMail from '../images/icon-mail.svg';
+import IconLinkedIn from '../images/linkedin';
+import IconGithub from '../images/github';
 
 const H1 = styled.h1`
-  color: ${props => props.theme.white};
+  color: ${props => props.theme.neutral100};
+  font-size: 36px;
 
   span {
-    color: ${props => props.theme.primary};
+    color: ${props => props.theme.primary500};
   }
 `;
 
 const H2 = styled.h2`
   font-weight: 400;
   font-size: 20px;
-  color: ${props => props.theme.white};
-`;
-
-const Message = styled.p`
-  color: #b1b1b1;
-  font-size: 18px;
-  font-weight: 400;
+  color: ${props => props.theme.neutral100};
 `;
 
 const Actions = styled.div`
@@ -34,55 +32,163 @@ const Actions = styled.div`
   justify-content: space-between;
 `;
 
-const LinkButton = styled.a`
-  display: inline-flex;
-  align-items: center;
-  cursor: pointer;
-  text-decoration: none;
+const StyledGrid = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 48px;
 
-  .cheveron {
-    transition: all 0.2s ease;
-  }
-
-  &:hover {
-    .cheveron {
-      transform: translateX(5px);
-    }
-  }
-
-  img {
-    width: 24px;
-    margin-bottom: 0;
-  }
-
-  span {
-    font-size: 14px;
-    color: #cfcfcf;
-    margin-left: 16px;
-    margin-right: 4px;
+  @media (max-width: ${props => props.theme.bp_medium}) {
+    grid-template-columns: 1fr;
   }
 `;
 
+const Heading = styled.h3`
+  color: ${props => props.theme.neutral200};
+  font-size: 20px;
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background: ${props => props.theme.primary500};
+  }
+`;
+
+const StyledList = styled.ul`
+  color: ${props => props.theme.neutral100};
+  margin-bottom: 0;
+
+  .secondary-info {
+    font-size: 16px;
+    color: ${props => props.theme.primary500};
+  }
+
+  .aux-info {
+    color: ${props => props.theme.neutral400};
+    font-size: 12px;
+  }
+
+  li {
+    margin-bottom: 32px;
+    list-style: none;
+    position: relative;
+
+    &:before {
+      content: '';
+      width: 8px;
+      height: 8px;
+      background: ${props => props.theme.primary500};
+      position: absolute;
+      left: -30px;
+      top: 12px;
+      border-radius: 50%;
+    }
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+`;
+
+const SocialLinks = styled.div`
+  margin-top: 16px;
+  display: grid;
+  grid-gap: 12px;
+  grid-template-columns: 20px 20px;
+`;
+
 export default () => (
-  <Layout>
+  <Homepage>
     <H2>
       Hello, <br /> I Am Jose Nunes
     </H2>
     <H1>
       <span>Frontend</span> Developer
     </H1>
-    <Message>New website coming soon...</Message>
-    <Actions>
-      <LinkButton href={require('../../static/assets/cv.pdf')} download="JoseNunes-CV.pdf">
-        <img src={iconCloudDownload} alt="icon-cloud-download" />
-        <span>Download my CV</span>
-        <img className="cheveron" src={iconCheveronRight} alt="icon-cheveron-right" />
-      </LinkButton>
-      <LinkButton href="mailto:jn@josenunes.xyz">
-        <img src={iconMail} alt="icon-mail" />
-        <span>jn@josenunes.xyz</span>
-        <img className="cheveron" src={iconCheveronRight} alt="icon-cheveron-right" />
-      </LinkButton>
-    </Actions>
-  </Layout>
+    <Manifest />
+    <StyledGrid>
+      <div>
+        <Heading>Recent Work Experiences</Heading>
+        <StyledList>
+          <li>
+            <div>
+              <LinkButton large>Adidas AG</LinkButton>
+            </div>
+            <div className="secondary-info">Frontend Developer</div>
+            <div className="aux-info">Mar 18 - Dec 18</div>
+          </li>
+          <li>
+            <div>
+              <LinkButton large>doDOC Corp.</LinkButton>
+            </div>
+            <div className="secondary-info">Frontend Developer</div>
+            <div className="aux-info">Mar 18 - Dec 18</div>
+          </li>
+          <li>
+            <div>
+              <LinkButton large>Soundzipper</LinkButton>
+            </div>
+            <div className="secondary-info">Frontend Developer</div>
+            <div className="aux-info">Mar 18 - Dec 18</div>
+          </li>
+          <li>
+            <div>
+              <LinkButton large>OOF</LinkButton>
+            </div>
+            <div className="secondary-info">Frontend Developer</div>
+            <div className="aux-info">Mar 18 - Dec 18</div>
+          </li>
+        </StyledList>
+      </div>
+      <div>
+        <div style={{ marginBottom: 48 }}>
+          <Heading>Recent Projects</Heading>
+          <StyledList>
+            <li>
+              <div>
+                <LinkButton large>FlowTask App</LinkButton>
+              </div>
+              <div className="aux-info">Task manager app</div>
+            </li>
+            <li>
+              <div>
+                <LinkButton large>mceuteixeira.com</LinkButton>
+              </div>
+              <div className="aux-info">Personal Website/Blog</div>
+            </li>
+            <li>
+              <div>
+                <LinkButton large>josenunes.xyz</LinkButton>
+              </div>
+              <div className="aux-info">Personal Website/Blog</div>
+            </li>
+          </StyledList>
+        </div>
+        <div>
+          <Heading>Get in touch</Heading>
+          <Actions>
+            <LinkButton
+              href={require('../../static/assets/cv.pdf')}
+              download="JoseNunes-CV.pdf"
+              icon={iconCloudDownload}
+              iconAltText="icon-cloud-download"
+            >
+              Download my CV
+            </LinkButton>
+            <LinkButton href="mailto:jn@josenunes.xyz" icon={iconMail} iconAltText="icon-mail">
+              jn@josenunes.xyz
+            </LinkButton>
+          </Actions>
+          <SocialLinks>
+            <IconLinkedIn />
+            <IconGithub />
+          </SocialLinks>
+        </div>
+      </div>
+    </StyledGrid>
+  </Homepage>
 );

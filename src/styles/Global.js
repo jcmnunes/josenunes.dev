@@ -22,13 +22,13 @@ const GlobalStyle = createGlobalStyle`
          url('${HackBoldWoff}') format('woff');
   }
 
-  html {
-    overflow: auto;
-  }
-
   body {
-    background: ${props => props.theme.gray2};
+    background: ${props => props.theme.neutral1000};
     font-family: 'Hack', monospace;
+  }
+  
+  ::selection {
+    background: ${props => props.theme.primary300};
   }
 `;
 

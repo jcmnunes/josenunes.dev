@@ -14,7 +14,7 @@ const LinkedIn = ({ color, width, height }) => {
 };
 
 LinkedIn.defaultProps = {
-  color: theme.white,
+  color: theme.neutral200,
   height: 20,
   width: 20,
 };
