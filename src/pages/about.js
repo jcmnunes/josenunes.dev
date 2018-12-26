@@ -1,3 +1,4 @@
 import React from 'react';
+import Layout from '../components/layouts/layout';
 
-export default () => <div>About Page</div>;
+export default () => <Layout>About</Layout>;

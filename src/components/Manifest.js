@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import { navigate } from 'gatsby';
 
 const StyledManifest = styled.div`
   color: #b1b1b1;
@@ -33,6 +34,10 @@ class Manifest extends Component {
     this.setState({ showMore: !this.state.showMore });
   };
 
+  goToAbout = () => {
+    navigate('/about');
+  };
+
   render() {
     const { showMore } = this.state;
     return (
@@ -52,7 +57,11 @@ class Manifest extends Component {
           <div className="terciary-button" onClick={this.toggleShowMore}>
             {showMore ? 'Read less' : 'Read more'}
           </div>
-          {showMore && <div className="terciary-button">Read even more</div>}
+          {showMore && (
+            <div className="terciary-button" onClick={this.goToAbout}>
+              Read even more
+            </div>
+          )}
         </div>
       </StyledManifest>
     );

@@ -5,7 +5,9 @@ import oofLogo from '../images/oof-logo.svg';
 
 export default [
   {
+    key: '1',
     linkText: 'Adidas AG',
+    linkUrl: '/work/adidas',
     secondaryInfo: 'Frontend Developer',
     auxInfo: 'Mar 18 - Dec 18',
     image: adidasLogo,
@@ -13,7 +15,9 @@ export default [
     imageWidth: '40px',
   },
   {
+    key: '2',
     linkText: 'doDOC Corp.',
+    linkUrl: '/work/dodoc',
     secondaryInfo: 'Frontend Developer',
     auxInfo: 'Mar 18 - Dec 18',
     image: dodocLogo,
@@ -21,7 +25,9 @@ export default [
     imageWidth: '75px',
   },
   {
+    key: '3',
     linkText: 'Soundzipper',
+    linkUrl: '/work/soundzipper',
     secondaryInfo: 'Web Developer',
     auxInfo: 'Mar 18 - Dec 18',
     image: szLogo,
@@ -29,7 +35,9 @@ export default [
     imageWidth: '125px',
   },
   {
+    key: '4',
     linkText: 'OOF',
+    linkUrl: '/work/oof',
     secondaryInfo: 'Web Developer',
     auxInfo: 'Mar 18 - Dec 18',
     image: oofLogo,

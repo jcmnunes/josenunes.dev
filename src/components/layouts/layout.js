@@ -5,6 +5,7 @@ import { StaticQuery, graphql } from 'gatsby';
 import { ThemeProvider } from 'styled-components';
 
 import Logo from '../Logo';
+import Breadcrumb from '../Breadcrumb';
 
 import theme from '../../styles/theme';
 import Container from '../../styles/Container';
@@ -12,7 +13,7 @@ import Header from '../../styles/Header';
 import Main from '../../styles/Main';
 import GlobalStyle from '../../styles/Global';
 
-const Homepage = ({ children }) => (
+const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -37,7 +38,8 @@ const Homepage = ({ children }) => (
         <ThemeProvider theme={theme}>
           <Container>
             <Header>
-              <Logo icon /> / Work / Adidas
+              <Logo icon />
+              <Breadcrumb />
             </Header>
             <Main>{children}</Main>
             <GlobalStyle />
@@ -48,8 +50,8 @@ const Homepage = ({ children }) => (
   />
 );
 
-Homepage.propTypes = {
+Layout.propTypes = {
   children: PropTypes.node.isRequired,
 };
 
-export default Homepage;
+export default Layout;

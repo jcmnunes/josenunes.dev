@@ -48,9 +48,9 @@ class List extends Component {
     return (
       <StyledList>
         {data.map(item => (
-          <li>
+          <li key={item.key}>
             <div>
-              <LinkButton large>{item.linkText}</LinkButton>
+              <LinkButton to={item.linkUrl}>{item.linkText}</LinkButton>
             </div>
             <div className="secondary-info">{item.secondaryInfo}</div>
             <div className="aux-info">{item.auxInfo}</div>

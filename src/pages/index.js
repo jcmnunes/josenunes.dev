@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import Homepage from '../components/layouts/Homepage';
+import Layout from '../components/layouts/layout';
 import Manifest from '../components/Manifest';
 import List from '../components/List';
 import Contact from '../components/Contact';
@@ -37,7 +37,7 @@ const StyledGrid = styled.div`
 `;
 
 export default () => (
-  <Homepage>
+  <Layout>
     <H2>
       Hello, <br /> I Am Jose Nunes
     </H2>
@@ -58,5 +58,5 @@ export default () => (
         <Contact />
       </div>
     </StyledGrid>
-  </Homepage>
+  </Layout>
 );

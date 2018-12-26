@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import { Link } from 'gatsby';
 import styled from 'styled-components';
 import iconCheveronRight from '../images/icon-cheveron-right.svg';
 
-const StyledLink = styled(Link)`
+const StyledAnchor = styled.a`
   display: inline-flex;
   align-items: center;
   cursor: pointer;
@@ -21,8 +20,8 @@ const StyledLink = styled(Link)`
   }
 
   span {
-    font-size: 16px;
-    margin-left: 0;
+    font-size: 14px;
+    margin-left: 16px;
     margin-right: 4px;
   }
 
@@ -34,12 +33,13 @@ const StyledLink = styled(Link)`
 
 class LinkButton extends Component {
   render() {
-    const { children, ...rest } = this.props;
+    const { icon, iconAltText, children, ...rest } = this.props;
     return (
-      <StyledLink {...rest}>
+      <StyledAnchor {...rest}>
+        {icon && <img src={icon} alt={iconAltText} />}
         <span className="button-text">{children}</span>
         <img className="cheveron" src={iconCheveronRight} alt="icon-cheveron-right" />
-      </StyledLink>
+      </StyledAnchor>
     );
   }
 }

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-import LinkButton from './LinkButton';
+import AnchorButton from './AnchorButton';
 
 import Heading from '../styles/Heading';
 
@@ -30,17 +30,17 @@ class Contact extends Component {
       <div>
         <Heading>Get in touch</Heading>
         <Actions>
-          <LinkButton
+          <AnchorButton
             href={require('../../static/assets/cv.pdf')}
             download="JoseNunes-CV.pdf"
             icon={iconCloudDownload}
             iconAltText="icon-cloud-download"
           >
             Download my CV
-          </LinkButton>
-          <LinkButton href="mailto:jn@josenunes.xyz" icon={iconMail} iconAltText="icon-mail">
+          </AnchorButton>
+          <AnchorButton href="mailto:jn@josenunes.xyz" icon={iconMail} iconAltText="icon-mail">
             jn@josenunes.xyz
-          </LinkButton>
+          </AnchorButton>
         </Actions>
         <SocialLinks>
           <IconLinkedIn />
