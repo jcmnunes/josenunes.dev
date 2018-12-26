@@ -42,10 +42,10 @@ class Manifest extends Component {
         to improve and to learn new things.
         {showMore && (
           <div>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-            accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-            sanctus est Lorem ipsum dolor sit amet.
+            Although I started my IT career as a Python developer, I’ve been working as a frontend
+            developer for the past 3 years. My initial tech stack was focused on vanilla JavaScript
+            and jQuery. Nowadays, I work mainly with modern frontend web technologies in the React
+            ecosystem. In fact, I’ve been working as a React developer for more than two years now.
           </div>
         )}
         <div className="actions">

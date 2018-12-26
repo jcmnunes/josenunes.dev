@@ -37,7 +37,7 @@ const Homepage = ({ children }) => (
         <ThemeProvider theme={theme}>
           <Container>
             <Header>
-              <Logo icon />
+              <Logo icon /> / Work / Adidas
             </Header>
             <Main>{children}</Main>
             <GlobalStyle />
