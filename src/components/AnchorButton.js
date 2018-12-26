@@ -31,7 +31,7 @@ const StyledAnchor = styled.a`
   }
 `;
 
-class LinkButton extends Component {
+class AnchorButton extends Component {
   render() {
     const { icon, iconAltText, children, ...rest } = this.props;
     return (
@@ -44,4 +44,4 @@ class LinkButton extends Component {
   }
 }
 
-export default LinkButton;
+export default AnchorButton;
