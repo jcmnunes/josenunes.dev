@@ -30,6 +30,14 @@ const GlobalStyle = createGlobalStyle`
   ::selection {
     background: ${props => props.theme.primary300};
   }
+  
+  figcaption {
+    font-size: 14px;
+    font-weight: 400;
+    color: ${props => props.theme.neutral600};
+    text-align: center;
+    margin: 8px 20px 0px;
+  }
 `;
 
 export default GlobalStyle;

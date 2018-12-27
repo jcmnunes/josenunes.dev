@@ -25,6 +25,10 @@ const StyledManifest = styled.div`
     grid-gap: 24px;
     grid-template-columns: max-content max-content;
   }
+
+  @media (max-width: ${props => props.theme.bp_medium}) {
+    font-size: 16px;
+  }
 `;
 
 class Manifest extends Component {
