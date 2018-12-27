@@ -4,6 +4,8 @@ import Img from 'gatsby-image';
 
 import WorkLayout from '../../components/layouts/workLayout';
 
+import adidasLogo from '../../images/adidas-logo.svg';
+
 export default ({ data }) => (
   <WorkLayout
     company="Adidas AG"
@@ -20,26 +22,57 @@ export default ({ data }) => (
       'Prettier',
       'Webpack',
     ]}
+    logo={adidasLogo}
   >
     <p>
-      Being a developer for 6 years now, I stumbled across several challenging and interesting
-      projects. As a React developer, I'm constantly trying to improve and to learn new things.
+      adidas AG (www.adidas-group.com) needs no introduction. It is the largest sportswear
+      manufacturer in Europe, and the second largest in the world. With its headquarters in
+      Herzogenaurach, Germany, employs nearly 57,000 people around the world.
     </p>
     <figure>
       <Img fluid={data.adidasGym.childImageSharp.fluid} />
-      <figcaption>This is the caption</figcaption>
+      <figcaption>
+        We are barely alive after an early morning Crossfit session at the adidas gym.
+      </figcaption>
     </figure>
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab alias asperiores beatae corporis,
-      cupiditate debitis delectus dolorem dolores fuga ipsum libero molestiae nihil nisi perferendis
-      quo recusandae repellendus suscipit voluptate.
+      At adidas, I worked as a frontend developer, integrated on a multi-disciplinary Scrum team, in
+      the development of a B2B React/Redux web app called “Click” (“Click” is a self-service order
+      intake platform for small and medium wholesale customers).
     </p>
+    <figure>
+      <Img fluid={data.clickTeam.childImageSharp.fluid} />
+      <figcaption>Almost the entire Click team hanging out after work.</figcaption>
+    </figure>
+    <p>
+      On the Frontend side, the "Click" app is a typical React/Redux SPA. The data model follows a
+      conventional "container - component - action - reducer - selector" flow. The app is written
+      with modern JavaScript features (> ES6).
+    </p>
+    <figure>
+      <Img fluid={data.clickApp.childImageSharp.fluid} />
+      <figcaption>Store selection page of the "Click" app.</figcaption>
+    </figure>
   </WorkLayout>
 );
 
 export const query = graphql`
-  query {
+  query adidasPage {
     adidasGym: file(relativePath: { eq: "adidas-gym.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 716) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    clickTeam: file(relativePath: { eq: "click-team.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 716) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    clickApp: file(relativePath: { eq: "click-app.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 716) {
           ...GatsbyImageSharpFluid

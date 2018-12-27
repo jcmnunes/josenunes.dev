@@ -36,7 +36,7 @@ const GlobalStyle = createGlobalStyle`
     font-weight: 400;
     color: ${props => props.theme.neutral600};
     text-align: center;
-    margin-top: 8px;
+    margin: 8px 20px 0px;
   }
 `;
 

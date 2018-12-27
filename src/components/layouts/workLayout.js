@@ -3,24 +3,13 @@ import styled from 'styled-components';
 
 import Layout from './layout';
 
-import adidasLogo from '../../images/adidas-logo.svg';
-
-const StyledLayout = styled.div`
-  .title {
-    display: flex;
-    h1 {
-      position: relative;
-      font-weight: 700;
-      color: ${props => props.theme.neutral100};
-      font-size: 36px;
-      margin-bottom: 8px;
-    }
-
-    .logo {
-      margin-bottom: 0;
-      height: 34px;
-      margin-left: 24px;
-    }
+const StyledWorkLayout = styled.div`
+  h1 {
+    position: relative;
+    font-weight: 700;
+    color: ${props => props.theme.neutral100};
+    font-size: 36px;
+    margin-bottom: 8px;
   }
 
   h2 {
@@ -63,11 +52,8 @@ class WorkLayout extends Component {
     const { company, companyRole, dates, techs } = this.props;
     return (
       <Layout>
-        <StyledLayout>
-          <div className="title">
-            <h1>{company}</h1>
-            <img className="logo" src={adidasLogo} alt="adidas-logo" />
-          </div>
+        <StyledWorkLayout>
+          <h1>{company}</h1>
           <h2>{companyRole}</h2>
           <h3>{dates}</h3>
           <div className="techs">
@@ -81,7 +67,7 @@ class WorkLayout extends Component {
             })}
           </div>
           <div className="body">{this.props.children}</div>
-        </StyledLayout>
+        </StyledWorkLayout>
       </Layout>
     );
   }
