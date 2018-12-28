@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import { navigate } from 'gatsby';
 
-import LogoIcon from '../../images/LogoIcon';
-import LogoText from '../../images/LogoText';
+import LogoIcon from '../images/LogoIcon';
+import LogoText from '../images/LogoText';
 
 const StyledLogo = styled.div`
   display: grid;
