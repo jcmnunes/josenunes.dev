@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'gatsby';
 import styled from 'styled-components';
 
 import Layout from '../components/layouts/layout';
@@ -7,6 +8,7 @@ import List from '../components/List';
 import Contact from '../components/Contact';
 
 import Heading from '../styles/Heading';
+import TwoColumnGrid from '../styles/TwoColumnGrid';
 
 import worksData from '../content/works';
 import projectsData from '../content/projects';
@@ -26,26 +28,26 @@ const H2 = styled.h2`
   color: ${props => props.theme.neutral100};
 `;
 
-const StyledGrid = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 48px;
+const AboutLink = styled(Link)`
+  color: ${props => props.theme.neutral100};
+  text-decoration: none;
 
-  @media (max-width: ${props => props.theme.bp_medium}) {
-    grid-template-columns: 1fr;
+  &:hover {
+    text-decoration: underline;
+    text-decoration-color: ${props => props.theme.primary500};
   }
 `;
 
 export default () => (
   <Layout>
     <H2>
-      Hello, <br /> I Am Jose Nunes
+      Hello, <br /> I Am <AboutLink to="/about">Jose Nunes</AboutLink>
     </H2>
     <H1>
       <span>Frontend</span> Developer
     </H1>
     <Manifest />
-    <StyledGrid>
+    <TwoColumnGrid>
       <div>
         <Heading>Recent Work Experiences</Heading>
         <List data={worksData} />
@@ -57,6 +59,6 @@ export default () => (
         </div>
         <Contact />
       </div>
-    </StyledGrid>
+    </TwoColumnGrid>
   </Layout>
 );

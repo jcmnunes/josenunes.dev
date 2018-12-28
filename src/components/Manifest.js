@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { navigate } from 'gatsby';
 
 const StyledManifest = styled.div`
-  color: #b1b1b1;
+  color: ${props => props.theme.neutral400};
   font-size: 18px;
   font-weight: 400;
   margin-bottom: 48px;
