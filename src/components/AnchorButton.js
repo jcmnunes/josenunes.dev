@@ -14,6 +14,8 @@ const StyledAnchor = styled.a`
   }
 
   &:hover {
+    text-decoration: none;
+
     .cheveron {
       transform: translateX(5px);
     }

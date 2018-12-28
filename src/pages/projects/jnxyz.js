@@ -4,28 +4,26 @@ import Img from 'gatsby-image';
 
 import SingleLayout from '../../components/layouts/singleLayout';
 
+import Heading from '../../styles/Heading';
+
 export default ({ data }) => (
   <SingleLayout
-    title="Adidas AG"
-    subTitle="Frontend developer"
-    auxInfo="Mar 18 - Dec 18"
-    techs={[
-      'React',
-      'Redux',
-      'Sass',
-      'Immutable',
-      'Jest',
-      'Enzyme',
-      'ESLint',
-      'Prettier',
-      'Webpack',
-    ]}
+    title="josenunes.xyz"
+    subTitle="Personal website"
+    auxInfo="First release: 2018"
+    techs={['React', 'Gatsby', 'Styled-Components', 'ESLint', 'Prettier']}
   >
     <p>
-      adidas AG (www.adidas-group.com) needs no introduction. It is the largest sportswear
-      manufacturer in Europe, and the second largest in the world. With its headquarters in
-      Herzogenaurach, Germany, employs nearly 57,000 people around the world.
+      This is my personal website. It is a <a href="https://www.gatsbyjs.org/">Gatsby</a> website. I
+      started the design process by consi
     </p>
+    <Heading>Design process</Heading>
+    <p>
+      I went through severeal initial iterations of the website before committing to the current
+      one. The first version of the website had a full height homepage (no scrolling) with a hero
+      carousel, a header and a footer.
+    </p>
+    <p>Later, I decided to buy a ready made portfolio theme... TBD</p>
     <figure>
       <Img fluid={data.adidasGym.childImageSharp.fluid} />
       <figcaption>
@@ -54,7 +52,7 @@ export default ({ data }) => (
 );
 
 export const query = graphql`
-  query adidasPage {
+  query jnxyzPage {
     adidasGym: file(relativePath: { eq: "adidas-gym.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 716) {

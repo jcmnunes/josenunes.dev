@@ -15,6 +15,8 @@ const StyledLink = styled(Link)`
   }
 
   &:hover {
+    text-decoration: none;
+
     .cheveron {
       transform: translateX(5px);
     }

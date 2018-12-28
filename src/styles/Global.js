@@ -27,6 +27,16 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Hack', monospace;
   }
   
+  a {
+    color: ${props => props.theme.primary300};
+    text-decoration: none;
+    
+    &:hover {
+      text-decoration: underline;
+      text-decoration-color: ${props => props.theme.primary300};
+    }
+  }
+  
   ::selection {
     background: ${props => props.theme.primary300};
   }
