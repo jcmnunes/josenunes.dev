@@ -22,6 +22,15 @@ const SocialLinks = styled.div`
   display: grid;
   grid-gap: 12px;
   grid-template-columns: 20px 20px;
+
+  a {
+    color: ${props => props.theme.neutral200};
+    cursor: pointer;
+
+    &:hover {
+      color: ${props => props.theme.neutral400};
+    }
+  }
 `;
 
 class Contact extends Component {
@@ -43,8 +52,12 @@ class Contact extends Component {
           </AnchorButton>
         </Actions>
         <SocialLinks>
-          <IconLinkedIn />
-          <IconGithub />
+          <a href="https://www.linkedin.com/in/jnunes-jn/">
+            <IconLinkedIn />
+          </a>
+          <a href="https://github.com/jcmnunes">
+            <IconGithub />
+          </a>
         </SocialLinks>
       </div>
     );

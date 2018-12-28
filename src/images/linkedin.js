@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import theme from '../styles/theme';
 
 const LinkedIn = ({ color, width, height }) => {
   return (
@@ -14,7 +13,7 @@ const LinkedIn = ({ color, width, height }) => {
 };
 
 LinkedIn.defaultProps = {
-  color: theme.neutral200,
+  color: 'currentColor',
   height: 20,
   width: 20,
 };
