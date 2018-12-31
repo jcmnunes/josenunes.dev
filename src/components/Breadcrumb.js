@@ -7,6 +7,10 @@ const StyledBreadcrumb = styled.div`
   a {
     color: ${props => props.theme.neutral300};
     text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+    }
   }
 `;
 
