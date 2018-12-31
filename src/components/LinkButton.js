@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 import styled, { css } from 'styled-components';
 import iconCheveronRight from '../images/icon-cheveron-right.svg';
@@ -23,7 +24,6 @@ const LinkStyles = css`
   }
 
   .button-text {
-    font-size: ${props => (props.small ? '14px' : '16px')};
     margin-left: 0;
     margin-right: 4px;
   }
@@ -54,23 +54,41 @@ class LinkButton extends Component {
     const content = (
       <>
         {icon && <img className="icon" src={icon} alt={iconAltText} />}
-        <span className="button-text">{children}</span>
+        <span
+          className="button-text"
+          style={{
+            fontSize: small ? '14px' : '16px',
+          }}
+        >
+          {children}
+        </span>
         <img className="cheveron" src={iconCheveronRight} alt="icon-cheveron-right" />
       </>
     );
     if (internal && !file) {
       return (
-        <StyledLink to={to} small={small} {...rest}>
+        <StyledLink to={to} {...rest}>
           {content}
         </StyledLink>
       );
     }
     return (
-      <StyledAnchor href={to} small={small} {...rest}>
+      <StyledAnchor href={to} {...rest}>
         {content}
       </StyledAnchor>
     );
   }
 }
+
+LinkButton.defaultProps = {
+  small: false,
+};
+
+LinkButton.propTypes = {
+  icon: PropTypes.string,
+  iconAltText: PropTypes.string,
+  to: PropTypes.string.isRequired,
+  small: PropTypes.bool,
+};
 
 export default LinkButton;

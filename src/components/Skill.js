@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const StyledSkill = styled.div`
@@ -40,5 +41,10 @@ class Skill extends Component {
     );
   }
 }
+
+Skill.propTypes = {
+  name: PropTypes.string.isRequired,
+  value: PropTypes.string.isRequired,
+};
 
 export default Skill;
