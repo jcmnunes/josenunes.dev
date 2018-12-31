@@ -81,7 +81,7 @@ export default () => (
     <Heading>Skills</Heading>
     <Skills>
       {skillsData.map(skill => (
-        <Skill name={skill.name} value={skill.value} />
+        <Skill key={skill.key} name={skill.name} value={skill.value} />
       ))}
     </Skills>
     <TwoColumnGrid>

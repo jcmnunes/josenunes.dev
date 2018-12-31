@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import Layout from './layout';
 
 const StyledWorkLayout = styled.div`
-  h1 {
+  .title {
     position: relative;
     font-weight: 700;
     color: ${props => props.theme.neutral100};
@@ -12,13 +12,13 @@ const StyledWorkLayout = styled.div`
     margin-bottom: 8px;
   }
 
-  h2 {
+  .subtitle {
     font-size: 24px;
     color: ${props => props.theme.primary500};
     margin-bottom: 14px;
   }
 
-  h3 {
+  .aux-info {
     font-size: 14px;
     color: ${props => props.theme.neutral400};
     font-weight: 400;
@@ -47,15 +47,15 @@ const StyledWorkLayout = styled.div`
   }
 `;
 
-class WorkLayout extends Component {
+class SingleLayout extends Component {
   render() {
-    const { company, companyRole, dates, techs } = this.props;
+    const { title, subTitle, auxInfo, techs } = this.props;
     return (
       <Layout>
         <StyledWorkLayout>
-          <h1>{company}</h1>
-          <h2>{companyRole}</h2>
-          <h3>{dates}</h3>
+          <div className="title">{title}</div>
+          <div className="subtitle">{subTitle}</div>
+          <div className="aux-info">{auxInfo}</div>
           <div className="techs">
             MAIN TECHS USED:
             <br />
@@ -73,4 +73,4 @@ class WorkLayout extends Component {
   }
 }
 
-export default WorkLayout;
+export default SingleLayout;
