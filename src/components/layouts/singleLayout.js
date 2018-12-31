@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 import Layout from './layout';
@@ -72,5 +73,13 @@ class SingleLayout extends Component {
     );
   }
 }
+
+SingleLayout.propTypes = {
+  title: PropTypes.string.isRequired,
+  subTitle: PropTypes.string,
+  auxInfo: PropTypes.string,
+  techs: PropTypes.array,
+  children: PropTypes.node.isRequired,
+};
 
 export default SingleLayout;

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { navigate } from 'gatsby';
 
@@ -29,5 +30,15 @@ class Logo extends Component {
     );
   }
 }
+
+Logo.defaultProps = {
+  icon: false,
+  text: false,
+};
+
+Logo.propTypes = {
+  icon: PropTypes.bool,
+  text: PropTypes.bool,
+};
 
 export default Logo;

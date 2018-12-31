@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import LinkButton from './LinkButton';
 
@@ -65,5 +66,9 @@ class List extends Component {
     );
   }
 }
+
+List.propTypes = {
+  data: PropTypes.array.isRequired,
+};
 
 export default List;
