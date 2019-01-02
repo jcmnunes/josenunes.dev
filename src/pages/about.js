@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { navigate } from 'gatsby';
 
 import Layout from '../components/layouts/layout';
 import Skill from '../components/Skill';
@@ -7,7 +8,9 @@ import List from '../components/List';
 
 import Heading from '../styles/Heading';
 import Paragraph from '../styles/Paragraph';
+import Primary from '../styles/Primary';
 import TwoColumnGrid from '../styles/TwoColumnGrid';
+import TerciaryButton from '../styles/TerciaryButton';
 
 import avatar from '../images/avatar.jpg';
 
@@ -59,6 +62,8 @@ const Skills = styled.div`
   }
 `;
 
+const recentCourses = coursesData.slice(0, 4);
+
 export default () => (
   <Layout>
     <AboutCard>
@@ -75,8 +80,8 @@ export default () => (
       </div>
     </AboutCard>
     <Paragraph>
-      Being a developer for 6 years now, I stumbled across several challenging and interesting
-      projects. As a React developer, I'm constantly trying to improve and to learn new things.
+      Hi, my name is Jose Nunes, I'm a (<Primary>React</Primary>) frontend developer from Portugal.
+      I love working for the web and I'm a big fan of React and all the React ecosystem.
     </Paragraph>
     <Heading>Skills</Heading>
     <Skills>
@@ -86,8 +91,9 @@ export default () => (
     </Skills>
     <TwoColumnGrid>
       <div>
-        <Heading>Recent courses</Heading>
-        <List data={coursesData} />
+        <Heading>Recent courses I took</Heading>
+        <List data={recentCourses} />
+        <TerciaryButton onClick={() => navigate('/courses')}>Show all courses</TerciaryButton>
       </div>
       <div>
         <Heading>
