@@ -22,9 +22,10 @@ export default ({ data }) => (
     ]}
   >
     <p>
-      adidas AG (www.adidas-group.com) needs no introduction. It is the largest sportswear
-      manufacturer in Europe, and the second largest in the world. With its headquarters in
-      Herzogenaurach, Germany, employs nearly 57,000 people around the world.
+      adidas AG (<a href="https://www.adidas-group.com">www.adidas-group.com</a>) needs no
+      introduction. It is the largest sportswear manufacturer in Europe, and the second largest in
+      the world. With its headquarters in Herzogenaurach, Germany, employs nearly 57,000 people
+      around the world.
     </p>
     <figure>
       <Img fluid={data.adidasGym.childImageSharp.fluid} />
