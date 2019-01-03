@@ -1,14 +1,13 @@
 <img src="https://raw.githubusercontent.com/jcmnunes/josenunesxyz/master/src/favicon.png" width="100px" height="100px">
+
 # My Personal Website
-<div align="center">
-	<a href="https://github.com/prettier/prettier"><img src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square" /></a>
-	<a href="https://github.com/styled-components/styled-components"><img src="https://img.shields.io/badge/style-%F0%9F%92%85%20styled--components-orange.svg?colorB=daa357&colorA=db748e" /></a>
+
+<div>
+    <a href="https://github.com/prettier/prettier"><img src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square" /></a>
+    <a href="https://github.com/styled-components/styled-components"><img src="https://img.shields.io/badge/style-%F0%9F%92%85%20styled--components-orange.svg?colorB=daa357&colorA=db748e" /></a>
 </div>
 
-This is my personal website ([josenunes.xyz](https://www.josenunes.xyz/)).
-
-This site is a [Gatsby](https://www.gatsbyjs.org/) blog with [Netlify](https://www.netlify.com)
-hosting.
+This is my personal website ([josenunes.xyz](https://www.josenunes.xyz/)). It is a [Gatsby](https://www.gatsbyjs.org/) blog with [Netlify](https://www.netlify.com) hosting.
 
 ## Available npm scripts
 
