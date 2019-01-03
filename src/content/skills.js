@@ -16,7 +16,7 @@ export default [
   },
   {
     key: '7',
-    name: 'Webpack',
+    name: 'ESLint/Prettier',
     value: '86%',
   },
   {
@@ -26,7 +26,7 @@ export default [
   },
   {
     key: '8',
-    name: 'npm',
+    name: 'Webpack/npm',
     value: '90%',
   },
   {
@@ -36,7 +36,7 @@ export default [
   },
   {
     key: '9',
-    name: 'Git',
+    name: 'Git/Scrum',
     value: '88%',
   },
   {
