@@ -33,3 +33,6 @@ $ npm run serve
 
 The website is hosted on Netlify. The production branch is `master` and deploys will happen
 automatically when pushing into it.
+
+## Licensing
+Licensed under the [MIT License](./LICENSE).
