@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import { navigate } from 'gatsby';
 
+import TerciaryButton from '../styles/TerciaryButton';
+
 const StyledManifest = styled.div`
   color: ${props => props.theme.neutral400};
   font-size: 18px;
@@ -10,14 +12,6 @@ const StyledManifest = styled.div`
 
   .color-primary {
     color: ${props => props.theme.primary500};
-  }
-
-  .terciary-button {
-    font-size: 16px;
-    font-weight: 700;
-    text-decoration: underline;
-    margin-top: 16px;
-    cursor: pointer;
   }
 
   .actions {
@@ -58,14 +52,10 @@ class Manifest extends Component {
           </div>
         )}
         <div className="actions">
-          <div className="terciary-button" onClick={this.toggleShowMore}>
+          <TerciaryButton onClick={this.toggleShowMore}>
             {showMore ? 'Read less' : 'Read more'}
-          </div>
-          {showMore && (
-            <div className="terciary-button" onClick={this.goToAbout}>
-              Read even more
-            </div>
-          )}
+          </TerciaryButton>
+          {showMore && <TerciaryButton onClick={this.goToAbout}>Read even more</TerciaryButton>}
         </div>
       </StyledManifest>
     );
