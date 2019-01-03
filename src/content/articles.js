@@ -1,11 +1,18 @@
 export default [
   {
-    key: 'lukasShallowDeep',
-    linkText: 'How to differentiate between deep and shallow copies in JavaScript',
+    key: 'barnesTransitionLink',
+    linkText: 'Per-Link Gatsby page transitions with TransitionLink',
     linkUrl:
-      'https://medium.freecodecamp.org/copying-stuff-in-javascript-how-to-differentiate-between-deep-and-shallow-copies-b6d8c1ef09cd',
-    secondaryInfo: 'Lukas Gisder-Dubé',
-    auxInfo: 'Lukas talks about the difference between shallow and deep copies in Javascript.',
+      'https://www.gatsbyjs.org/blog/2018-12-04-per-link-gatsby-page-transitions-with-transitionlink/',
+    secondaryInfo: 'Tyler Barnes',
+    auxInfo: 'Tyler describes the thought process behind gatsby-plugin-transition-link.',
+  },
+  {
+    key: 'danDontKnow',
+    linkText: 'Things I Don’t Know as of 2018',
+    linkUrl: 'https://overreacted.io/things-i-dont-know-as-of-2018/',
+    secondaryInfo: 'Dan Abramov',
+    auxInfo: 'Interesting article by Dan where he talks about the "things" he doesn\'t know.',
   },
   {
     key: 'schoger7Tips',
@@ -14,12 +21,5 @@ export default [
       'https://medium.com/refactoring-ui/7-practical-tips-for-cheating-at-design-40c736799886',
     secondaryInfo: 'Adam Wathan & Steve Schoger',
     auxInfo: '7 extremelly helpfull design tips from Adam Wathan & Steve Schoger.',
-  },
-  {
-    key: 'danSuperProps',
-    linkText: 'Why do we write super(props)?',
-    linkUrl: 'https://overreacted.io/why-do-we-write-super-props/',
-    secondaryInfo: 'Dan Abramov',
-    auxInfo: 'Interesting article by Dan explaining why we need to write super(props).',
   },
 ];
