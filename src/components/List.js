@@ -8,7 +8,7 @@ const StyledList = styled.ul`
   margin-bottom: 0;
 
   .secondary-info {
-    font-size: 16px;
+    font-size: 14px;
     color: ${props => props.theme.primary500};
   }
 
