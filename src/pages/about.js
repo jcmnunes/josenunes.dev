@@ -39,6 +39,26 @@ const AboutCard = styled.div`
   .primary {
     color: ${props => props.theme.primary500};
   }
+
+  @media (max-width: ${props => props.theme.bp_medium}) {
+    h2 {
+      font-size: 20px;
+    }
+
+    h1 {
+      font-size: 24px;
+    }
+  }
+
+  @media (max-width: ${props => props.theme.bp_small}) {
+    h2 {
+      font-size: 16px;
+    }
+
+    h1 {
+      font-size: 20px;
+    }
+  }
 `;
 
 const Avatar = styled.span`
@@ -49,6 +69,17 @@ const Avatar = styled.span`
   background-image: url('${avatar}');
   background-size: cover;
   margin-right: 24px;
+  
+  @media (max-width: ${props => props.theme.bp_medium}) {
+    width: 75px;
+    height: 75px;
+  }
+  
+  @media (max-width: ${props => props.theme.bp_small}) {
+    width: 60px;
+    height: 60px;
+    margin-right: 16px;
+  }
 `;
 
 const Skills = styled.div`
