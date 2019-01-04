@@ -40,8 +40,7 @@ class Contact extends Component {
         <Heading>Get in touch</Heading>
         <Actions>
           <LinkButton
-            to={require('../../static/assets/cv.pdf')}
-            download="JoseNunes-CV.pdf"
+            to={'/assets/JoseNunes-CV.pdf'}
             icon={iconCloudDownload}
             iconAltText="icon-cloud-download"
             small
