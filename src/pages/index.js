@@ -73,7 +73,10 @@ export default () => (
     </H1>
     <Message>New website coming soon...</Message>
     <Actions>
-      <LinkButton href={require('../../static/assets/cv.pdf')} download="JoseNunes-CV.pdf">
+      <LinkButton
+        href={require('../../static/assets/JoseNunes-CV.pdf')}
+        download="JoseNunes-CV.pdf"
+      >
         <img src={iconCloudDownload} alt="icon-cloud-download" />
         <span>Download my CV</span>
         <img className="cheveron" src={iconCheveronRight} alt="icon-cheveron-right" />
