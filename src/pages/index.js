@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import AniLink from 'gatsby-plugin-transition-link/AniLink';
 import styled from 'styled-components';
 
 import Layout from '../components/layouts/layout';
@@ -36,7 +36,7 @@ const H2 = styled.h2`
   color: ${props => props.theme.neutral100};
 `;
 
-const AboutLink = styled(Link)`
+const AboutLink = styled(AniLink)`
   color: ${props => props.theme.neutral100};
   text-decoration: none;
 
@@ -49,7 +49,10 @@ const AboutLink = styled(Link)`
 export default () => (
   <Layout>
     <H2>
-      Hello, <br /> I Am <AboutLink to="/about">Jose Nunes</AboutLink>
+      Hello, <br /> I Am{' '}
+      <AboutLink cover to="/about" duration={1} bg="#EF4E4E">
+        Jose Nunes
+      </AboutLink>
     </H2>
     <H1>
       <span>Frontend</span> Developer

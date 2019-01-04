@@ -6,7 +6,8 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    'gatsby-plugin-page-transitions',
+    `gatsby-plugin-page-transitions`,
+    `gatsby-plugin-transition-link`,
     {
       resolve: `gatsby-plugin-typography`,
       options: {
