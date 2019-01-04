@@ -20,6 +20,14 @@ const H1 = styled.h1`
   span {
     color: ${props => props.theme.primary500};
   }
+
+  @media (max-width: ${props => props.theme.bp_medium}) {
+    font-size: 30px;
+  }
+
+  @media (max-width: ${props => props.theme.bp_small}) {
+    font-size: 24px;
+  }
 `;
 
 const H2 = styled.h2`

@@ -25,6 +25,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     background: ${props => props.theme.neutral1000};
     font-family: 'Hack', monospace;
+    min-width: 360px;
   }
   
   a {

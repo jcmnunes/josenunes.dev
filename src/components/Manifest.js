@@ -23,6 +23,10 @@ const StyledManifest = styled.div`
   @media (max-width: ${props => props.theme.bp_medium}) {
     font-size: 16px;
   }
+
+  @media (max-width: ${props => props.theme.bp_small}) {
+    font-size: 14px;
+  }
 `;
 
 class Manifest extends Component {

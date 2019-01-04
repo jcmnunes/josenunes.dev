@@ -46,6 +46,14 @@ const StyledWorkLayout = styled.div`
       }
     }
   }
+
+  @media (max-width: ${props => props.theme.bp_small}) {
+    .body {
+      p {
+        font-size: 14px;
+      }
+    }
+  }
 `;
 
 class SingleLayout extends Component {
