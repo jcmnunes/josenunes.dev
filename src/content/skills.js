@@ -17,7 +17,7 @@ export default [
   {
     key: '7',
     name: 'ESLint/Prettier',
-    value: '86%',
+    value: '96%',
   },
   {
     key: '3',
@@ -46,7 +46,7 @@ export default [
   },
   {
     key: '10',
-    name: 'Node',
+    name: 'Node/Express',
     value: '75%',
   },
 ];
