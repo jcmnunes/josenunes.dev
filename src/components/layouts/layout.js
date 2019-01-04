@@ -5,6 +5,7 @@ import { StaticQuery, graphql } from 'gatsby';
 import { ThemeProvider } from 'styled-components';
 
 import Logo from '../Logo';
+import Breadcrumb from '../Breadcrumb';
 
 import theme from '../../styles/theme';
 import Container from '../../styles/Container';
@@ -38,6 +39,7 @@ const Layout = ({ children }) => (
           <Container>
             <Header>
               <Logo icon />
+              <Breadcrumb />
             </Header>
             <Main>{children}</Main>
             <GlobalStyle />

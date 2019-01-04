@@ -1,91 +1,64 @@
 import React from 'react';
+import { Link } from 'gatsby';
 import styled from 'styled-components';
 
 import Layout from '../components/layouts/layout';
+import Manifest from '../components/Manifest';
+import List from '../components/List';
+import Contact from '../components/Contact';
 
-import iconCloudDownload from '../images/icon-cloud-download.svg';
-import iconCheveronRight from '../images/icon-cheveron-right.svg';
-import iconMail from '../images/icon-mail.svg';
+import Heading from '../styles/Heading';
+import TwoColumnGrid from '../styles/TwoColumnGrid';
+
+import worksData from '../content/works';
+import projectsData from '../content/projects';
 
 const H1 = styled.h1`
-  color: ${props => props.theme.white};
+  color: ${props => props.theme.neutral100};
+  font-size: 36px;
 
   span {
-    color: ${props => props.theme.primary};
+    color: ${props => props.theme.primary500};
   }
 `;
 
 const H2 = styled.h2`
   font-weight: 400;
   font-size: 20px;
-  color: ${props => props.theme.white};
+  color: ${props => props.theme.neutral100};
 `;
 
-const Message = styled.p`
-  color: #b1b1b1;
-  font-size: 18px;
-  font-weight: 400;
-`;
-
-const Actions = styled.div`
-  display: flex;
-  flex-direction: column;
-  height: 50px;
-  justify-content: space-between;
-`;
-
-const LinkButton = styled.a`
-  display: inline-flex;
-  align-items: center;
-  cursor: pointer;
+const AboutLink = styled(Link)`
+  color: ${props => props.theme.neutral100};
   text-decoration: none;
 
-  .cheveron {
-    transition: all 0.2s ease;
-  }
-
   &:hover {
-    .cheveron {
-      transform: translateX(5px);
-    }
-  }
-
-  img {
-    width: 24px;
-    margin-bottom: 0;
-  }
-
-  span {
-    font-size: 14px;
-    color: #cfcfcf;
-    margin-left: 16px;
-    margin-right: 4px;
+    text-decoration: underline;
+    text-decoration-color: ${props => props.theme.primary500};
   }
 `;
 
 export default () => (
   <Layout>
     <H2>
-      Hello, <br /> I Am Jose Nunes
+      Hello, <br /> I Am <AboutLink to="/about">Jose Nunes</AboutLink>
     </H2>
     <H1>
       <span>Frontend</span> Developer
     </H1>
-    <Message>New website coming soon...</Message>
-    <Actions>
-      <LinkButton
-        href={require('../../static/assets/JoseNunes-CV.pdf')}
-        download="JoseNunes-CV.pdf"
-      >
-        <img src={iconCloudDownload} alt="icon-cloud-download" />
-        <span>Download my CV</span>
-        <img className="cheveron" src={iconCheveronRight} alt="icon-cheveron-right" />
-      </LinkButton>
-      <LinkButton href="mailto:jn@josenunes.xyz">
-        <img src={iconMail} alt="icon-mail" />
-        <span>jn@josenunes.xyz</span>
-        <img className="cheveron" src={iconCheveronRight} alt="icon-cheveron-right" />
-      </LinkButton>
-    </Actions>
+    <Manifest />
+    <TwoColumnGrid>
+      <div>
+        <Heading>Recent Work Experiences</Heading>
+        <List data={worksData} />
+      </div>
+      <div>
+        <div style={{ marginBottom: 48 }}>
+          <Heading>Recent Projects</Heading>
+          <List data={projectsData} />
+        </div>
+        <Contact />
+      </div>
+    </TwoColumnGrid>
   </Layout>
 );

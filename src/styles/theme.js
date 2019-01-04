@@ -1,12 +1,31 @@
 export default {
-  primary: '#f45c43',
-  default: '#636363',
-  white: '#eaeaea',
-  gray1: '#2c2d2f',
-  gray2: '#222222',
+  /* Colors */
+  // Primary
+  primary100: '#FFE3E3',
+  primary200: '#FFBDBD',
+  primary300: '#FF9B9B',
+  primary400: '#F86A6A',
+  primary500: '#EF4E4E',
+  primary600: '#E12D39',
+  primary700: '#CF1124',
+  primary800: '#AB091E',
+  primary900: '#8A041A',
+  primary1000: '#610316',
+  // Neutral
+  neutral100: '#F7F7F7',
+  neutral200: '#E1E1E1',
+  neutral300: '#CFCFCF',
+  neutral400: '#B1B1B1',
+  neutral500: '#9E9E9E',
+  neutral600: '#7E7E7E',
+  neutral700: '#626262',
+  neutral800: '#515151',
+  neutral900: '#3B3B3B',
+  neutral1000: '#222222',
 
-  huge: '1400px',
-  desktops: '1281px',
-
-  pattern: `url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%232c2d2f' fill-opacity='0.52' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E")`,
+  /* Breakpoints */
+  bp_large: '1050px',
+  bp_semilarge: '920px',
+  bp_medium: '720px',
+  bp_small: '450px',
 };

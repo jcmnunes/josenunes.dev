@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { navigate } from 'gatsby';
 
-import LogoIcon from '../../images/LogoIcon';
-import LogoText from '../../images/LogoText';
+import LogoIcon from '../images/LogoIcon';
+import LogoText from '../images/LogoText';
 
 const StyledLogo = styled.div`
   display: grid;
@@ -29,5 +30,15 @@ class Logo extends Component {
     );
   }
 }
+
+Logo.defaultProps = {
+  icon: false,
+  text: false,
+};
+
+Logo.propTypes = {
+  icon: PropTypes.bool,
+  text: PropTypes.bool,
+};
 
 export default Logo;

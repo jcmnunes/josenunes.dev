@@ -22,13 +22,31 @@ const GlobalStyle = createGlobalStyle`
          url('${HackBoldWoff}') format('woff');
   }
 
-  html {
-    overflow: auto;
-  }
-
   body {
-    background: ${props => props.theme.gray2};
+    background: ${props => props.theme.neutral1000};
     font-family: 'Hack', monospace;
+  }
+  
+  a {
+    color: ${props => props.theme.primary300};
+    text-decoration: none;
+    
+    &:hover {
+      text-decoration: underline;
+      text-decoration-color: ${props => props.theme.primary300};
+    }
+  }
+  
+  ::selection {
+    background: ${props => props.theme.primary300};
+  }
+  
+  figcaption {
+    font-size: 14px;
+    font-weight: 400;
+    color: ${props => props.theme.neutral600};
+    text-align: center;
+    margin: 8px 20px 0px;
   }
 `;
 

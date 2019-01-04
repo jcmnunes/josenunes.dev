@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import theme from '../styles/theme';
 
 const Github = ({ color, width, height }) => {
   return (
@@ -14,7 +13,7 @@ const Github = ({ color, width, height }) => {
 };
 
 Github.defaultProps = {
-  color: theme.white,
+  color: 'currentColor',
   height: 20,
   width: 20,
 };

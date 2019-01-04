@@ -14,7 +14,7 @@ const LogoIcon = ({ color, width, height }) => {
 };
 
 LogoIcon.defaultProps = {
-  color: theme.white,
+  color: theme.neutral100,
   height: 50,
   width: 50,
 };
