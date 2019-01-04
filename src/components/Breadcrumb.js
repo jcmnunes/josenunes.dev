@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import { Link } from 'gatsby';
 import { Location } from '@reach/router';
+
+import TransitionLink from './TransitionLink';
 
 const StyledBreadcrumb = styled.div`
   a {
@@ -19,7 +20,7 @@ class Breadcrumb extends Component {
     if (location.pathname === '/') {
       return (
         <span>
-          / <Link to="/">Home</Link>{' '}
+          / <TransitionLink to="/">Home</TransitionLink>{' '}
         </span>
       );
     }
@@ -29,7 +30,7 @@ class Breadcrumb extends Component {
         const path = urlArray.slice(0, index + 1).join('/');
         return (
           <span key={`${item}${index}`}>
-            / <Link to={path}>{item}</Link>{' '}
+            / <TransitionLink to={path}>{item}</TransitionLink>{' '}
           </span>
         );
       }

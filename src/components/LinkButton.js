@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'gatsby';
+import TransitionLink from './TransitionLink';
 import styled, { css } from 'styled-components';
 import iconCheveronRight from '../images/icon-cheveron-right.svg';
 
@@ -38,7 +38,7 @@ const LinkStyles = css`
   }
 `;
 
-const StyledLink = styled(Link)`
+const StyledLink = styled(TransitionLink)`
   ${LinkStyles}
 `;
 

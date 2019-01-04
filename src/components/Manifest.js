@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import { navigate } from 'gatsby';
+import AniLink from 'gatsby-plugin-transition-link/AniLink';
 
 import TerciaryButton from '../styles/TerciaryButton';
 
@@ -36,10 +36,6 @@ class Manifest extends Component {
     this.setState({ showMore: !this.state.showMore });
   };
 
-  goToAbout = () => {
-    navigate('/about');
-  };
-
   render() {
     const { showMore } = this.state;
     return (
@@ -59,7 +55,13 @@ class Manifest extends Component {
           <TerciaryButton onClick={this.toggleShowMore}>
             {showMore ? 'Read less' : 'Read more'}
           </TerciaryButton>
-          {showMore && <TerciaryButton onClick={this.goToAbout}>Read even more</TerciaryButton>}
+          {showMore && (
+            <TerciaryButton>
+              <AniLink cover to="/about" duration={1} bg="#EF4E4E">
+                Read even more
+              </AniLink>
+            </TerciaryButton>
+          )}
         </div>
       </StyledManifest>
     );

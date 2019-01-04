@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { navigate } from 'gatsby';
+
+import TransitionLink from './TransitionLink';
 
 import LogoIcon from '../images/LogoIcon';
 import LogoText from '../images/LogoText';
 
-const StyledLogo = styled.div`
+const StyledLogo = styled(TransitionLink)`
   display: grid;
   grid-template-columns: min-content min-content;
   grid-gap: 10px;
@@ -15,15 +16,10 @@ const StyledLogo = styled.div`
 `;
 
 class Logo extends Component {
-  goToHomepage = () => {
-    console.log('Hello');
-    navigate('/');
-  };
-
   render() {
     const { icon, text } = this.props;
     return (
-      <StyledLogo onClick={this.goToHomepage}>
+      <StyledLogo to="/">
         {icon && <LogoIcon />}
         {text && <LogoText />}
       </StyledLogo>
