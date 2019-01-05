@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-import Layout from '../components/layouts/layout';
 import LinkButton from '../components/LinkButton';
 
 const StyledNotFound = styled.div`
@@ -20,13 +19,13 @@ const StyledNotFound = styled.div`
 class NotFound extends Component {
   render() {
     return (
-      <Layout>
+      <>
         <StyledNotFound>
           <h1>404</h1>
           <h2>Page not found</h2>
           <LinkButton to="/">Back to home</LinkButton>
         </StyledNotFound>
-      </Layout>
+      </>
     );
   }
 }

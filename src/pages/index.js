@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
 
-import Layout from '../components/layouts/layout';
 import Manifest from '../components/Manifest';
 import List from '../components/List';
 import Contact from '../components/Contact';
@@ -47,7 +46,7 @@ const AboutLink = styled(Link)`
 `;
 
 export default () => (
-  <Layout>
+  <>
     <H2>
       Hello, <br /> I Am <AboutLink to="/about">Jose Nunes</AboutLink>
     </H2>
@@ -68,5 +67,5 @@ export default () => (
         <Contact />
       </div>
     </TwoColumnGrid>
-  </Layout>
+  </>
 );
