@@ -6,6 +6,7 @@ import { ThemeProvider } from 'styled-components';
 
 import Logo from '../Logo';
 import Breadcrumb from '../Breadcrumb';
+import PageTransition from '../PageTransition';
 
 import theme from '../../styles/theme';
 import Container from '../../styles/Container';
@@ -13,7 +14,7 @@ import Header from '../../styles/Header';
 import Main from '../../styles/Main';
 import GlobalStyle from '../../styles/Global';
 
-const Layout = ({ children }) => (
+const Layout = ({ element, props }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -41,7 +42,9 @@ const Layout = ({ children }) => (
               <Logo icon />
               <Breadcrumb />
             </Header>
-            <Main>{children}</Main>
+            <PageTransition {...props}>
+              <Main>{element}</Main>
+            </PageTransition>
             <GlobalStyle />
           </Container>
         </ThemeProvider>

@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import { navigate } from 'gatsby';
 
-import Layout from '../components/layouts/layout';
 import Skill from '../components/Skill';
 import List from '../components/List';
 
@@ -96,7 +95,7 @@ const Skills = styled.div`
 const recentCourses = coursesData.slice(0, 4);
 
 export default () => (
-  <Layout>
+  <>
     <AboutCard>
       <Avatar />
       <div>
@@ -136,5 +135,5 @@ export default () => (
         <List data={articlesData} />
       </div>
     </TwoColumnGrid>
-  </Layout>
+  </>
 );
