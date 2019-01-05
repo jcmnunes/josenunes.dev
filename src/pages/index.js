@@ -37,10 +37,10 @@ const H2 = styled.h2`
 
 const AboutLink = styled(Link)`
   color: ${props => props.theme.neutral100};
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-color: ${props => props.theme.primary500};
 
   &:hover {
-    text-decoration: underline;
     text-decoration-color: ${props => props.theme.primary500};
   }
 `;
@@ -64,7 +64,7 @@ export default () => (
           <Heading>Recent Projects</Heading>
           <List data={projectsData} />
         </div>
-        <Contact />
+        <Contact socialLinks />
       </div>
     </TwoColumnGrid>
   </>
