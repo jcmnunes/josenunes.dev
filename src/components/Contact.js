@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 import LinkButton from './LinkButton';
@@ -36,7 +37,7 @@ const SocialLinks = styled.div`
 class Contact extends Component {
   render() {
     return (
-      <div>
+      <div style={{ marginBottom: '48px' }}>
         <Heading>Get in touch</Heading>
         <Actions>
           <LinkButton
@@ -51,17 +52,27 @@ class Contact extends Component {
             jn@josenunes.xyz
           </LinkButton>
         </Actions>
-        <SocialLinks>
-          <a href="https://www.linkedin.com/in/jnunes-jn/">
-            <IconLinkedIn />
-          </a>
-          <a href="https://github.com/jcmnunes">
-            <IconGithub />
-          </a>
-        </SocialLinks>
+        {this.props.socialLinks && (
+          <SocialLinks>
+            <a href="https://www.linkedin.com/in/jnunes-jn/">
+              <IconLinkedIn />
+            </a>
+            <a href="https://github.com/jcmnunes">
+              <IconGithub />
+            </a>
+          </SocialLinks>
+        )}
       </div>
     );
   }
 }
+
+Contact.defaultProps = {
+  socialLinks: false,
+};
+
+Contact.propTypes = {
+  socialLinks: PropTypes.bool,
+};
 
 export default Contact;

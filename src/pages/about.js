@@ -4,6 +4,7 @@ import { navigate } from 'gatsby';
 
 import Skill from '../components/Skill';
 import List from '../components/List';
+import Contact from '../components/Contact';
 
 import Heading from '../styles/Heading';
 import Paragraph from '../styles/Paragraph';
@@ -113,6 +114,13 @@ export default () => (
       Hi, my name is Jose Nunes, I'm a (<Primary>React</Primary>) frontend developer from Portugal.
       I love working for the web and I'm a big fan of React and all the React ecosystem.
     </Paragraph>
+    <Paragraph>
+      Although I started my IT career as a Python developer, I’ve been working as a frontend
+      developer for the past 3 years. My initial tech stack was focused on vanilla JavaScript and
+      jQuery. Nowadays, I work mainly with modern frontend web technologies in the React ecosystem.
+      In fact, I’ve been working as a React developer for more than two years now.
+    </Paragraph>
+    <Contact />
     <Heading>Skills</Heading>
     <Skills>
       {skillsData.map(skill => (
