@@ -16,7 +16,6 @@ const StyledLogo = styled.div`
 
 class Logo extends Component {
   goToHomepage = () => {
-    console.log('Hello');
     navigate('/');
   };
 

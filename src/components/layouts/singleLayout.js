@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import Layout from './layout';
-
 const StyledWorkLayout = styled.div`
   .title {
     position: relative;
@@ -46,13 +44,21 @@ const StyledWorkLayout = styled.div`
       }
     }
   }
+
+  @media (max-width: ${props => props.theme.bp_small}) {
+    .body {
+      p {
+        font-size: 14px;
+      }
+    }
+  }
 `;
 
 class SingleLayout extends Component {
   render() {
     const { title, subTitle, auxInfo, techs } = this.props;
     return (
-      <Layout>
+      <>
         <StyledWorkLayout>
           <div className="title">{title}</div>
           <div className="subtitle">{subTitle}</div>
@@ -69,7 +75,7 @@ class SingleLayout extends Component {
           </div>
           <div className="body">{this.props.children}</div>
         </StyledWorkLayout>
-      </Layout>
+      </>
     );
   }
 }

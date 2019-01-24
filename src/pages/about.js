@@ -2,9 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import { navigate } from 'gatsby';
 
-import Layout from '../components/layouts/layout';
 import Skill from '../components/Skill';
 import List from '../components/List';
+import Contact from '../components/Contact';
 
 import Heading from '../styles/Heading';
 import Paragraph from '../styles/Paragraph';
@@ -39,6 +39,26 @@ const AboutCard = styled.div`
   .primary {
     color: ${props => props.theme.primary500};
   }
+
+  @media (max-width: ${props => props.theme.bp_medium}) {
+    h2 {
+      font-size: 20px;
+    }
+
+    h1 {
+      font-size: 24px;
+    }
+  }
+
+  @media (max-width: ${props => props.theme.bp_small}) {
+    h2 {
+      font-size: 16px;
+    }
+
+    h1 {
+      font-size: 20px;
+    }
+  }
 `;
 
 const Avatar = styled.span`
@@ -49,6 +69,17 @@ const Avatar = styled.span`
   background-image: url('${avatar}');
   background-size: cover;
   margin-right: 24px;
+  
+  @media (max-width: ${props => props.theme.bp_medium}) {
+    width: 75px;
+    height: 75px;
+  }
+  
+  @media (max-width: ${props => props.theme.bp_small}) {
+    width: 60px;
+    height: 60px;
+    margin-right: 16px;
+  }
 `;
 
 const Skills = styled.div`
@@ -65,7 +96,7 @@ const Skills = styled.div`
 const recentCourses = coursesData.slice(0, 4);
 
 export default () => (
-  <Layout>
+  <>
     <AboutCard>
       <Avatar />
       <div>
@@ -83,6 +114,13 @@ export default () => (
       Hi, my name is Jose Nunes, I'm a (<Primary>React</Primary>) frontend developer from Portugal.
       I love working for the web and I'm a big fan of React and all the React ecosystem.
     </Paragraph>
+    <Paragraph>
+      Although I started my IT career as a Python developer, I’ve been working as a frontend
+      developer for the past 3 years. My initial tech stack was focused on vanilla JavaScript and
+      jQuery. Nowadays, I work mainly with modern frontend web technologies in the React ecosystem.
+      In fact, I’ve been working as a React developer for more than two years now.
+    </Paragraph>
+    <Contact />
     <Heading>Skills</Heading>
     <Skills>
       {skillsData.map(skill => (
@@ -105,5 +143,5 @@ export default () => (
         <List data={articlesData} />
       </div>
     </TwoColumnGrid>
-  </Layout>
+  </>
 );

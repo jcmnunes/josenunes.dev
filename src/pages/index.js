@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
 
-import Layout from '../components/layouts/layout';
 import Manifest from '../components/Manifest';
 import List from '../components/List';
 import Contact from '../components/Contact';
@@ -20,6 +19,14 @@ const H1 = styled.h1`
   span {
     color: ${props => props.theme.primary500};
   }
+
+  @media (max-width: ${props => props.theme.bp_medium}) {
+    font-size: 30px;
+  }
+
+  @media (max-width: ${props => props.theme.bp_small}) {
+    font-size: 24px;
+  }
 `;
 
 const H2 = styled.h2`
@@ -30,16 +37,16 @@ const H2 = styled.h2`
 
 const AboutLink = styled(Link)`
   color: ${props => props.theme.neutral100};
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-color: ${props => props.theme.primary500};
 
   &:hover {
-    text-decoration: underline;
     text-decoration-color: ${props => props.theme.primary500};
   }
 `;
 
 export default () => (
-  <Layout>
+  <>
     <H2>
       Hello, <br /> I Am <AboutLink to="/about">Jose Nunes</AboutLink>
     </H2>
@@ -57,8 +64,8 @@ export default () => (
           <Heading>Recent Projects</Heading>
           <List data={projectsData} />
         </div>
-        <Contact />
+        <Contact socialLinks />
       </div>
     </TwoColumnGrid>
-  </Layout>
+  </>
 );
