@@ -48,7 +48,7 @@ const AboutLink = styled(Link)`
 export default () => (
   <>
     <H2>
-      Hello, <br /> I Am <AboutLink to="/about">Jose Nunes</AboutLink>
+      Hello, <br /> I'm <AboutLink to="/about">Jose Nunes</AboutLink>
     </H2>
     <H1>
       <span>Frontend</span> Developer

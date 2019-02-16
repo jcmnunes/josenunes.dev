@@ -12,7 +12,10 @@ const LinkStyles = css`
   color: ${props => props.theme.neutral200};
 
   .cheveron {
+    display: block;
     transition: all 0.2s ease;
+    width: 24px;
+    height: 24px;
   }
 
   &:hover {
