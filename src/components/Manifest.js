@@ -35,7 +35,7 @@ class Manifest extends Component {
         projects. As a <span className="color-primary">React developer</span>, I'm constantly trying
         to improve and to learn new things.
         <div>
-          <TerciaryButton onClick={this.goToAbout}>About Me</TerciaryButton>
+          <TerciaryButton onClick={this.goToAbout}>About Me ➜</TerciaryButton>
         </div>
       </StyledManifest>
     );
