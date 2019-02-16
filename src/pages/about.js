@@ -94,6 +94,7 @@ const Skills = styled.div`
 `;
 
 const recentCourses = coursesData.slice(0, 4);
+const recentArticles = articlesData.slice(0, 4);
 
 export default ({ data }) => (
   <>
@@ -142,7 +143,8 @@ export default ({ data }) => (
             😍
           </span>
         </Heading>
-        <List data={articlesData} />
+        <List data={recentArticles} />
+        <TerciaryButton onClick={() => navigate('/articles')}>Show all articles ➜</TerciaryButton>
       </div>
     </TwoColumnGrid>
   </>
