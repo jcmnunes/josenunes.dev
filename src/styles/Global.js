@@ -48,6 +48,10 @@ const GlobalStyle = createGlobalStyle`
     color: ${props => props.theme.neutral600};
     text-align: center;
     margin: 8px 20px 0px;
+
+    @media(max-width: ${props => props.theme.bp_small}) {
+      font-size: 13px;
+    }
   }
 `;
 
