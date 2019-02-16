@@ -94,6 +94,7 @@ const Skills = styled.div`
 `;
 
 const recentCourses = coursesData.slice(0, 4);
+const recentArticles = articlesData.slice(0, 4);
 
 export default ({ data }) => (
   <>
@@ -118,9 +119,9 @@ export default ({ data }) => (
     </Paragraph>
     <Paragraph>
       Although I started my IT career as a Python developer, I’ve been working as a frontend
-      developer for the past 3 years. My initial tech stack was focused on vanilla JavaScript and
-      jQuery. Nowadays, I work mainly with modern frontend web technologies in the React ecosystem.
-      In fact, I’ve been working as a React developer for more than two years now.
+      developer for the past three years. My initial tech stack was focused on vanilla JavaScript
+      and jQuery. Nowadays, I work mainly with modern frontend web technologies in the React
+      ecosystem. I’ve been working as a React developer for more than two years now.
     </Paragraph>
     <Contact />
     <Heading>Skills</Heading>
@@ -142,7 +143,8 @@ export default ({ data }) => (
             😍
           </span>
         </Heading>
-        <List data={articlesData} />
+        <List data={recentArticles} />
+        <TerciaryButton onClick={() => navigate('/articles')}>Show all articles ➜</TerciaryButton>
       </div>
     </TwoColumnGrid>
   </>

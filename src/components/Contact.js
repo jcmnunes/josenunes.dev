@@ -12,7 +12,7 @@ import IconLinkedIn from '../images/linkedin';
 import IconGithub from '../images/github';
 
 const Actions = styled.div`
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
   height: 50px;
   justify-content: space-between;

@@ -34,7 +34,8 @@
     "react-transition-group": "^2.5.2",
     "react-typography": "^0.16.13",
     "styled-components": "^4.1.1",
-    "typography": "^0.16.17"
+    "typography": "^0.16.17",
+    "uuid": "^3.3.2"
   },
   "devDependencies": {
     "babel-eslint": "^9.0.0",
