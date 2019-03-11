@@ -119,9 +119,9 @@ export default ({ data }) => (
     </Paragraph>
     <Paragraph>
       Although I started my IT career as a Python developer, I’ve been working as a frontend
-      developer for the past three years. My initial tech stack was focused on vanilla JavaScript
-      and jQuery. Nowadays, I work mainly with modern frontend web technologies in the React
-      ecosystem. I’ve been working as a React developer for more than two years now.
+      developer for the past 4 years. My initial tech stack was focused on vanilla JavaScript and
+      jQuery. Nowadays, I work mainly with modern frontend web technologies in the React ecosystem.
+      I’ve been working as a React developer for two and a half years now.
     </Paragraph>
     <Contact />
     <Heading>Skills</Heading>
