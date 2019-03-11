@@ -8,7 +8,7 @@ export default ({ data }) => (
   <SingleLayout
     title="doDOC Corp"
     subTitle="Frontend developer"
-    auxInfo="Oct 16 - Feb 18"
+    auxInfo="Oct 2016 - Feb 2018"
     techs={[
       'React',
       'Redux',

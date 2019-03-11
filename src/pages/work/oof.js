@@ -8,7 +8,7 @@ export default ({ data }) => (
   <SingleLayout
     title="OOF"
     subTitle="Web developer"
-    auxInfo="May 16 - Jun 16"
+    auxInfo="May 2016 - Jun 2016"
     techs={['HTML5', 'jQuery', 'Sass', 'PHP', 'Wordpress']}
   >
     <p>

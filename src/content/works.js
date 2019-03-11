@@ -1,3 +1,4 @@
+import f1Logo from '../images/f1-logo.svg';
 import adidasLogo from '../images/adidas-logo.svg';
 import dodocLogo from '../images/dodoc-logo.svg';
 import szLogo from '../images/sz-logo.svg';
@@ -5,41 +6,51 @@ import oofLogo from '../images/oof-logo.svg';
 
 export default [
   {
-    key: '1',
+    key: 'ostmodern-f1tvapp',
+    linkText: 'Ostmodern/Formula 1',
+    linkUrl: '/work/ostmodern',
+    secondaryInfo: 'Frontend Developer',
+    auxInfo: 'Jan 2019 - Mar 2019',
+    image: f1Logo,
+    imageAlt: 'f1-logo',
+    imageWidth: '50px',
+  },
+  {
+    key: 'adidas-click',
     linkText: 'Adidas AG',
     linkUrl: '/work/adidas',
     secondaryInfo: 'Frontend Developer',
-    auxInfo: 'Mar 18 - Dec 18',
+    auxInfo: 'Mar 2018 - Dec 2018',
     image: adidasLogo,
     imageAlt: 'adidas-logo',
     imageWidth: '40px',
   },
   {
-    key: '2',
+    key: 'dodoc',
     linkText: 'doDOC Corp.',
     linkUrl: '/work/dodoc',
     secondaryInfo: 'Frontend Developer',
-    auxInfo: 'Oct 16 - Feb 18',
+    auxInfo: 'Oct 2016 - Feb 2018',
     image: dodocLogo,
     imageAlt: 'dodoc-logo',
     imageWidth: '75px',
   },
   {
-    key: '3',
+    key: 'soundzipper',
     linkText: 'Soundzipper',
     linkUrl: '/work/soundzipper',
     secondaryInfo: 'Web Developer',
-    auxInfo: 'Sep 15 - Sep 16',
+    auxInfo: 'Sep 2015 - Sep 2016',
     image: szLogo,
     imageAlt: 'soundzipper-logo',
     imageWidth: '125px',
   },
   {
-    key: '4',
+    key: 'oof',
     linkText: 'OOF',
     linkUrl: '/work/oof',
     secondaryInfo: 'Web Developer',
-    auxInfo: 'May 16 - Jun 16',
+    auxInfo: 'May 2016 - Jun 2016',
     image: oofLogo,
     imageAlt: 'oof-logo',
     imageWidth: '50px',
