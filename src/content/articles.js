@@ -3,11 +3,20 @@ import uuidv4 from 'uuid/v4';
 export default [
   {
     key: uuidv4(),
+    linkText: 'Let’s build a fast, slick and customizable rich text editor with Slate.js and React',
+    linkUrl:
+      'https://medium.freecodecamp.org/lets-build-a-customizable-rich-text-editor-with-slate-and-react-beefd5d441f2',
+    secondaryInfo: 'Indrek Lasn',
+    auxInfo:
+      'A nice little project to learn the basics of Slatejs ➜ a completely customizable framework for building rich text editors.',
+  },
+  {
+    key: uuidv4(),
     linkText: 'To Grid or to Flex?',
     linkUrl: 'https://css-irl.info/to-grid-or-to-flex/',
     secondaryInfo: 'Michelle Barker',
     auxInfo:
-      'Interesting article, published at css-irl.info, that talks about CSS Grid and Flexbox',
+      'Interesting article, published at css-irl.info, that talks about CSS Grid and Flexbox.',
   },
   {
     key: uuidv4(),
