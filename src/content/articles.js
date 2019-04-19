@@ -3,6 +3,14 @@ import uuidv4 from 'uuid/v4';
 export default [
   {
     key: uuidv4(),
+    linkText: 'Advanced Redux Patterns: Normalisation',
+    linkUrl: 'https://blog.brainsandbeards.com/advanced-redux-patterns-normalisation-6b9a5aa46e1f',
+    secondaryInfo: 'Wojciech Ogrodowczyk',
+    auxInfo:
+      'Wojciech talks about data normalization, and the normalizr package, in the context of Redux.',
+  },
+  {
+    key: uuidv4(),
     linkText: 'Let’s build a fast, slick and customizable rich text editor with Slate.js and React',
     linkUrl:
       'https://medium.freecodecamp.org/lets-build-a-customizable-rich-text-editor-with-slate-and-react-beefd5d441f2',
