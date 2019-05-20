@@ -7,6 +7,7 @@ import { ThemeProvider } from 'styled-components';
 import Logo from '../Logo';
 import Breadcrumb from '../Breadcrumb';
 import PageTransition from '../PageTransition';
+import BlogLink from '../BlogLink';
 
 import theme from '../../styles/theme';
 import Container from '../../styles/Container';
@@ -46,6 +47,7 @@ const Layout = ({ element, props }) => (
               <Main>{element}</Main>
             </PageTransition>
             <GlobalStyle />
+            <BlogLink />
           </Container>
         </ThemeProvider>
       </>
