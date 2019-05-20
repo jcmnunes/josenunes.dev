@@ -6,28 +6,12 @@ import Manifest from '../components/Manifest';
 import List from '../components/List';
 import Contact from '../components/Contact';
 
+import H1 from '../styles/H1';
 import Heading from '../styles/Heading';
 import TwoColumnGrid from '../styles/TwoColumnGrid';
 
 import worksData from '../content/works';
 import projectsData from '../content/projects';
-
-const H1 = styled.h1`
-  color: ${props => props.theme.neutral100};
-  font-size: 36px;
-
-  span {
-    color: ${props => props.theme.primary500};
-  }
-
-  @media (max-width: ${props => props.theme.bp_medium}) {
-    font-size: 30px;
-  }
-
-  @media (max-width: ${props => props.theme.bp_small}) {
-    font-size: 24px;
-  }
-`;
 
 const H2 = styled.h2`
   font-weight: 400;

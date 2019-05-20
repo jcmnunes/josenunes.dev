@@ -4,6 +4,8 @@ import { Link } from 'gatsby';
 import { Location } from '@reach/router';
 
 const StyledBreadcrumb = styled.div`
+  flex: 1 0 auto;
+
   a {
     color: ${props => props.theme.neutral300};
     text-decoration: none;
