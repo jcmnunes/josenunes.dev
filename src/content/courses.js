@@ -3,6 +3,14 @@ import uuidv4 from 'uuid/v4';
 export default [
   {
     key: uuidv4(),
+    linkText: 'React Testing with Jest and Enzyme',
+    linkUrl: 'https://www.udemy.com/react-testing-with-jest-and-enzyme/',
+    secondaryInfo: 'Bonnie Schulkin',
+    auxInfo:
+      'An excellent course about testing React apps with Jest and Enzyme using the TDD strategy.',
+  },
+  {
+    key: uuidv4(),
     linkText: 'Node.js: The Complete Guide to Build RESTful APIs',
     linkUrl: 'https://www.udemy.com/nodejs-master-class',
     secondaryInfo: 'Mosh Hamedani',
