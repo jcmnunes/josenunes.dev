@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 const Container = styled.div`
+  position: relative;
   max-width: 716px;
   min-height: 100vh;
   background-color: ${props => props.theme.gray2};
