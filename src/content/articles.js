@@ -3,6 +3,37 @@ import uuidv4 from 'uuid/v4';
 export default [
   {
     key: uuidv4(),
+    linkText: 'Taking Control of React Performance',
+    linkUrl: 'https://blog.opendigerati.com/taking-control-of-react-performance-4f21a15a19b5',
+    secondaryInfo: 'Michael Haglund',
+    auxInfo: '',
+  },
+  {
+    key: uuidv4(),
+    linkText: 'How to use the JavaScript console: going beyond console.log()',
+    linkUrl:
+      'https://medium.freecodecamp.org/how-to-use-the-javascript-console-going-beyond-console-log-5128af9d573b',
+    secondaryInfo: 'Yash Agrawal',
+    auxInfo: '',
+  },
+  {
+    key: uuidv4(),
+    linkText: 'How to get better at testing with test-driven development',
+    linkUrl:
+      'https://medium.freecodecamp.org/how-to-get-better-at-testing-with-test-driven-development-18a7d097b23f',
+    secondaryInfo: 'Thomas Lombart',
+    auxInfo: 'A good exercise on TDD. Nice explanation of the true value of it.',
+  },
+  {
+    key: uuidv4(),
+    linkText: 'How to identify and resolve wasted renders in React',
+    linkUrl:
+      'https://medium.freecodecamp.org/how-to-identify-and-resolve-wasted-renders-in-react-cc4b1e910d10',
+    secondaryInfo: 'Nayeem Reza',
+    auxInfo: '',
+  },
+  {
+    key: uuidv4(),
     linkText: 'Advanced Redux Patterns: Normalisation',
     linkUrl: 'https://blog.brainsandbeards.com/advanced-redux-patterns-normalisation-6b9a5aa46e1f',
     secondaryInfo: 'Wojciech Ogrodowczyk',
