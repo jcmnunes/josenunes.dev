@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link, graphql } from 'gatsby';
+import Footer from '../components/Footer';
 
 const StyledBlogPost = styled.div`
   h1 {
@@ -62,6 +63,7 @@ class BlogPostTemplate extends React.Component {
             )}
           </li>
         </PostLinks>
+        <Footer />
       </StyledBlogPost>
     );
   }
