@@ -1,6 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import ListItem from '../../components/ListItem';
+import Footer from '../../components/Footer';
 import H1 from '../../styles/H1';
 import Heading from '../../styles/Heading';
 
@@ -27,6 +28,7 @@ class BlogIndex extends React.Component {
             />
           ))}
         </ul>
+        <Footer />
       </div>
     );
   }
