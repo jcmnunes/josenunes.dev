@@ -76,7 +76,7 @@ class LinkButton extends Component {
       );
     }
     return (
-      <StyledAnchor href={to} {...rest}>
+      <StyledAnchor href={to} target="_blank" {...rest}>
         {content}
       </StyledAnchor>
     );

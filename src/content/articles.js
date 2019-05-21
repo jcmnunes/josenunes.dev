@@ -3,6 +3,13 @@ import uuidv4 from 'uuid/v4';
 export default [
   {
     key: uuidv4(),
+    linkText: 'TDD Changed My Life',
+    linkUrl: 'https://medium.com/javascript-scene/tdd-changed-my-life-5af0ce099f80',
+    secondaryInfo: 'Eric Elliott',
+    auxInfo: 'Great article about TDD.',
+  },
+  {
+    key: uuidv4(),
     linkText: 'Taking Control of React Performance',
     linkUrl: 'https://blog.opendigerati.com/taking-control-of-react-performance-4f21a15a19b5',
     secondaryInfo: 'Michael Haglund',
