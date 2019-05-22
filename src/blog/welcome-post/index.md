@@ -12,10 +12,10 @@ and register new exciting things about our industry.
 
 This blog effectively started when I decided to (finally) make a personal
 website. Although that was something I wanted for a long time, I never had the
-proper commitment to start building it. That is not entirely true. Over the
-years, I made several attempts that never got too far, though.
+proper commitment to start building it. Over the years, I made several attempts
+that never got too far, though.
 
-My first serious attempt was in 2016 when inspired by a recent design I worked
+My first serious attempt was in 2016, when inspired by a recent design I worked
 on at the time ([this website ➜](http://exchange.ics.uminho.pt/)), I went for a
 full page "vibe".
 
@@ -37,7 +37,7 @@ from iconic themes.
 
 However, I soon start tackling the design. I ended up designing several screens
 (story repeats itself!! 😫). The first change I made was to introduce a dark
-theme. Later I redesigned the homepage to suit my personal preference best.
+theme. Later, I redesigned the homepage to suit my personal preference.
 
 ![Mock of the second version of the website](version2-home.png)
 
