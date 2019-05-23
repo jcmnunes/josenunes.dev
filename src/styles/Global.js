@@ -57,6 +57,10 @@ const GlobalStyle = createGlobalStyle`
   code[class*="language-"], pre[class*="language-"] {
     font-family: 'Hack', monospace;
   }
+  
+  hr {
+    background: ${props => props.theme.neutral700};
+  }
 `;
 
 export default GlobalStyle;
