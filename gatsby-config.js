@@ -1,6 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: 'JN | Jose Nunes',
+    author: 'Jose Nunes',
+    description: 'Personal Website/Blog (Powered by Gatsby)',
+    siteUrl: 'https://josenunes.xyz',
   },
   plugins: [
     `gatsby-plugin-styled-components`,
@@ -15,8 +18,37 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        path: `${__dirname}/src/blog`,
+        name: `blog`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         path: `${__dirname}/src/images`,
         name: 'images',
+      },
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 652,
+            },
+          },
+          {
+            resolve: `gatsby-remark-prismjs`,
+          },
+          {
+            resolve: 'gatsby-remark-external-links',
+            options: {
+              target: '_blank',
+            },
+          },
+        ],
       },
     },
     {

@@ -53,6 +53,14 @@ const GlobalStyle = createGlobalStyle`
       font-size: 13px;
     }
   }
+  
+  code[class*="language-"], pre[class*="language-"] {
+    font-family: 'Hack', monospace;
+  }
+  
+  hr {
+    background: ${props => props.theme.neutral700};
+  }
 `;
 
 export default GlobalStyle;

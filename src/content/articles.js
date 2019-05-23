@@ -3,6 +3,29 @@ import uuidv4 from 'uuid/v4';
 export default [
   {
     key: uuidv4(),
+    linkText: 'Absolute imports with Create React App',
+    linkUrl: 'https://hackernoon.com/absolute-imports-with-create-react-app-4c6cfb66c35d',
+    secondaryInfo: 'David Gilbertson',
+    auxInfo:
+      'Another handy article from David Gilbertson. This time, regarding absolute imports in CRA.',
+  },
+  {
+    key: uuidv4(),
+    linkText: 'How to create a Countdown component using React & MomentJS',
+    linkUrl:
+      'https://medium.freecodecamp.org/how-to-create-a-countdown-component-using-react-momentjs-4717edc4ac3',
+    secondaryInfo: 'Florin Pop',
+    auxInfo: 'A neat little React project to sharpen momentjs and SVG skills.',
+  },
+  {
+    key: uuidv4(),
+    linkText: 'TDD Changed My Life',
+    linkUrl: 'https://medium.com/javascript-scene/tdd-changed-my-life-5af0ce099f80',
+    secondaryInfo: 'Eric Elliott',
+    auxInfo: 'Great article about TDD.',
+  },
+  {
+    key: uuidv4(),
     linkText: 'Taking Control of React Performance',
     linkUrl: 'https://blog.opendigerati.com/taking-control-of-react-performance-4f21a15a19b5',
     secondaryInfo: 'Michael Haglund',
