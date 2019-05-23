@@ -19,6 +19,11 @@ const StyledBlogPost = styled.div`
     font-size: 16px;
     color: ${props => props.theme.neutral400};
   }
+
+  ul {
+    color: ${props => props.theme.neutral400};
+    font-size: 16px;
+  }
 `;
 
 const Date = styled.div`
@@ -47,6 +52,7 @@ class BlogPostTemplate extends React.Component {
         <h1>{post.frontmatter.title}</h1>
         <Date>{post.frontmatter.date}</Date>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        <hr />
         <PostLinks>
           <li>
             {previous && (
