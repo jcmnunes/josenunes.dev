@@ -3,6 +3,28 @@ import uuidv4 from 'uuid/v4';
 export default [
   {
     key: uuidv4(),
+    linkText: 'Contributing to an open source project: How to get started',
+    linkUrl:
+      'https://medium.com/mindsdb/contributing-to-an-open-source-project-how-to-get-started-6ba812301738',
+    secondaryInfo: 'Adam Carrigan',
+    auxInfo: 'Article regarding OpenSource contribution and how to get started.',
+  },
+  {
+    key: uuidv4(),
+    linkText: 'How to Use Array Reduce for More than Just Numbers',
+    linkUrl: 'https://jrsinclair.com/articles/2019/functional-js-do-more-with-reduce/',
+    secondaryInfo: 'James Sinclair',
+    auxInfo: 'An article about Array.reduce and some good use cases of it.',
+  },
+  {
+    key: uuidv4(),
+    linkText: 'The Art of Command Line',
+    linkUrl: 'https://github.com/jlevy/the-art-of-command-line',
+    secondaryInfo: 'Joshua Levy',
+    auxInfo: 'A comprehensive article about the command line.',
+  },
+  {
+    key: uuidv4(),
     linkText: 'Absolute imports with Create React App',
     linkUrl: 'https://hackernoon.com/absolute-imports-with-create-react-app-4c6cfb66c35d',
     secondaryInfo: 'David Gilbertson',
