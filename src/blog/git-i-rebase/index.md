@@ -19,7 +19,7 @@ three types of supporting branches:
 I want to focus, for now, on the workflow regarding Feature branches. As the
 name implies, they are used to develop new features 🤔. When doing so, it is not
 uncommon to start making commits with both sloppy commit messages and code. I
-think that is perfectly ok as long as we later clean the mess. My preferred way
+think that is perfectly ok as long as we clean the mess later. My preferred way
 of doing so is with an
 [interactive rebase](https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History).
 The command I use most often is:
@@ -103,7 +103,7 @@ const Hero = () => (
     <p>I have a new blog post.</p>
     <a
       className="App-link"
-      href="https://josenunes.xyz/blog/thoughts-git"
+      href="https://josenunes.xyz/blog/git-i-rebase"
       target="_blank"
       rel="noopener noreferrer"
     >
@@ -123,7 +123,7 @@ $ git commit -am "New link URL"
 
 Finally, we need to change the link text:
 
-```jsx
+```jsx{12}
 import React from 'react';
 
 const Hero = () => (
@@ -292,4 +292,7 @@ project we are working on, could be just enough to describe our PR.
 
 Of course, there is a lot more we can do while rebasing a feature branch.
 Depending on the commit history we might want to rename commits or remove them
-altogether.
+altogether. I tend comeback to the
+[Juri Strumpflohner course](https://egghead.io/courses/productive-git-for-developers)
+on Egghead.io once in a while to refresh my Git skills. I definitely recommend
+it.
