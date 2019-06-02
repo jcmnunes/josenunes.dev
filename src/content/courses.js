@@ -3,6 +3,13 @@ import uuidv4 from 'uuid/v4';
 export default [
   {
     key: uuidv4(),
+    linkText: 'Productive Git for Developers',
+    linkUrl: 'https://egghead.io/courses/productive-git-for-developers',
+    secondaryInfo: 'Juri Strumpflohner',
+    auxInfo: 'A concise and helpful course about Git with a lot of great tips and Git workflows.',
+  },
+  {
+    key: uuidv4(),
     linkText: 'React Testing with Jest and Enzyme',
     linkUrl: 'https://www.udemy.com/react-testing-with-jest-and-enzyme/',
     secondaryInfo: 'Bonnie Schulkin',
