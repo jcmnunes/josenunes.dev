@@ -256,12 +256,12 @@ that) and leave just the commit messages as follows:
 
 ```git{1-8}
 Add link to new blog post
-#
+
 Changes:
 - New pre-link text
 - New link URL
 - New link text
-#
+
 TST-1
 # Please enter the commit message for your changes. Lines starting
 # with '#' will be ignored, and an empty message aborts the commit.
@@ -292,7 +292,7 @@ project we are working on, could be just enough to describe our PR.
 
 Of course, there is a lot more we can do while rebasing a feature branch.
 Depending on the commit history we might want to rename commits or remove them
-altogether. I tend comeback to the
+altogether. I tend to comeback to the
 [Juri Strumpflohner course](https://egghead.io/courses/productive-git-for-developers)
 on Egghead.io once in a while to refresh my Git skills. I definitely recommend
 it.

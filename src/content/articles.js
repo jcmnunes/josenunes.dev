@@ -3,6 +3,51 @@ import uuidv4 from 'uuid/v4';
 export default [
   {
     key: uuidv4(),
+    linkText: 'The Top 5 Books That Made Me a Better Developer',
+    linkUrl: 'https://davidtucker.net/the-top-5-books-that-made-me-a-better-developer-1ffc3a28a10b',
+    secondaryInfo: 'David Tucker',
+    auxInfo: 'Five resources to learn how to better code, communicate, and collaborate.',
+  },
+  {
+    key: uuidv4(),
+    linkText: 'Dropbox Paper Will Set Us Free',
+    linkUrl: 'https://medium.com/needmore-notes/dropbox-paper-will-set-us-free-811421d7c566',
+    secondaryInfo: 'Raymond Brigleb',
+    auxInfo:
+      'Dropbox paper is a neat piece of software. In this post, Raymond Brigleb highlights some of its features.',
+  },
+  {
+    key: uuidv4(),
+    linkText: 'Basics of writing Clean code',
+    linkUrl: 'https://medium.com/programming-hacks/basics-of-writing-clean-code-c1e79f3315d3',
+    secondaryInfo: 'Gaurav Singh',
+    auxInfo:
+      'This blog post discusses some best practices to write clean code (inspired by the "Clean Code" book.',
+  },
+  {
+    key: uuidv4(),
+    linkText: 'Contributing to an open source project: How to get started',
+    linkUrl:
+      'https://medium.com/mindsdb/contributing-to-an-open-source-project-how-to-get-started-6ba812301738',
+    secondaryInfo: 'Adam Carrigan',
+    auxInfo: 'Article regarding OpenSource contribution and how to get started.',
+  },
+  {
+    key: uuidv4(),
+    linkText: 'How to Use Array Reduce for More than Just Numbers',
+    linkUrl: 'https://jrsinclair.com/articles/2019/functional-js-do-more-with-reduce/',
+    secondaryInfo: 'James Sinclair',
+    auxInfo: 'An article about Array.reduce and some good use cases of it.',
+  },
+  {
+    key: uuidv4(),
+    linkText: 'The Art of Command Line',
+    linkUrl: 'https://github.com/jlevy/the-art-of-command-line',
+    secondaryInfo: 'Joshua Levy',
+    auxInfo: 'A comprehensive article about the command line.',
+  },
+  {
+    key: uuidv4(),
     linkText: 'Absolute imports with Create React App',
     linkUrl: 'https://hackernoon.com/absolute-imports-with-create-react-app-4c6cfb66c35d',
     secondaryInfo: 'David Gilbertson',
