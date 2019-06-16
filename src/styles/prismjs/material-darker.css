@@ -230,6 +230,7 @@ pre[class*='language-'].language-scss > code {
 .gatsby-highlight-code-line {
   background-color: #333;
   display: block;
+  height: 18px;
 }
 
 .gatsby-highlight pre[class*='language-'] {
