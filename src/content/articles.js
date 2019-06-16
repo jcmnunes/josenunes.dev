@@ -3,6 +3,29 @@ import uuidv4 from 'uuid/v4';
 export default [
   {
     key: uuidv4(),
+    linkText: 'The Top 5 Books That Made Me a Better Developer',
+    linkUrl: 'https://davidtucker.net/the-top-5-books-that-made-me-a-better-developer-1ffc3a28a10b',
+    secondaryInfo: 'David Tucker',
+    auxInfo: 'Five resources to learn how to better code, communicate, and collaborate.',
+  },
+  {
+    key: uuidv4(),
+    linkText: 'Dropbox Paper Will Set Us Free',
+    linkUrl: 'https://medium.com/needmore-notes/dropbox-paper-will-set-us-free-811421d7c566',
+    secondaryInfo: 'Raymond Brigleb',
+    auxInfo:
+      'Dropbox paper is a neat piece of software. In this post, Raymond Brigleb highlights some of its features.',
+  },
+  {
+    key: uuidv4(),
+    linkText: 'Basics of writing Clean code',
+    linkUrl: 'https://medium.com/programming-hacks/basics-of-writing-clean-code-c1e79f3315d3',
+    secondaryInfo: 'Gaurav Singh',
+    auxInfo:
+      'This blog post discusses some best practices to write clean code (inspired by the "Clean Code" book.',
+  },
+  {
+    key: uuidv4(),
     linkText: 'Contributing to an open source project: How to get started',
     linkUrl:
       'https://medium.com/mindsdb/contributing-to-an-open-source-project-how-to-get-started-6ba812301738',
