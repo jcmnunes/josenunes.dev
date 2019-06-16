@@ -1,3 +1,4 @@
+import advLogo from '../images/advizr-logo.svg';
 import f1Logo from '../images/f1-logo.svg';
 import adidasLogo from '../images/adidas-logo.svg';
 import dodocLogo from '../images/dodoc-logo.svg';
@@ -5,6 +6,16 @@ import szLogo from '../images/sz-logo.svg';
 import oofLogo from '../images/oof-logo.svg';
 
 export default [
+  {
+    key: 'advizr',
+    linkText: 'Advizr',
+    linkUrl: '/work/advizr',
+    secondaryInfo: 'Frontend Developer',
+    auxInfo: 'Jun 2019 - Present',
+    image: advLogo,
+    imageAlt: 'advizr-logo',
+    imageWidth: '40px',
+  },
   {
     key: 'ostmodern-f1tvapp',
     linkText: 'Ostmodern/Formula 1',
