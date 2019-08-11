@@ -1,12 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { navigate } from 'gatsby';
+import { Link } from 'gatsby';
 
 import LogoIcon from '../images/LogoIcon';
 import LogoText from '../images/LogoText';
 
-const StyledLogo = styled.div`
+const StyledLogo = styled(Link)`
   display: grid;
   grid-template-columns: min-content min-content;
   grid-gap: 10px;
@@ -14,21 +14,12 @@ const StyledLogo = styled.div`
   cursor: pointer;
 `;
 
-class Logo extends Component {
-  goToHomepage = () => {
-    navigate('/');
-  };
-
-  render() {
-    const { icon, text } = this.props;
-    return (
-      <StyledLogo onClick={this.goToHomepage}>
-        {icon && <LogoIcon />}
-        {text && <LogoText />}
-      </StyledLogo>
-    );
-  }
-}
+const Logo = ({ icon, text }) => (
+  <StyledLogo to="/">
+    {icon && <LogoIcon />}
+    {text && <LogoText />}
+  </StyledLogo>
+);
 
 Logo.defaultProps = {
   icon: false,

@@ -61,6 +61,11 @@ const GlobalStyle = createGlobalStyle`
   hr {
     background: ${props => props.theme.neutral700};
   }
+  
+  blockquote {
+    border-left: 4px solid ${props => props.theme.primary500};
+    padding-left: 12px;
+  }
 `;
 
 export default GlobalStyle;
