@@ -21,9 +21,9 @@ export default [
   },
   {
     key: uuidv4(),
-    linkText: 'mceuteixeira.com',
-    linkUrl: 'https://github.com/jcmnunes/mct',
-    auxInfo: 'Personal Website/Blog (Powered by Gatsby)',
+    linkText: 'UI-Capsules',
+    linkUrl: 'https://github.com/jcmnunes/ui-capsules',
+    auxInfo: 'React UI kit (wip)',
   },
   {
     key: uuidv4(),
