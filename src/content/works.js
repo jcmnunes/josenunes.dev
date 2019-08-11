@@ -3,7 +3,6 @@ import f1Logo from '../images/f1-logo.svg';
 import adidasLogo from '../images/adidas-logo.svg';
 import dodocLogo from '../images/dodoc-logo.svg';
 import szLogo from '../images/sz-logo.svg';
-import oofLogo from '../images/oof-logo.svg';
 
 export default [
   {
@@ -55,15 +54,5 @@ export default [
     image: szLogo,
     imageAlt: 'soundzipper-logo',
     imageWidth: '125px',
-  },
-  {
-    key: 'oof',
-    linkText: 'OOF',
-    linkUrl: '/work/oof',
-    secondaryInfo: 'Web Developer',
-    auxInfo: 'May 2016 - Jun 2016',
-    image: oofLogo,
-    imageAlt: 'oof-logo',
-    imageWidth: '50px',
   },
 ];

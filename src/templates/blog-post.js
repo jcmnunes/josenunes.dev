@@ -15,6 +15,12 @@ const StyledBlogPost = styled.div`
     margin-bottom: 24px;
   }
 
+  h3 {
+    color: ${props => props.theme.neutral100};
+    margin-top: 32px;
+    margin-bottom: 16px;
+  }
+
   p {
     font-size: 16px;
     color: ${props => props.theme.neutral400};

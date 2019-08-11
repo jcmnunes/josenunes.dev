@@ -3,6 +3,36 @@ import uuidv4 from 'uuid/v4';
 export default [
   {
     key: uuidv4(),
+    linkText: 'How to Write an Open Source JavaScript Library',
+    linkUrl: 'https://egghead.io/courses/how-to-write-an-open-source-javascript-library',
+    secondaryInfo: 'Kent C. Dodds',
+    auxInfo:
+      'Excellent course by the one and only Kent C. Dodds, where he explains how to publish an npm package.',
+  },
+  {
+    key: uuidv4(),
+    linkText: 'Async React with Redux Saga',
+    linkUrl: 'https://egghead.io/courses/async-react-with-redux-saga',
+    secondaryInfo: 'Tyler Clark',
+    auxInfo: 'A great course about the super powers of redux-saga.',
+  },
+  {
+    key: uuidv4(),
+    linkText: 'Modern JavaScript Tooling with React',
+    linkUrl: 'https://egghead.io/courses/modern-javascript-tooling-with-react',
+    secondaryInfo: 'Andy Van Slaars',
+    auxInfo:
+      'In this course, starting from an empty directory, Andy builds a powerful boilerplate project.',
+  },
+  {
+    key: uuidv4(),
+    linkText: 'JavaScript ES2019 in Practice',
+    linkUrl: 'https://egghead.io/courses/javascript-es2019-in-practice',
+    secondaryInfo: 'Mike Sherov',
+    auxInfo: 'A course about all latest JavaScript features published with ES2019.',
+  },
+  {
+    key: uuidv4(),
     linkText: 'Productive Git for Developers',
     linkUrl: 'https://egghead.io/courses/productive-git-for-developers',
     secondaryInfo: 'Juri Strumpflohner',
