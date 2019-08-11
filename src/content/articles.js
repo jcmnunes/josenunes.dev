@@ -3,6 +3,78 @@ import uuidv4 from 'uuid/v4';
 export default [
   {
     key: uuidv4(),
+    linkText: '9 Useful Browser Extensions for Developers — 2020 edition',
+    linkUrl:
+      'https://medium.com/better-programming/9-productivity-browser-extensions-for-developers-2020-edition-eb84cda6f038',
+    secondaryInfo: 'Indrek Lasn',
+    auxInfo: 'Some interesting browser extensions.',
+  },
+  {
+    key: uuidv4(),
+    linkText: '22 Miraculous Tools for React Developers in 2019',
+    linkUrl: 'https://dev.to/jsmanifest/22-miraculous-tools-for-react-developers-in-2019-4i46',
+    secondaryInfo: 'jsmanifest',
+    auxInfo: 'A comprehensive list of React related tools.',
+  },
+  {
+    key: uuidv4(),
+    linkText: 'What you should know about CORS',
+    linkUrl: 'https://dev.to/jsmanifest/22-miraculous-tools-for-react-developers-in-2019-4i46',
+    secondaryInfo: 'jsmanifest',
+    auxInfo: 'An article about CORS with valuable information.',
+  },
+  {
+    key: uuidv4(),
+    linkText: 'My Personal Git Tricks Cheatsheet',
+    linkUrl: 'https://dev.to/antjanus/my-personal-git-tricks-cheatsheet-23j1',
+    secondaryInfo: 'Antonin Januska',
+    auxInfo: 'A list of useful Git commands.',
+  },
+  {
+    key: uuidv4(),
+    linkText: "What To Expect When You're Expecting To Drop IE11",
+    linkUrl: 'https://dev.to/samthor/what-to-expect-when-you-re-expecting-to-drop-ie11-ifg',
+    secondaryInfo: 'Sam Thorogood',
+    auxInfo: 'A (sad) article about the things we miss when supporting IE11.',
+  },
+  {
+    key: uuidv4(),
+    linkText: 'Forget about component lifecycles and start thinking in effects',
+    linkUrl:
+      'https://sebastiandedeyne.com/forget-about-component-lifecycles-and-start-thinking-in-effects/',
+    secondaryInfo: 'Sebastian De Deyne',
+    auxInfo: 'An article about the useState hook and how it can replace lifecycle methods.',
+  },
+  {
+    key: uuidv4(),
+    linkText: 'The 10 Component Commandments',
+    linkUrl: 'https://dev.to/selbekk/the-10-component-commandments-2a7f',
+    secondaryInfo: 'Kristofer Selbekk',
+    auxInfo: 'Ten React best practices explained by Selbekk in an interesting article.',
+  },
+  {
+    key: uuidv4(),
+    linkText: 'A Vacancy Has Been Detected',
+    linkUrl: 'https://kellysutton.com/2019/06/19/a-vacancy-has-been-detected.html',
+    secondaryInfo: 'Kelly Sutton',
+    auxInfo: 'Interesting article about empathy in software development.',
+  },
+  {
+    key: uuidv4(),
+    linkText: 'Destructuring JavaScript objects like a pro',
+    linkUrl: 'https://dev.to/willamesoares/destructuring-javascript-objects-like-a-pro-17bg',
+    secondaryInfo: 'Will Soares',
+    auxInfo: '',
+  },
+  {
+    key: uuidv4(),
+    linkText: 'Up your Git game and clean up your history',
+    linkUrl: 'https://dev.to/christopherkade/up-your-git-game-and-clean-up-your-history-4j3j',
+    secondaryInfo: 'Christopher Kade',
+    auxInfo: 'An informative article about the superpowers of git rebase.',
+  },
+  {
+    key: uuidv4(),
     linkText: 'The Top 5 Books That Made Me a Better Developer',
     linkUrl: 'https://davidtucker.net/the-top-5-books-that-made-me-a-better-developer-1ffc3a28a10b',
     secondaryInfo: 'David Tucker',
