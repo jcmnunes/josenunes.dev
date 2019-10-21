@@ -4,19 +4,19 @@ import Img from 'gatsby-image';
 import styled from 'styled-components';
 import { navigate } from 'gatsby';
 
-import Skill from '../components/Skill';
-import List from '../components/List';
-import Contact from '../components/Contact';
+import Skill from '../../components/Skill';
+import List from '../../components/List';
+import Contact from '../../components/Contact';
 
-import Heading from '../styles/Heading';
-import Paragraph from '../styles/Paragraph';
-import Primary from '../styles/Primary';
-import TwoColumnGrid from '../styles/TwoColumnGrid';
-import TerciaryButton from '../styles/TerciaryButton';
+import Heading from '../../styles/Heading';
+import Paragraph from '../../styles/Paragraph';
+import Primary from '../../styles/Primary';
+import TwoColumnGrid from '../../styles/TwoColumnGrid';
+import TerciaryButton from '../../styles/TerciaryButton';
 
-import coursesData from '../content/courses';
-import articlesData from '../content/articles';
-import skillsData from '../content/skills';
+import coursesData from '../../content/courses';
+import articlesData from '../../content/articles';
+import skillsData from '../../content/skills';
 
 const AboutCard = styled.div`
   display: flex;
@@ -119,9 +119,9 @@ export default ({ data }) => (
     </Paragraph>
     <Paragraph>
       Although I started my IT career as a Python developer, I’ve been working as a frontend
-      developer for the past 4 years. My initial tech stack was focused on vanilla JavaScript and
+      developer for the past 5 years. My initial tech stack was focused on vanilla JavaScript and
       jQuery. Nowadays, I work mainly with modern frontend web technologies in the React ecosystem.
-      I’ve been working as a React developer for two and a half years now.
+      I’ve been working as a React developer for more than 3 years now.
     </Paragraph>
     <Contact />
     <Heading>Skills</Heading>
@@ -134,7 +134,9 @@ export default ({ data }) => (
       <div>
         <Heading>Recent courses I took</Heading>
         <List data={recentCourses} />
-        <TerciaryButton onClick={() => navigate('/courses')}>Show all courses ➜</TerciaryButton>
+        <TerciaryButton onClick={() => navigate('/about/courses')}>
+          Show all courses ➜
+        </TerciaryButton>
       </div>
       <div>
         <Heading>
@@ -144,7 +146,9 @@ export default ({ data }) => (
           </span>
         </Heading>
         <List data={recentArticles} />
-        <TerciaryButton onClick={() => navigate('/articles')}>Show all articles ➜</TerciaryButton>
+        <TerciaryButton onClick={() => navigate('/about/articles')}>
+          Show all articles ➜
+        </TerciaryButton>
       </div>
     </TwoColumnGrid>
   </>

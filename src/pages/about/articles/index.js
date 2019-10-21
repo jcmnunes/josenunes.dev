@@ -1,9 +1,9 @@
 import React from 'react';
-import List from '../../components/List';
+import List from '../../../components/List';
 
-import Heading from '../../styles/Heading';
+import Heading from '../../../styles/Heading';
 
-import articlesData from '../../content/articles';
+import articlesData from '../../../content/articles';
 
 const CoursesIndex = () => {
   return (
