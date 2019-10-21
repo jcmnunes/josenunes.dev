@@ -3,6 +3,20 @@ import uuidv4 from 'uuid/v4';
 export default [
   {
     key: uuidv4(),
+    linkText: 'React, Inline Functions, and Performance',
+    linkUrl: 'https://cdb.reacttraining.com/react-inline-functions-and-performance-bdff784f5578',
+    secondaryInfo: 'Ryan Florence\n',
+    auxInfo: 'Not a new article, but full of great insights related with performance.',
+  },
+  {
+    key: uuidv4(),
+    linkText: 'Why should you use "noopener"? Beware of security Flaws',
+    linkUrl: 'https://dev.to/dhilipkmr/why-should-you-use-noopener-beware-of-security-flaws-3i57',
+    secondaryInfo: 'Dhilip kumar',
+    auxInfo: 'The author explains why target blank can introduce vulnerabilities.',
+  },
+  {
+    key: uuidv4(),
     linkText: '9 Useful Browser Extensions for Developers — 2020 edition',
     linkUrl:
       'https://medium.com/better-programming/9-productivity-browser-extensions-for-developers-2020-edition-eb84cda6f038',

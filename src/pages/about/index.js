@@ -134,7 +134,9 @@ export default ({ data }) => (
       <div>
         <Heading>Recent courses I took</Heading>
         <List data={recentCourses} />
-        <TerciaryButton onClick={() => navigate('/about/courses')}>Show all courses ➜</TerciaryButton>
+        <TerciaryButton onClick={() => navigate('/about/courses')}>
+          Show all courses ➜
+        </TerciaryButton>
       </div>
       <div>
         <Heading>
@@ -144,7 +146,9 @@ export default ({ data }) => (
           </span>
         </Heading>
         <List data={recentArticles} />
-        <TerciaryButton onClick={() => navigate('/about/articles')}>Show all articles ➜</TerciaryButton>
+        <TerciaryButton onClick={() => navigate('/about/articles')}>
+          Show all articles ➜
+        </TerciaryButton>
       </div>
     </TwoColumnGrid>
   </>
