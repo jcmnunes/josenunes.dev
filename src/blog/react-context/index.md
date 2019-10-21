@@ -15,18 +15,18 @@ app, the need for Redux became apparent.
 
 After almost three years, I still work on React apps that are using Redux. In my
 opinion, Redux is still a pretty decent way to handle data flow in a React app,
-and it was proved to be viable in large applications. As a special bonus,
+and it has proved to be viable in large applications. As a bonus,
 [Hooks](https://react-redux.js.org/next/api/hooks) makes using Redux even
 better, with no need for containers and much less boilerplate (something to
 discuss on a future post).
 
-That being said, recently, I found a situation where I thought it might not be
-the best tool for the job. The case was this. I had a big folder containing a
-large amount of React components that compose a single feature of a large React
-app. Most of those components need access to two IDs: the `clientId` and the
-`subscriberId`. We are talking about a section of the app that renders
-information about a specific subscriber of a particular client. However, only
-the top-level parent has direct access to them.
+That being said, I recently faced a situation where it might not be the best
+tool for the job. I had a big folder containing a large amount of React
+components that composes a single feature of a large React app. Most of those
+components need access to two IDs: the `clientId` and the `subscriberId`. We are
+talking about a section of the app that renders information about a specific
+subscriber of a particular client. However, only the top-level parent has direct
+access to them.
 
 I started implementing the feature the usual way, i.e., passing down those props
 to the components that need access to them. As expected, prop-drilling soon
@@ -114,14 +114,11 @@ straightforward, and it is a great way to mitigate prop-drilling.
 However, I should say I don’t feel React Context should replace Redux
 altogether. Especially for large features, containing many actions, API calls,
 etc. I do feel Context has its place in situations like the one described here.
-I even think it makes sense to use it from a semantic point of view. If we think
-about it, clientId and subscriberId define the “context” of the feature, and as
-such, all components should have easy access to it.
 
 ## Caveats
 
 The [React docs](https://reactjs.org/docs/context.html#caveats) mention a
-standard caveat of using context the way I did above. The problem is the
+standard caveat of using Context the way I did above. The problem is the
 Provider value containing a new object reference on every Parent’s render. There
 is an excellent [post](https://phinguyen.io/context-caveat-deep-dive/) from Phi
 Nguyen on the subject. As with everything performance-related, there is always a
