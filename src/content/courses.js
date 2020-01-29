@@ -3,11 +3,24 @@ import uuidv4 from 'uuid/v4';
 export default [
   {
     key: uuidv4(),
+    linkText: 'Testing JavaScript',
+    linkUrl: 'https://testingjavascript.com/',
+    secondaryInfo: 'Kent C. Dodds',
+    auxInfo: 'Probably, the best course about JavaScript testing. Among all the great things this course was to offer, I found the pace to be incredible - so much high quality knowledge in such a short amount of time.',
+  },
+  {
+    key: uuidv4(),
+    linkText: 'Typescript: The Complete Developer\'s Guide',
+    linkUrl: 'https://www.udemy.com/course/typescript-the-complete-developers-guide/',
+    secondaryInfo: 'Stephen Grider',
+    auxInfo: 'One more extremely high quality course from Stephen about Typescript, an invaluable tool to write good quality code.',
+  },
+  {
+    key: uuidv4(),
     linkText: 'How to Write an Open Source JavaScript Library',
     linkUrl: 'https://egghead.io/courses/how-to-write-an-open-source-javascript-library',
     secondaryInfo: 'Kent C. Dodds',
-    auxInfo:
-      'Excellent course by the one and only Kent C. Dodds, where he explains how to publish an npm package.',
+    auxInfo: 'Excellent course by the one and only Kent C. Dodds, where he explains how to publish an npm package.',
   },
   {
     key: uuidv4(),
@@ -21,8 +34,7 @@ export default [
     linkText: 'Modern JavaScript Tooling with React',
     linkUrl: 'https://egghead.io/courses/modern-javascript-tooling-with-react',
     secondaryInfo: 'Andy Van Slaars',
-    auxInfo:
-      'In this course, starting from an empty directory, Andy builds a powerful boilerplate project.',
+    auxInfo: 'In this course, starting from an empty directory, Andy builds a powerful boilerplate project.',
   },
   {
     key: uuidv4(),
@@ -43,32 +55,28 @@ export default [
     linkText: 'React Testing with Jest and Enzyme',
     linkUrl: 'https://www.udemy.com/react-testing-with-jest-and-enzyme/',
     secondaryInfo: 'Bonnie Schulkin',
-    auxInfo:
-      'An excellent course about testing React apps with Jest and Enzyme using the TDD strategy.',
+    auxInfo: 'An excellent course about testing React apps with Jest and Enzyme using the TDD strategy.',
   },
   {
     key: uuidv4(),
     linkText: 'Node.js: The Complete Guide to Build RESTful APIs',
     linkUrl: 'https://www.udemy.com/nodejs-master-class',
     secondaryInfo: 'Mosh Hamedani',
-    auxInfo:
-      'A great course to learn the fundamentals of building RESTful APIs in Node, Express and MongoDB.',
+    auxInfo: 'A great course to learn the fundamentals of building RESTful APIs in Node, Express and MongoDB.',
   },
   {
     key: uuidv4(),
     linkText: 'Universal React with Next.js - The Ultimate Guide',
     linkUrl: 'https://www.udemy.com/universal-react-with-nextjs-the-ultimate-guide',
     secondaryInfo: 'Reed Barger',
-    auxInfo:
-      'A course on Next.js from Reed Barger. Almost 10h of content and a total of 6 projects makes this a comprehensive course.',
+    auxInfo: 'A course on Next.js from Reed Barger. Almost 10h of content and a total of 6 projects makes this a comprehensive course.',
   },
   {
     key: uuidv4(),
     linkText: 'Advanced Javascript',
     linkUrl: 'https://www.udemy.com/javascript-advanced/',
     secondaryInfo: 'Asim Hussain',
-    auxInfo:
-      'Asim explains advanced JavaScript language features in an enjoyable and understandable way.',
+    auxInfo: 'Asim explains advanced JavaScript language features in an enjoyable and understandable way.',
   },
   {
     key: uuidv4(),
@@ -103,16 +111,14 @@ export default [
     linkText: 'JavaScript - Understanding the Weird Parts',
     linkUrl: 'https://www.udemy.com/understand-javascript/',
     secondaryInfo: 'Anthony Alicea',
-    auxInfo:
-      'Anthony Alicea explains the fundamental concepts of the JavaScript language in great detail.',
+    auxInfo: 'Anthony Alicea explains the fundamental concepts of the JavaScript language in great detail.',
   },
   {
     key: uuidv4(),
     linkText: 'Modern React with Redux',
     linkUrl: 'https://www.udemy.com/react-redux/',
     secondaryInfo: 'Stephen Grider',
-    auxInfo:
-      'Stephen Grider explains React and Redux with his very personal and engaging teaching style.',
+    auxInfo: 'Stephen Grider explains React and Redux with his very personal and engaging teaching style.',
   },
   {
     key: uuidv4(),
@@ -126,8 +132,7 @@ export default [
     linkText: 'The Complete React Native and Redux Course',
     linkUrl: 'https://www.udemy.com/the-complete-react-native-and-redux-course/',
     secondaryInfo: 'Stephen Grider',
-    auxInfo:
-      'Stephen Grider teaches React Native in his with his very personal and engaging teaching style.',
+    auxInfo: 'Stephen Grider teaches React Native in his with his very personal and engaging teaching style.',
   },
   {
     key: uuidv4(),
@@ -141,8 +146,7 @@ export default [
     linkText: 'Node with React: Fullstack Web Development',
     linkUrl: 'https://www.udemy.com/node-with-react-fullstack-web-development/',
     secondaryInfo: 'Stephen Grider',
-    auxInfo:
-      'Stephen Grider covers the popular fullstack tech stack: React, Redux, Express, and Mongo.',
+    auxInfo: 'Stephen Grider covers the popular fullstack tech stack: React, Redux, Express, and Mongo.',
   },
   {
     key: uuidv4(),
@@ -212,8 +216,7 @@ export default [
     linkText: 'React for beginners',
     linkUrl: 'https://reactforbeginners.com/',
     secondaryInfo: 'Wes Bos',
-    auxInfo:
-      'Wes gives step-by-step guide to build real world React.js + Firebase apps and website components.',
+    auxInfo: 'Wes gives step-by-step guide to build real world React.js + Firebase apps and website components.',
   },
   {
     key: uuidv4(),
@@ -234,7 +237,6 @@ export default [
     linkText: 'Building Applications with React and Redux in ES6',
     linkUrl: 'https://www.pluralsight.com/courses/react-redux-react-router-es6',
     secondaryInfo: 'Cory House',
-    auxInfo:
-      'Cory teaches how to use Redux, React Router, and ES6 to build a real world app with React.',
+    auxInfo: 'Cory teaches how to use Redux, React Router, and ES6 to build a real world app with React.',
   },
 ];

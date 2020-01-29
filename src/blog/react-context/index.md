@@ -20,13 +20,13 @@ and it has proved to be viable in large applications. As a bonus,
 better, with no need for containers and much less boilerplate (something to
 discuss on a future post).
 
-That being said, I recently faced a situation where it might not be the best
-tool for the job. I had a big folder containing a large amount of React
-components that composes a single feature of a large React app. Most of those
-components need access to two IDs: the `clientId` and the `subscriberId`. We are
-talking about a section of the app that renders information about a specific
-subscriber of a particular client. However, only the top-level parent has direct
-access to them.
+That being said, Redux might not always be the right choice. Recently, while
+implementing a new feature, I had a big folder containing a large amount of
+React components that composes a single feature of a large React app. Most of
+those components need access to two IDs: the `clientId` and the `subscriberId`.
+We are talking about a section of the app that renders information about a
+specific subscriber of a particular client. However, only the top-level parent
+has direct access to them.
 
 I started implementing the feature the usual way, i.e., passing down those props
 to the components that need access to them. As expected, prop-drilling soon
