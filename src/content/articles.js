@@ -3,9 +3,23 @@ import uuidv4 from 'uuid/v4';
 export default [
   {
     key: uuidv4(),
+    linkText: 'Understanding React\'s key prop',
+    linkUrl: 'https://kentcdodds.com/blog/understanding-reacts-key-prop',
+    secondaryInfo: 'Kent C. Dodds',
+    auxInfo: 'Kent talks about a useful but relatively unknown feature of React - the use of key prop to unmount the previous component instance and to mount a new one.',
+  },
+  {
+    key: uuidv4(),
+    linkText: 'Why React Hooks?',
+    linkUrl: 'https://tylermcginnis.com/why-react-hooks/',
+    secondaryInfo: 'Tyler McGinnis',
+    auxInfo: 'The author makes an overview of the different ways of writing React apps along the years and why hooks are much more than being able to use state inside function components.',
+  },
+  {
+    key: uuidv4(),
     linkText: 'React, Inline Functions, and Performance',
     linkUrl: 'https://cdb.reacttraining.com/react-inline-functions-and-performance-bdff784f5578',
-    secondaryInfo: 'Ryan Florence\n',
+    secondaryInfo: 'Ryan Florence',
     auxInfo: 'Not a new article, but full of great insights related with performance.',
   },
   {
@@ -18,8 +32,7 @@ export default [
   {
     key: uuidv4(),
     linkText: '9 Useful Browser Extensions for Developers — 2020 edition',
-    linkUrl:
-      'https://medium.com/better-programming/9-productivity-browser-extensions-for-developers-2020-edition-eb84cda6f038',
+    linkUrl: 'https://medium.com/better-programming/9-productivity-browser-extensions-for-developers-2020-edition-eb84cda6f038',
     secondaryInfo: 'Indrek Lasn',
     auxInfo: 'Some interesting browser extensions.',
   },
@@ -54,8 +67,7 @@ export default [
   {
     key: uuidv4(),
     linkText: 'Forget about component lifecycles and start thinking in effects',
-    linkUrl:
-      'https://sebastiandedeyne.com/forget-about-component-lifecycles-and-start-thinking-in-effects/',
+    linkUrl: 'https://sebastiandedeyne.com/forget-about-component-lifecycles-and-start-thinking-in-effects/',
     secondaryInfo: 'Sebastian De Deyne',
     auxInfo: 'An article about the useState hook and how it can replace lifecycle methods.',
   },
@@ -99,22 +111,19 @@ export default [
     linkText: 'Dropbox Paper Will Set Us Free',
     linkUrl: 'https://medium.com/needmore-notes/dropbox-paper-will-set-us-free-811421d7c566',
     secondaryInfo: 'Raymond Brigleb',
-    auxInfo:
-      'Dropbox paper is a neat piece of software. In this post, Raymond Brigleb highlights some of its features.',
+    auxInfo: 'Dropbox paper is a neat piece of software. In this post, Raymond Brigleb highlights some of its features.',
   },
   {
     key: uuidv4(),
     linkText: 'Basics of writing Clean code',
     linkUrl: 'https://medium.com/programming-hacks/basics-of-writing-clean-code-c1e79f3315d3',
     secondaryInfo: 'Gaurav Singh',
-    auxInfo:
-      'This blog post discusses some best practices to write clean code (inspired by the "Clean Code" book.',
+    auxInfo: 'This blog post discusses some best practices to write clean code (inspired by the "Clean Code" book.',
   },
   {
     key: uuidv4(),
     linkText: 'Contributing to an open source project: How to get started',
-    linkUrl:
-      'https://medium.com/mindsdb/contributing-to-an-open-source-project-how-to-get-started-6ba812301738',
+    linkUrl: 'https://medium.com/mindsdb/contributing-to-an-open-source-project-how-to-get-started-6ba812301738',
     secondaryInfo: 'Adam Carrigan',
     auxInfo: 'Article regarding OpenSource contribution and how to get started.',
   },
@@ -137,14 +146,12 @@ export default [
     linkText: 'Absolute imports with Create React App',
     linkUrl: 'https://hackernoon.com/absolute-imports-with-create-react-app-4c6cfb66c35d',
     secondaryInfo: 'David Gilbertson',
-    auxInfo:
-      'Another handy article from David Gilbertson. This time, regarding absolute imports in CRA.',
+    auxInfo: 'Another handy article from David Gilbertson. This time, regarding absolute imports in CRA.',
   },
   {
     key: uuidv4(),
     linkText: 'How to create a Countdown component using React & MomentJS',
-    linkUrl:
-      'https://medium.freecodecamp.org/how-to-create-a-countdown-component-using-react-momentjs-4717edc4ac3',
+    linkUrl: 'https://medium.freecodecamp.org/how-to-create-a-countdown-component-using-react-momentjs-4717edc4ac3',
     secondaryInfo: 'Florin Pop',
     auxInfo: 'A neat little React project to sharpen momentjs and SVG skills.',
   },
@@ -165,24 +172,21 @@ export default [
   {
     key: uuidv4(),
     linkText: 'How to use the JavaScript console: going beyond console.log()',
-    linkUrl:
-      'https://medium.freecodecamp.org/how-to-use-the-javascript-console-going-beyond-console-log-5128af9d573b',
+    linkUrl: 'https://medium.freecodecamp.org/how-to-use-the-javascript-console-going-beyond-console-log-5128af9d573b',
     secondaryInfo: 'Yash Agrawal',
     auxInfo: '',
   },
   {
     key: uuidv4(),
     linkText: 'How to get better at testing with test-driven development',
-    linkUrl:
-      'https://medium.freecodecamp.org/how-to-get-better-at-testing-with-test-driven-development-18a7d097b23f',
+    linkUrl: 'https://medium.freecodecamp.org/how-to-get-better-at-testing-with-test-driven-development-18a7d097b23f',
     secondaryInfo: 'Thomas Lombart',
     auxInfo: 'A good exercise on TDD. Nice explanation of the true value of it.',
   },
   {
     key: uuidv4(),
     linkText: 'How to identify and resolve wasted renders in React',
-    linkUrl:
-      'https://medium.freecodecamp.org/how-to-identify-and-resolve-wasted-renders-in-react-cc4b1e910d10',
+    linkUrl: 'https://medium.freecodecamp.org/how-to-identify-and-resolve-wasted-renders-in-react-cc4b1e910d10',
     secondaryInfo: 'Nayeem Reza',
     auxInfo: '',
   },
@@ -191,34 +195,28 @@ export default [
     linkText: 'Advanced Redux Patterns: Normalisation',
     linkUrl: 'https://blog.brainsandbeards.com/advanced-redux-patterns-normalisation-6b9a5aa46e1f',
     secondaryInfo: 'Wojciech Ogrodowczyk',
-    auxInfo:
-      'Wojciech talks about data normalization, and the normalizr package, in the context of Redux.',
+    auxInfo: 'Wojciech talks about data normalization, and the normalizr package, in the context of Redux.',
   },
   {
     key: uuidv4(),
     linkText: 'Let’s build a fast, slick and customizable rich text editor with Slate.js and React',
-    linkUrl:
-      'https://medium.freecodecamp.org/lets-build-a-customizable-rich-text-editor-with-slate-and-react-beefd5d441f2',
+    linkUrl: 'https://medium.freecodecamp.org/lets-build-a-customizable-rich-text-editor-with-slate-and-react-beefd5d441f2',
     secondaryInfo: 'Indrek Lasn',
-    auxInfo:
-      'A nice little project to learn the basics of Slatejs ➜ a completely customizable framework for building rich text editors.',
+    auxInfo: 'A nice little project to learn the basics of Slatejs ➜ a completely customizable framework for building rich text editors.',
   },
   {
     key: uuidv4(),
     linkText: 'To Grid or to Flex?',
     linkUrl: 'https://css-irl.info/to-grid-or-to-flex/',
     secondaryInfo: 'Michelle Barker',
-    auxInfo:
-      'Interesting article, published at css-irl.info, that talks about CSS Grid and Flexbox.',
+    auxInfo: 'Interesting article, published at css-irl.info, that talks about CSS Grid and Flexbox.',
   },
   {
     key: uuidv4(),
     linkText: 'ES5 to ESNext — here’s every feature added to JavaScript since 2015',
-    linkUrl:
-      'https://medium.freecodecamp.org/es5-to-esnext-heres-every-feature-added-to-javascript-since-2015-d0c255e13c6e',
+    linkUrl: 'https://medium.freecodecamp.org/es5-to-esnext-heres-every-feature-added-to-javascript-since-2015-d0c255e13c6e',
     secondaryInfo: 'Flavio Copes',
-    auxInfo:
-      'A must-read article from Flavio Copes, describing all additions to the JavaScript language since 2015.',
+    auxInfo: 'A must-read article from Flavio Copes, describing all additions to the JavaScript language since 2015.',
   },
   {
     key: uuidv4(),
@@ -232,31 +230,26 @@ export default [
     linkText: 'Folder Structure in React Apps',
     linkUrl: 'https://blog.usejournal.com/folder-structure-in-react-apps-c2ae8974d21f',
     secondaryInfo: 'Katia Wheeler',
-    auxInfo:
-      'An easy to digest article from Katia Wheeler talking about folder structure in React apps.',
+    auxInfo: 'An easy to digest article from Katia Wheeler talking about folder structure in React apps.',
   },
   {
     key: uuidv4(),
     linkText: 'Authentication and Authorization Basics with GraphQL and REST',
-    linkUrl:
-      'https://www.prisma.io/tutorials/graphql-rest-authentication-authorization-basics-ct20/',
+    linkUrl: 'https://www.prisma.io/tutorials/graphql-rest-authentication-authorization-basics-ct20/',
     secondaryInfo: 'Prisma',
     auxInfo: 'A tutorial from the folks at Prisma about Authentication and Authorization.',
   },
   {
     key: uuidv4(),
     linkText: 'Components testing in React: what and how to test with Jest and Enzyme',
-    linkUrl:
-      'https://medium.freecodecamp.org/components-testing-in-react-what-and-how-to-test-with-jest-and-enzyme-7c1cace99de5',
+    linkUrl: 'https://medium.freecodecamp.org/components-testing-in-react-what-and-how-to-test-with-jest-and-enzyme-7c1cace99de5',
     secondaryInfo: 'Alona Pysarenko',
-    auxInfo:
-      'Alona Pysarenko, Frontend Engineer at Django Stars, talks about about react components testing.',
+    auxInfo: 'Alona Pysarenko, Frontend Engineer at Django Stars, talks about about react components testing.',
   },
   {
     key: uuidv4(),
     linkText: 'Per-Link Gatsby page transitions with TransitionLink',
-    linkUrl:
-      'https://www.gatsbyjs.org/blog/2018-12-04-per-link-gatsby-page-transitions-with-transitionlink/',
+    linkUrl: 'https://www.gatsbyjs.org/blog/2018-12-04-per-link-gatsby-page-transitions-with-transitionlink/',
     secondaryInfo: 'Tyler Barnes',
     auxInfo: 'Tyler describes the thought process behind gatsby-plugin-transition-link.',
   },
@@ -270,8 +263,7 @@ export default [
   {
     key: uuidv4(),
     linkText: '7 Practical Tips for Cheating at Design',
-    linkUrl:
-      'https://medium.com/refactoring-ui/7-practical-tips-for-cheating-at-design-40c736799886',
+    linkUrl: 'https://medium.com/refactoring-ui/7-practical-tips-for-cheating-at-design-40c736799886',
     secondaryInfo: 'Adam Wathan & Steve Schoger',
     auxInfo: '7 extremelly helpfull design tips from Adam Wathan & Steve Schoger.',
   },
