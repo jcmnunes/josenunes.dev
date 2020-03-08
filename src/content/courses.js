@@ -3,6 +3,13 @@ import uuidv4 from 'uuid/v4';
 export default [
   {
     key: uuidv4(),
+    linkText: 'NestJS Zero to Hero',
+    linkUrl: 'https://www.udemy.com/course/nestjs-zero-to-hero/',
+    secondaryInfo: 'Ariel Weinberger',
+    auxInfo: 'NestJS is definitely a solid node framework. Ariel gives a great introduction to Nest in this course. The course is easy to digest with a great pace.',
+  },
+  {
+    key: uuidv4(),
     linkText: 'Testing JavaScript',
     linkUrl: 'https://testingjavascript.com/',
     secondaryInfo: 'Kent C. Dodds',
@@ -17,17 +24,17 @@ export default [
   },
   {
     key: uuidv4(),
-    linkText: 'How to Write an Open Source JavaScript Library',
-    linkUrl: 'https://egghead.io/courses/how-to-write-an-open-source-javascript-library',
-    secondaryInfo: 'Kent C. Dodds',
-    auxInfo: 'Excellent course by the one and only Kent C. Dodds, where he explains how to publish an npm package.',
-  },
-  {
-    key: uuidv4(),
     linkText: 'Async React with Redux Saga',
     linkUrl: 'https://egghead.io/courses/async-react-with-redux-saga',
     secondaryInfo: 'Tyler Clark',
     auxInfo: 'A great course about the super powers of redux-saga.',
+  },
+  {
+    key: uuidv4(),
+    linkText: 'How to Write an Open Source JavaScript Library',
+    linkUrl: 'https://egghead.io/courses/how-to-write-an-open-source-javascript-library',
+    secondaryInfo: 'Kent C. Dodds',
+    auxInfo: 'Excellent course by the one and only Kent C. Dodds, where he explains how to publish an npm package.',
   },
   {
     key: uuidv4(),
