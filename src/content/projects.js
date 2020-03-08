@@ -9,15 +9,9 @@ export default [
   },
   {
     key: uuidv4(),
-    linkText: 'Widy app (Frontend)',
-    linkUrl: 'https://github.com/jcmnunes/widy-frontend',
-    auxInfo: 'Widy is a productivity app. On the frontend, Widy is a SPA React/Redux app.',
-  },
-  {
-    key: uuidv4(),
-    linkText: 'Widy app (Backend)',
-    linkUrl: 'https://github.com/jcmnunes/widy-backend',
-    auxInfo: 'Widy is a productivity app. On the backend, Widy is a Node/Express/MongoDB app.',
+    linkText: 'Widy app',
+    linkUrl: 'https://github.com/jcmnunes/widy',
+    auxInfo: 'Widy is a productivity app. On the frontend, Widy is a SPA React/Redux app. On the backend, Widy is a Node/Express/MongoDB app.',
   },
   {
     key: uuidv4(),

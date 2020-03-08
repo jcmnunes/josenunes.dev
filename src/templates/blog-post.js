@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import { Link, graphql } from 'gatsby';
 import Footer from '../components/Footer';
 
+import 'katex/dist/katex.min.css';
+
 const StyledBlogPost = styled.div`
   h1 {
     color: ${props => props.theme.neutral100};
@@ -29,6 +31,10 @@ const StyledBlogPost = styled.div`
   ul {
     color: ${props => props.theme.neutral400};
     font-size: 16px;
+  }
+
+  .katex {
+    color: ${props => props.theme.neutral400};
   }
 `;
 
