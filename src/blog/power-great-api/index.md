@@ -1,5 +1,5 @@
 ---
-title: The art of problem solving
+title: The power of a great API
 date: '2020-01-25T23:18:31.296Z'
 description:
   This post is about the art of problem-solving by analyzing a recent new
@@ -20,13 +20,12 @@ the last time we wrote a class component (or a container for that matter). The
 code is so much easier to read and write after hooks.
 
 I want to understand why that happened and what makes hooks so much better. The
-first step for me is to recognize which specific problems hooks solve on our
+first step for me is to recognize which specific problems hooks solved in our
 codebase.
 
 ## Reduce boilerplate
 
-I think the simple "counter" example well describes the first real wow factor of
-hooks.
+I think the simple "counter" example well describes the "power" of hooks.
 
 ```jsx
 import React, { useState } from 'react';
@@ -72,7 +71,7 @@ class Counter extends Component {
 ```
 
 Also, in reality, using classes to represent React components is not intuitive
-at all if we think about it. We are used to instantiating classes, apply
+at all if we think about it. We are used to instantiate classes, apply
 inheritance, create public and private methods and properties, and all those
 other OO related things. For that reason, I've always found class components to
 feel a bit off.
@@ -87,7 +86,7 @@ component.
 When I found I could do all that with just one hook, my mind got blown. The
 advantage of using the useEffect hook is that all the code, related with some
 functionality, is colocated inside it. Again that makes the code so much easier
-to read.
+to read and write.
 
 ## Better Redux usage
 
@@ -109,19 +108,15 @@ So, the main problems hooks fixed were:
   of the same functionality spread all over the component.
 - No more need for Redux's container files, which is a good thing since those
   components were essentially boilerplate code.
+- The overall collocation of code is much higher which makes the code both
+  easier to read and write.
 
-We have identified several problems hooks solve (and I've intentionally left a
-lot more out for brevity). However, that alone can't explain why my team adopted
-them so quickly. There is a missing piece here. In my opinion, hooks were so
-consensual in my team because they make sense and are easy to use. That is the
-most exceptional aspect of them. That tells me that we should not only try to
-fix problems but also to fix them in a way others find logical and easy to
-understand.
-
-For instance, classes fix the problem of having stateful components but do it
-with unnecessary boilerplate and complexity. That is a perfect example of
-solving a problem but not making it in the simplest way possible. I guess we can
-say that Occam's Razor principle applies here:
+However, I think all those advantages alone can't explain why my team adopted
+hooks so quickly. In my opinion, hooks were so consensual because they have a
+great developer experience by providing an api that is easy to use and reason
+about. For instance, classes fix the problem of having stateful components but do it
+with unnecessary boilerplate and complexity. I guess we can say that Occam's
+Razor principle always applies:
 
 > When you have two competing theories that make exactly the same predictions,
 > the simpler one is the better.

@@ -19,8 +19,8 @@ export default ({ data }) => (
     </p>
     <Heading>Design process</Heading>
     <p>
-      I went through severeal initial iterations of the website before committing to the current
-      one. The first version of the website had a full height homepage (no scrolling) with a hero
+      I went through several initial iterations of the website before committing to the current one.
+      The first version of the website had a full height homepage (no scrolling) with a hero
       carousel, a header and a footer.
     </p>
     <p>Later, I decided to buy a ready made portfolio theme... TBD</p>
