@@ -9,7 +9,7 @@ export default ({ data }) => (
     title="Advizr"
     subTitle="Frontend developer"
     auxInfo="Jun 2019 - Present"
-    techs={['React', 'Redux', 'Styled-Components', 'Sass', 'Jest', 'Enzyme', 'ESLint', 'Webpack']}
+    techs={['React', 'Redux', 'Styled-Components', 'TypeScript']}
   >
     <p>
       Advizr (<a href="https://www.advizr.com/">www.advizr.com</a>), based in New York, is dedicated
@@ -29,12 +29,24 @@ export default ({ data }) => (
       At Advizr, I work as a frontend web developer, integrated into the web team responsible for
       the development and maintenance of the Advizr software (a React/Redux SPA).
     </p>
+    <figure>
+      <Img fluid={data.advizrTeam.childImageSharp.fluid} />
+      <figcaption>It is always great to catch up with the team.</figcaption>
+    </figure>
   </SingleLayout>
 );
 
 export const query = graphql`
   query advizrPage {
-    advizrWorkflow: file(relativePath: { eq: "advizr-workflow.png" }) {
+    advizrWorkflow: file(relativePath: { eq: "advizr-reporting.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 716) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+
+    advizrTeam: file(relativePath: { eq: "advizr-call.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 716) {
           ...GatsbyImageSharpFluid

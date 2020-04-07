@@ -9,6 +9,7 @@ import Contact from '../components/Contact';
 import H1 from '../styles/H1';
 import Heading from '../styles/Heading';
 import TwoColumnGrid from '../styles/TwoColumnGrid';
+import Paragraph from '../styles/Paragraph';
 
 import worksData from '../content/works';
 import projectsData from '../content/projects';
@@ -46,6 +47,9 @@ export default () => (
       <div>
         <div style={{ marginBottom: 48 }}>
           <Heading>Recent Projects</Heading>
+          <Paragraph style={{ fontSize: 14 }}>
+            Some of the projects I maintain during my free time:
+          </Paragraph>
           <List data={projectsData} />
         </div>
         <Contact socialLinks />
