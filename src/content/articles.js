@@ -3,6 +3,34 @@ import uuidv4 from 'uuid/v4';
 export default [
   {
     key: uuidv4(),
+    linkText: 'Why Development Teams are Slow',
+    linkUrl: 'https://medium.com/javascript-scene/why-development-teams-are-slow-89107985c75c',
+    secondaryInfo: 'Eric Elliot',
+    auxInfo: 'A great article from Eric Elliot touching the several reasons that can contribute to a slow development process inside a team.',
+  },
+  {
+    key: uuidv4(),
+    linkText: 'Building a real-time collaborative text editor for the web',
+    linkUrl: 'https://medium.com/@david.roegiers/building-a-real-time-collaborative-text-editor-for-the-web-draftjs-sharedb-1dd8e8826295',
+    secondaryInfo: 'David Roegiers',
+    auxInfo: 'An interesting article where the author describes the thought process behind the implementation of a collaborative text editor.',
+  },
+  {
+    key: uuidv4(),
+    linkText: 'A checklist to improve your product UI',
+    linkUrl: 'https://uxdesign.cc/how-to-improve-your-product-ui-designers-checklist-58510947e6ab',
+    secondaryInfo: 'Anna Sh',
+    auxInfo: 'Anna Sh provides some great tips that will easily increase the quality of any UI.',
+  },
+  {
+    key: uuidv4(),
+    linkText: 'Lesser-known CSS properties in GIFs',
+    linkUrl: 'https://medium.com/@PavelLaptev/lesser-known-css-properties-in-gifs-966a143497ba',
+    secondaryInfo: 'Pavel Laptev',
+    auxInfo: 'Super interesting CSS properties, most of them I was not even aware they exist. The only downside is poor cross browser support at the moment.',
+  },
+  {
+    key: uuidv4(),
     linkText: 'Understanding React\'s key prop',
     linkUrl: 'https://kentcdodds.com/blog/understanding-reacts-key-prop',
     secondaryInfo: 'Kent C. Dodds',
