@@ -1,6 +1,34 @@
-import uuidv4 from 'uuid/v4';
+import { v4 as uuidv4 } from 'uuid';
 
 export default [
+  {
+    key: uuidv4(),
+    linkText: 'Learn and Understand NodeJS',
+    linkUrl: 'https://www.udemy.com/course/understand-nodejs/',
+    secondaryInfo: 'Anthony Alicea',
+    auxInfo: 'I must confess, I\'m a big fan of Anthony\'s teaching style. This course is another mandatory one to watch.',
+  },
+  {
+    key: uuidv4(),
+    linkText: 'The Complete React Native + Hooks',
+    linkUrl: 'https://www.udemy.com/course/the-complete-react-native-and-redux-course/',
+    secondaryInfo: 'Stephen Grider',
+    auxInfo: 'Stephen Grider guides us into a great journey through react-native, using the latest React features.',
+  },
+  {
+    key: uuidv4(),
+    linkText: 'Construct Sturdy UIs with XState',
+    linkUrl: 'https://egghead.io/courses/construct-sturdy-uis-with-xstate',
+    secondaryInfo: 'Isaac Mann',
+    auxInfo: 'Concise and valuable course about Xstate and state machines. The author explains the main features of the library by using great example apps, as usual with a great pace.',
+  },
+  {
+    key: uuidv4(),
+    linkText: 'Introduction to State Machines Using XState',
+    linkUrl: 'https://egghead.io/courses/introduction-to-state-machines-using-xstate',
+    secondaryInfo: 'Kyle Shevlin',
+    auxInfo: 'Another excellent course from Kyle Shevlin, this time around about state machines and Xstate.',
+  },
   {
     key: uuidv4(),
     linkText: 'NestJS Zero to Hero',

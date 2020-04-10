@@ -1,12 +1,6 @@
-import uuidv4 from 'uuid/v4';
+import { v4 as uuidv4 } from 'uuid';
 
 export default [
-  {
-    key: uuidv4(),
-    linkText: 'josenunes.xyz',
-    linkUrl: 'https://github.com/jcmnunes/josenunesxyz',
-    auxInfo: 'Personal Website/Blog (Powered by Gatsby)',
-  },
   {
     key: uuidv4(),
     linkText: 'Widy app',
@@ -17,7 +11,13 @@ export default [
     key: uuidv4(),
     linkText: 'UI-Capsules',
     linkUrl: 'https://github.com/jcmnunes/ui-capsules',
-    auxInfo: 'React UI kit (wip)',
+    auxInfo: 'React UI kit',
+  },
+  {
+    key: uuidv4(),
+    linkText: 'josenunes.xyz',
+    linkUrl: 'https://github.com/jcmnunes/josenunesxyz',
+    auxInfo: 'Personal Website/Blog (Powered by Gatsby)',
   },
   {
     key: uuidv4(),
