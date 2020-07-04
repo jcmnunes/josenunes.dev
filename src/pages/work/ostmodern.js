@@ -1,8 +1,8 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
-
 import SingleLayout from '../../components/layouts/singleLayout';
+import { Anchor } from '../../components/Anchor';
 
 export default ({ data }) => (
   <SingleLayout
@@ -22,8 +22,8 @@ export default ({ data }) => (
     ]}
   >
     <p>
-      Ostmodern (<a href="https://www.ostmodern.co.uk/">www.ostmodern.co.uk</a>), a London based
-      company, are digital product designers and content delivery experts specializing in
+      Ostmodern (<Anchor href="https://www.ostmodern.co.uk/">www.ostmodern.co.uk</Anchor>), a London
+      based company, are digital product designers and content delivery experts specializing in
       video-centric products. Ostmodern’s client list includes big names, such as Arsenal FC, BBC
       and Formula 1.
     </p>
@@ -34,7 +34,7 @@ export default ({ data }) => (
     <p>
       At Ostmodern, I worked as a frontend web developer, integrated into the web team (a
       multidisciplinary Scrum team) responsible for developing and maintaining the{' '}
-      <a href="https://f1tv.formula1.com">F1TV web app</a>.
+      <Anchor href="https://f1tv.formula1.com">F1TV web app</Anchor>.
     </p>
     <figure>
       <Img fluid={data.f1tvAppLeaderboard.childImageSharp.fluid} />

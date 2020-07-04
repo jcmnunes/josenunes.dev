@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-
 import LinkButton from './LinkButton';
-
+import { Anchor } from './Anchor';
+import { personalInfo } from '../content/personalInfo';
 import Heading from '../styles/Heading';
-
 import iconMail from '../images/icon-mail.svg';
 import iconCloudDownload from '../images/icon-cloud-download.svg';
 import IconLinkedIn from '../images/linkedin';
@@ -48,18 +47,23 @@ class Contact extends Component {
           >
             Download my CV
           </LinkButton>
-          <LinkButton to="mailto:jn@josenunes.xyz" icon={iconMail} iconAltText="icon-mail" small>
-            jn@josenunes.xyz
+          <LinkButton
+            to={`mailto:${personalInfo.email}`}
+            icon={iconMail}
+            iconAltText="icon-mail"
+            small
+          >
+            {personalInfo.email}
           </LinkButton>
         </Actions>
         {this.props.socialLinks && (
           <SocialLinks>
-            <a href="https://www.linkedin.com/in/jnunes-jn/">
+            <Anchor href={personalInfo.linkedIn}>
               <IconLinkedIn />
-            </a>
-            <a href="https://github.com/jcmnunes">
+            </Anchor>
+            <Anchor href={personalInfo.github}>
               <IconGithub />
-            </a>
+            </Anchor>
           </SocialLinks>
         )}
       </div>
