@@ -1,9 +1,8 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
-
+import { Anchor } from '../../components/Anchor';
 import SingleLayout from '../../components/layouts/singleLayout';
-
 import Heading from '../../styles/Heading';
 
 export default ({ data }) => (
@@ -14,8 +13,8 @@ export default ({ data }) => (
     techs={['React', 'Gatsby', 'Styled-Components', 'ESLint', 'Prettier']}
   >
     <p>
-      This is my personal website. It is a <a href="https://www.gatsbyjs.org/">Gatsby</a> website. I
-      started the design process by consi
+      This is my personal website. It is a <Anchor href="https://www.gatsbyjs.org/">Gatsby</Anchor>{' '}
+      website. I started the design process by consi
     </p>
     <Heading>Design process</Heading>
     <p>

@@ -2,10 +2,12 @@ import React from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
 import LinkButton from './LinkButton';
+import { Anchor } from './Anchor';
 import iconCloudDownload from '../images/icon-cloud-download.svg';
 import iconMail from '../images/icon-mail.svg';
 import IconLinkedIn from '../images/linkedin';
 import IconGithub from '../images/github';
+import { personalInfo } from '../content/personalInfo';
 
 const StyledFooter = styled.footer`
   position: relative;
@@ -92,17 +94,22 @@ const Footer = () => {
           >
             Download my CV
           </LinkButton>
-          <LinkButton to="mailto:jn@josenunes.xyz" icon={iconMail} iconAltText="icon-mail" small>
-            jn@josenunes.xyz
+          <LinkButton
+            to={`mailto:${personalInfo.email}`}
+            icon={iconMail}
+            iconAltText="icon-mail"
+            small
+          >
+            {personalInfo.email}
           </LinkButton>
         </Links>
         <SocialLinks>
-          <a href="https://www.linkedin.com/in/jnunes-jn/">
+          <Anchor href={personalInfo.linkedIn}>
             <IconLinkedIn />
-          </a>
-          <a href="https://github.com/jcmnunes">
+          </Anchor>
+          <Anchor href={personalInfo.github}>
             <IconGithub />
-          </a>
+          </Anchor>
         </SocialLinks>
       </LinksContainer>
     </StyledFooter>

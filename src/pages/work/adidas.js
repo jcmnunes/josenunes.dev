@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
-
+import { Anchor } from '../../components/Anchor';
 import SingleLayout from '../../components/layouts/singleLayout';
 
 export default ({ data }) => (
@@ -22,7 +22,7 @@ export default ({ data }) => (
     ]}
   >
     <p>
-      adidas AG (<a href="https://www.adidas-group.com">www.adidas-group.com</a>) needs no
+      adidas AG (<Anchor href="https://www.adidas-group.com">www.adidas-group.com</Anchor>) needs no
       introduction. It is the largest sportswear manufacturer in Europe, and the second largest in
       the world. With its headquarters in Herzogenaurach, Germany, employs nearly 57,000 people
       around the world.
