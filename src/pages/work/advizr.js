@@ -1,8 +1,8 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
-
 import SingleLayout from '../../components/layouts/singleLayout';
+import { Anchor } from '../../components/Anchor';
 
 export default ({ data }) => (
   <SingleLayout
@@ -12,9 +12,9 @@ export default ({ data }) => (
     techs={['React', 'Redux', 'Styled-Components', 'TypeScript']}
   >
     <p>
-      Advizr (<a href="https://www.advizr.com/">www.advizr.com</a>), based in New York, is dedicated
-      to creating financial planning programs and technology that will expand consumer and advisor
-      access to high-quality financial planning, as well as drive advisor profitability. The
+      Advizr (<Anchor href="https://www.advizr.com/">www.advizr.com</Anchor>), based in New York, is
+      dedicated to creating financial planning programs and technology that will expand consumer and
+      advisor access to high-quality financial planning, as well as drive advisor profitability. The
       powerful, automated, interactive financial planning solution empowers consumers to take
       control of their financial wellness and allows advisors to identify new opportunities and grow
       their practice.

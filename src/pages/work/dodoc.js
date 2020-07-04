@@ -1,8 +1,8 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
-
 import SingleLayout from '../../components/layouts/singleLayout';
+import { Anchor } from '../../components/Anchor';
 
 export default ({ data }) => (
   <SingleLayout
@@ -23,9 +23,9 @@ export default ({ data }) => (
     ]}
   >
     <p>
-      doDOC (<a href="https://www.dodoc.com">www.dodoc.com</a>) is software development company with
-      headquarters in Boston (USA) and Coimbra (Portugal). doDOC product is a single platform
-      solution for secure collaboration when working with complex and regulated documents.
+      doDOC (<Anchor href="https://www.dodoc.com">www.dodoc.com</Anchor>) is software development
+      company with headquarters in Boston (USA) and Coimbra (Portugal). doDOC product is a single
+      platform solution for secure collaboration when working with complex and regulated documents.
     </p>
     <figure>
       <Img fluid={data.poster.childImageSharp.fluid} />
