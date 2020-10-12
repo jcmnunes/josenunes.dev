@@ -1,4 +1,4 @@
-import advLogo from '../images/advizr-logo.svg';
+import orionLogo from '../images/orion-logo.svg';
 import f1Logo from '../images/f1-logo.svg';
 import adidasLogo from '../images/adidas-logo.svg';
 import dodocLogo from '../images/dodoc-logo.svg';
@@ -6,13 +6,13 @@ import szLogo from '../images/sz-logo.svg';
 
 export default [
   {
-    key: 'advizr',
-    linkText: 'Advizr',
-    linkUrl: '/work/advizr',
+    key: 'orion',
+    linkText: 'Orion Advisor Tech',
+    linkUrl: '/work/orion',
     secondaryInfo: 'Frontend Developer',
     auxInfo: 'Jun 2019 - Present',
-    image: advLogo,
-    imageAlt: 'advizr-logo',
+    image: orionLogo,
+    imageAlt: 'orion-logo',
     imageWidth: '40px',
   },
   {
