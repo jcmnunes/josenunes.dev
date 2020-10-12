@@ -15,7 +15,7 @@ export default [
   },
   {
     key: uuidv4(),
-    linkText: 'josenunes.xyz',
+    linkText: 'josenunes.dev',
     linkUrl: 'https://github.com/jcmnunes/josenunesxyz',
     auxInfo: 'Personal Website/Blog (Powered by Gatsby)',
   },
