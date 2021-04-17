@@ -3,6 +3,41 @@ import { v4 as uuidv4 } from 'uuid';
 export default [
   {
     key: uuidv4(),
+    linkText: 'Practical React Query',
+    linkUrl: 'https://tkdodo.eu/blog/practical-react-query',
+    secondaryInfo: 'TkDodo',
+    auxInfo: 'A great collection of articles about React Query.',
+  },
+  {
+    key: uuidv4(),
+    linkText: 'Should You Really Use useMemo in React? Let’s Find Out',
+    linkUrl: 'https://medium.com/swlh/should-you-use-usememo-in-react-a-benchmarked-analysis-159faf6609b7',
+    secondaryInfo: 'Kevin Van Ryckegem',
+    auxInfo: 'An interesting performance experiment related to the use of useMemo.',
+  },
+  {
+    key: uuidv4(),
+    linkText: 'How React Query gives you almost everything you thought you needed GraphQL for',
+    linkUrl: 'https://swizec.com/blog/how-react-query-gives-you-almost-everything-you-thought-you-needed-graphql-for/',
+    secondaryInfo: 'Swizec',
+    auxInfo: 'The author explains how and why React Query almost replaces GraphQL (functionality-wise) allowing to at the same work with REST APIs.',
+  },
+  {
+    key: uuidv4(),
+    linkText: 'Flatten Array using Array.flat() in JavaScript',
+    linkUrl: 'https://www.samanthaming.com/tidbits/71-how-to-flatten-array-using-array-flat/',
+    secondaryInfo: 'Samantha Ming',
+    auxInfo: 'An article about the useful Array method "flat" (ES2019).',
+  },
+  {
+    key: uuidv4(),
+    linkText: 'Four Ways to Fetch Data in React',
+    linkUrl: 'https://www.bitnative.com/2020/07/06/four-ways-to-fetch-data-in-react/',
+    secondaryInfo: 'Cory House',
+    auxInfo: 'Cory House was one of the first developers that introduce me to React. In this great article he discusses several ways to fetch data in a React app.',
+  },
+  {
+    key: uuidv4(),
     linkText: 'Taking Notion to the Next Level',
     linkUrl: 'https://dev.to/whoisryosuke/taking-notion-to-the-next-level-2nln',
     secondaryInfo: 'Ryosuke',

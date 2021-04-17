@@ -21,8 +21,8 @@ export default [
   },
   {
     key: uuidv4(),
-    linkText: 'JN Material Theme',
-    linkUrl: 'https://marketplace.visualstudio.com/items?itemName=jcmnunes.jn-material-theme',
-    auxInfo: 'Personal VSCode theme',
+    linkText: 'BC Editor',
+    linkUrl: 'https://github.com/jcmnunes/editor',
+    auxInfo: 'Prosemirror based editor with markdown shortcuts and serialization.',
   },
 ];
