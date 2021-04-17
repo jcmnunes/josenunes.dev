@@ -96,7 +96,7 @@ const Skills = styled.div`
 const recentCourses = coursesData.slice(0, 4);
 const recentArticles = articlesData.slice(0, 4);
 
-export default ({ data }) => (
+const About = ({ data }) => (
   <>
     <AboutCard>
       <Avatar>
@@ -119,9 +119,9 @@ export default ({ data }) => (
     </Paragraph>
     <Paragraph>
       Although I started my IT career as a Python developer, I’ve been working as a frontend
-      developer for the past 5 years. My initial tech stack was focused on vanilla JavaScript and
+      developer for the past 7 years. My initial tech stack was focused on vanilla JavaScript and
       jQuery. Nowadays, I work mainly with modern frontend web technologies in the React ecosystem.
-      I’ve been working as a React developer for more than 3 years now.
+      I’ve been working as a React developer for almost 5 years now.
     </Paragraph>
     <Contact />
     <Heading>Skills</Heading>
@@ -165,3 +165,5 @@ export const query = graphql`
     }
   }
 `;
+
+export default About;

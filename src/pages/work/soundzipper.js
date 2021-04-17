@@ -4,7 +4,7 @@ import Img from 'gatsby-image';
 import SingleLayout from '../../components/layouts/singleLayout';
 import { Anchor } from '../../components/Anchor';
 
-export default ({ data }) => (
+const ProjectSoundzipper = ({ data }) => (
   <SingleLayout
     title="Soundzipper"
     subTitle="Frontend developer"
@@ -59,3 +59,5 @@ export const query = graphql`
     }
   }
 `;
+
+export default ProjectSoundzipper;

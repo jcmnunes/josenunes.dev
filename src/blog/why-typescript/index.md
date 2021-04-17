@@ -16,20 +16,20 @@ typed language by design, is being somewhat irreversibly changed with
 TypeScript. In other words, I was not ready to abandon JavaScript.
 
 A long time passed, and coincidentally, any of the projects I was working on at
-the time were using TypeScript. As a result, I kind stay happily writing
-type-unsafe JS code, occasionally dealing with "can't read property ... of
-undefined" errors and having sub-optimal IntelliSense in my code editor. At the
-same time, I was taking the time to properly define PropTypes in every component
-file 🤷‍.
+the time were using TypeScript. As a result, I was happily writing type-unsafe
+JS code, occasionally dealing with "can't read property ... of undefined"
+errors, hard to track data structures and having sub-optimal auto-complete in my
+code editor. At the same time, I was taking the time to properly define
+PropTypes in every component file 🤷‍.
 
-Some time ago, a co-worker of mine decided to shake things up a little bit and
+Some time ago, a co-worker of mine decided to shake things up a bit and
 suggested we start using TypeScript in our codebase. Naturally, I did not like
 the idea at first. I even tried some silly arguments to convince him otherwise.
 However, in a good team spirit, I decided to put my concerns aside and give it a
 try. Spoiler alert, nowadays, I will always use TypeScript if that is a viable
 option.
 
-Several things made me reconsider my initial perspective. But there was one
+Several things made me reconsider my initial perspective, however, there was one
 thing that really made it. The idea started when watching Kent C. Dodds'
 "Testing JavaScript" course. Kent was happily teaching popular tools like ESLint
 and Prettier when he suddenly introduced a lesson called "Avoid Common Errors by
