@@ -30,7 +30,7 @@ const AboutLink = styled(Link)`
   }
 `;
 
-export default () => (
+const Home = () => (
   <>
     <H2>
       Hello, <br /> I'm <AboutLink to="/about">Jose Nunes</AboutLink>
@@ -57,3 +57,5 @@ export default () => (
     </TwoColumnGrid>
   </>
 );
+
+export default Home;

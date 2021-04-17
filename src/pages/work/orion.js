@@ -4,7 +4,7 @@ import Img from 'gatsby-image';
 import SingleLayout from '../../components/layouts/singleLayout';
 import { Anchor } from '../../components/Anchor';
 
-export default ({ data }) => (
+const ProjectOrion = ({ data }) => (
   <SingleLayout
     title="Orion Advisor Tech"
     subTitle="Frontend developer"
@@ -12,7 +12,7 @@ export default ({ data }) => (
     techs={['React', 'React-Native', 'TypeScript', 'CSS in JS']}
   >
     <p>
-      Orion Advisor Tech{' '}
+      Orion Advisor Tech (
       <Anchor href="https://www.orionadvisortech.com/">www.orionadvisortech.com</Anchor>), exists to
       help fiduciary minded advisors realize their unique vision for success. The powerful,
       automated, interactive financial planning solution empowers consumers to take control of their
@@ -54,3 +54,5 @@ export const query = graphql`
     }
   }
 `;
+
+export default ProjectOrion;

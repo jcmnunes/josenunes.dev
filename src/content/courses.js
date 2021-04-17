@@ -3,6 +3,20 @@ import { v4 as uuidv4 } from 'uuid';
 export default [
   {
     key: uuidv4(),
+    linkText: 'SQL and PostgreSQL: The Complete Developer\'s Guide',
+    linkUrl: 'https://www.udemy.com/course/sql-and-postgresql/',
+    secondaryInfo: 'Stephen Grider',
+    auxInfo: 'A comprehensive course about SQL and PostgreSQL by Stephen Grider.',
+  },
+  {
+    key: uuidv4(),
+    linkText: 'End-to-End Security with Auth0',
+    linkUrl: 'https://courses.reactsecurity.io/courses/end-to-end-security-with-auth0',
+    secondaryInfo: 'Ryan Chenkie',
+    auxInfo: 'Ryan Chenkie guides us through the process of adding Auth0 for authentication and authorization.',
+  },
+  {
+    key: uuidv4(),
     linkText: 'Learn and Understand NodeJS',
     linkUrl: 'https://www.udemy.com/course/understand-nodejs/',
     secondaryInfo: 'Anthony Alicea',

@@ -4,7 +4,7 @@ import Img from 'gatsby-image';
 import SingleLayout from '../../components/layouts/singleLayout';
 import { Anchor } from '../../components/Anchor';
 
-export default ({ data }) => (
+const ProjectF1 = ({ data }) => (
   <SingleLayout
     title="Ostmodern / Formula 1"
     subTitle="Frontend developer"
@@ -68,3 +68,5 @@ export const query = graphql`
     }
   }
 `;
+
+export default ProjectF1;

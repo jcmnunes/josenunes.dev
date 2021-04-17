@@ -31,7 +31,7 @@ class Manifest extends Component {
   render() {
     return (
       <StyledManifest>
-        Being a developer for 6 years now, I stumbled across several challenging and interesting
+        Being a developer for 8 years now, I stumbled across several challenging and interesting
         projects. As a <span className="color-primary">React developer</span>, I'm constantly trying
         to improve and to learn new things.
         <div>
