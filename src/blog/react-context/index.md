@@ -7,11 +7,11 @@ description:
   scenarios.
 ---
 
-It was soon in my learning React journey that I started to ear about Redux.
-Initially, I was not sure why people were using it. The reason for that is the
-fact that I was essential learning React and building small toy apps, where prop
-drilling and scalability were not issues. As soon as I started working on a real
-app, the need for Redux became apparent.
+It was soon in my learning React journey that I started to hear about Redux.
+Initially, I was not sure why people were using it. I was essential learning
+React and building small toy apps, where prop drilling and scalability were not
+issues. As soon as I started working on a real app, the need for Redux became
+apparent.
 
 After almost three years, I still work on React apps that are using Redux. In my
 opinion, Redux is still a pretty decent way to handle data flow in a React app,
@@ -93,10 +93,10 @@ the help of the `useContext` hook:
 ```jsx
 // Child.jsx
 import React, { useContext } from 'react';
-import LoremContext from './Parent';
+import FeatureContext from './Parent';
 
 const Child = () => {
-  const { clientId, subscriberId } = useContext(LoremContext);
+  const { clientId, subscriberId } = useContext(FeatureContext);
 
   return (
     <div>
@@ -110,18 +110,3 @@ export default Child;
 
 As can be seen in the code above, using Context with hooks is exceptionally
 straightforward, and it is a great way to mitigate prop-drilling.
-
-However, I should say I don’t feel React Context should replace Redux
-altogether. Especially for large features, containing many actions, API calls,
-etc. I do feel Context has its place in situations like the one described here.
-
-## Caveats
-
-The [React docs](https://reactjs.org/docs/context.html#caveats) mention a
-standard caveat of using Context the way I did above. The problem is the
-Provider value containing a new object reference on every Parent’s render. There
-is an excellent [post](https://phinguyen.io/context-caveat-deep-dive/) from Phi
-Nguyen on the subject. As with everything performance-related, there is always a
-trade-off between optimization and code complexity. I certainly feel performance
-optimization should be done when performance is an apparent problem, and we have
-a reliable way to measure it.

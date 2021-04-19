@@ -13,36 +13,15 @@ sentence from David Gilbertson in his article
 > Removing the focus outline is like removing the wheelchair ramp from a school
 > because it doesn’t fit in with the aesthetic.
 
-A smart sentence from a bright developer. When not using a mouse, trying to
-navigate an app without the focus-ring is almost impossible. And yet, we can see
-a large number of web apps that have the focus-ring hidden (usually by something
-like `button:focus { outline: none; }`).
-
-I’ve been there, to be honest. The reason to hide it is essentially a cosmetic
-one. The ring sometimes does not look good in a particular design. But now,
-Gilbertson sentence makes perfect sense.
-
-Is there a native solution to this? The answer is yes. Try to run the code
-below:
-
-```html
-<button>Click Me</button>
-```
-
-You will see the browser cleverly showing the focus ring when tabbing into the
-button and hiding it when clicking with the mouse (that works with an anchor tag
-too). So, problem solved, use a button (or an anchor) when you want something to
-be clickable.
-
-Unfortunately, it is not that easy. If you start changing the style of the
-button, the Browser will render the focus ring no matter what
-([see this pen](https://codepen.io/jcmnunes/pen/OemJRX)).
+When using the keyboard, trying to navigate an app without the focus-ring is
+almost impossible. Yet, we can see many apps with a hidden focus-ring (usually
+by something like `button:focus { outline: none; }`).
 
 ## Possible solutions
 
 There are several possible solutions to this problem. One interesting tweak is
 explained by David Gilbertson in his blog post mentioned above. A different
-solution was adopted by the Palantir team when developing the awesome
+solution was adopted by the Palantir team when developing the
 [Blueprint UI kit](https://blueprintjs.com/). Essentially, they use a
 [helper class](https://github.com/palantir/blueprint/blob/develop/packages/core/src/common/interactionMode.ts)
 to determine the interaction mode (mouse or keyboard) and show the ring
