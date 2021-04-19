@@ -35,8 +35,8 @@ $$
 \frac{d}{dx}a^{x} = \lim_{dx \rightarrow 0} \frac{a^{x+dx} - a^{x}}{dx}
 $$
 
-If we rearrange the terms a little bit we can see that the derivative of an
-exponential function is the function itself times a constant:
+If we rearrange the terms a bit we can see that the derivative of an exponential
+function is the function itself times a constant:
 
 $$
 \frac{d}{dx}a^{x} = a^{x}\lim_{dx \rightarrow 0} \frac{a^{dx} - 1}{dx}
@@ -55,7 +55,7 @@ $$
 e = \lim_{dx \rightarrow 0} \left(1 + dx\right) ^ {1/dx}
 $$
 
-And finally, we can see that for an exponential function of base $e$:
+Finally, we can see that for an exponential function of base $e$:
 
 $$
 \frac{d}{dx}e^{x} = e^{x}
@@ -77,7 +77,6 @@ It is already pretty close to the real value of $e$ ($2.718281828459045...$).
 
 ## So, what is Euler's number exactly?
 
-As we can see, there is nothing mysterious about Euler's number. It is just the
-number for which an exponential function derivative is equal to itself.
-Actually, $e^{x}$ is the only function having this property and that's why in
-Math, most of the exponential functions have base $e$.
+In reality, there are more ways to define Euler's number. However, this is the
+way I like to think about it. Namely, $e$ is the number for which an exponential
+function derivative is equal to itself.

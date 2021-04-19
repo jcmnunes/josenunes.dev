@@ -1,23 +1,18 @@
 ---
-title: Welcome to josenunes.xyz
+title: Welcome to josenunes.dev
 date: '2019-05-21T10:00:07.661Z'
 description:
-  In this first post, I talk a little bit about this website and blog and its
-  design process.
+  In this first post, I talk a bit about this website and its design process.
 ---
 
-Welcome to josenunes.xyz blog. For a long time, I've been thinking about writing
-a personal blog. A blog is, without a doubt, an excellent opportunity to share
-and register new exciting things about our industry.
-
-This blog effectively started when I decided to (finally) make a personal
-website. Although that was something I wanted for a long time, I never had the
-proper commitment to start building it. Over the years, I made several attempts
-that never got too far, though.
+Welcome to josenunes.dev blog. For a long time, I've been thinking about writing
+a personal blog. Although that was something I wanted for a long time, I never
+had the proper commitment to start building it. Over the years, I made several
+attempts that never got too far.
 
 My first serious attempt was in 2016, when inspired by a recent design I worked
 on at the time ([this website ➜](http://exchange.ics.uminho.pt/)), I went for a
-full page "vibe".
+full page layout.
 
 ![Mock of the first version of the website](site-v1-mock.png)
 
@@ -35,9 +30,9 @@ I found
 [this one](https://themeforest.net/item/profyl-personal-vcard-resume-html-template/20952362)
 from iconic themes.
 
-However, I soon start tackling the design. I ended up designing several screens
-(story repeats itself!! 😫). The first change I made was to introduce a dark
-theme. Later, I redesigned the homepage to suit my personal preference.
+However, I soon start tackling the design. I ended up designing several screens.
+The first change I made was to introduce a dark theme. Later, I redesigned the
+homepage to suit my personal preference.
 
 ![Mock of the second version of the website](version2-home.png)
 
@@ -52,14 +47,7 @@ Version 3 is the current version of the website. As can be seen from the
 previous two images, it shares the same color scheme and dark theme of
 version 2. The big difference is the "personality" of the design. The current
 version has (at least from my perspective) a "coder personality". The dark
-theme, combined with a monospace font (Hack btw, great font), and a more
-text-based design, are the factors responsible for it.
+theme, combined with a monospace font, and a more text-based design, are the
+factors responsible for it.
 
-I have to say and considering that I'm not a designer, that I'm happy with this
-version. In my opinion, it is straightforward but at the same time has a great
-personality that I tend to enjoy.
-
-And so, finally I made it, I have a personal website/blog 🎉. Thank you for
-checking it!
-
-Cheers 💪!!
+And finally, I have a personal website/blog 🎉. Thank you for checking it!
