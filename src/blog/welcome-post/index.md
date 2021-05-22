@@ -1,6 +1,6 @@
 ---
 title: Welcome to josenunes.dev
-date: '2019-05-21T10:00:07.661Z'
+date: '2019-05-21'
 description:
   In this first post, I talk a bit about this website and its design process.
 ---

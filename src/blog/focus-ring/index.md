@@ -1,6 +1,6 @@
 ---
 title: A11y - How to stop hiding the focus-ring
-date: '2019-08-11T21:48:17.528Z'
+date: '2019-08-11'
 description:
   The focus ring is essential to make an app accessible. It is sometimes hidden
   to improve aesthetics. There's a way to have the better of both worlds.

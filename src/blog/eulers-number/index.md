@@ -1,6 +1,6 @@
 ---
 title: What's the meaning of Euler's number
-date: '2020-01-31T18:02:24.689Z'
+date: '2020-01-31'
 description:
   Euler's number is a math star. However, unlike the number pi, its meaning is
   not so well known. In this post I talk about the way I tend to think about
