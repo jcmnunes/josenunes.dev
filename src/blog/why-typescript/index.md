@@ -1,6 +1,6 @@
 ---
 title: Why JS developers should not fear TypeScript
-date: '2020-04-10T09:44:38.580Z'
+date: '2020-04-10'
 description:
   It can be hard for a JavaScript developer to accept the idea of using
   TypeScript. In this post, I talk about what made me lose that fear and become
