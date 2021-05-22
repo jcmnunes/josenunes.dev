@@ -1,6 +1,6 @@
 ---
 title: React Context and the useContext hook
-date: '2019-10-20T21:38:50.169Z'
+date: '2019-10-20'
 description:
   React Context can be a great tool to mitigate prop-drilling. With the
   useContext hook, boilerplate is minimal, which makes it a great choice in some

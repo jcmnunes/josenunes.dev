@@ -1,6 +1,6 @@
 ---
 title: Use console.log in arrow functions
-date: '2019-05-22T13:50:23.641Z'
+date: '2019-05-22'
 description:
   There is a little trick to put a console.log in an arrow function with an
   implicit return.

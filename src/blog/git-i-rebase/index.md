@@ -1,6 +1,6 @@
 ---
 title: Interactive rebase
-date: '2019-05-23T14:50:39.549Z'
+date: '2019-05-23'
 description:
   Interactive rebase is a powerful tool to rewrite Git history and maintain a
   sane commit history.
