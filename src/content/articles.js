@@ -1,6 +1,13 @@
 import { v4 as uuidv4 } from 'uuid';
 
-export default [
+const articles = [
+  {
+    key: uuidv4(),
+    linkText: 'Reduce State Management Footprint with React Query',
+    linkUrl: 'https://blog.testdouble.com/posts/2021-05-03-reduce-state-management-with-react-query/',
+    secondaryInfo: 'Tommy Groshong',
+    auxInfo: 'Tommy Groshong talks about React Query, and why he thinks it is a must have in a React app.',
+  },
   {
     key: uuidv4(),
     linkText: 'Practical React Query',
@@ -380,3 +387,5 @@ export default [
     auxInfo: '7 extremelly helpfull design tips from Adam Wathan & Steve Schoger.',
   },
 ];
+
+export default articles;
