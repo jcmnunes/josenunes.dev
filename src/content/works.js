@@ -4,7 +4,7 @@ import adidasLogo from '../images/adidas-logo.svg';
 import dodocLogo from '../images/dodoc-logo.svg';
 import szLogo from '../images/sz-logo.svg';
 
-export default [
+const works = [
   {
     key: 'orion',
     linkText: 'Orion Advisor Tech',
@@ -56,3 +56,5 @@ export default [
     imageWidth: '125px',
   },
 ];
+
+export default works;

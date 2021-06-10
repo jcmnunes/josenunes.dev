@@ -1,6 +1,6 @@
 import { v4 as uuidv4 } from 'uuid';
 
-export default [
+const projects = [
   {
     key: uuidv4(),
     linkText: 'Widy app',
@@ -26,3 +26,5 @@ export default [
     auxInfo: 'Prosemirror based editor with markdown shortcuts and serialization.',
   },
 ];
+
+export default projects;

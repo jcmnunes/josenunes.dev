@@ -3,6 +3,20 @@ import { v4 as uuidv4 } from 'uuid';
 const articles = [
   {
     key: uuidv4(),
+    linkText: 'Using WebSockets with React Query',
+    linkUrl: 'https://tkdodo.eu/blog/using-web-sockets-with-react-query',
+    secondaryInfo: 'TkDodo',
+    auxInfo: 'Adding websockets into a react-query powered app can be a walk in the park. TkDodo explains why.',
+  },
+  {
+    key: uuidv4(),
+    linkText: 'How to choose the right React state management solution',
+    linkUrl: 'https://blog.logrocket.com/how-to-choose-the-right-react-state-management-solution/',
+    secondaryInfo: 'Iva Kop',
+    auxInfo: 'A great overview of several state management solutions in the React ecosystem.',
+  },
+  {
+    key: uuidv4(),
     linkText: 'Reduce State Management Footprint with React Query',
     linkUrl: 'https://blog.testdouble.com/posts/2021-05-03-reduce-state-management-with-react-query/',
     secondaryInfo: 'Tommy Groshong',
