@@ -1,8 +1,7 @@
 import React from 'react';
-import { graphql } from 'gatsby';
+import { graphql, navigate } from 'gatsby';
 import Img from 'gatsby-image';
 import styled from 'styled-components';
-import { navigate } from 'gatsby';
 
 import Skill from '../../components/Skill';
 import List from '../../components/List';

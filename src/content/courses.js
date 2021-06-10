@@ -1,6 +1,13 @@
 import { v4 as uuidv4 } from 'uuid';
 
-export default [
+const courses = [
+  {
+    key: uuidv4(),
+    linkText: 'Learn CSS',
+    linkUrl: 'https://web.dev/learn/css/',
+    secondaryInfo: 'web.dev',
+    auxInfo: 'An evergreen CSS course and reference to level up your web styling expertise.',
+  },
   {
     key: uuidv4(),
     linkText: 'SQL and PostgreSQL: The Complete Developer\'s Guide',
@@ -289,3 +296,5 @@ export default [
     auxInfo: 'Cory teaches how to use Redux, React Router, and ES6 to build a real world app with React.',
   },
 ];
+
+export default courses;

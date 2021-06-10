@@ -38,7 +38,9 @@ const Home = () => (
     <H1>
       <span>Frontend</span> Developer
     </H1>
+
     <Manifest />
+
     <TwoColumnGrid>
       <div>
         <Heading>Recent Work Experiences</Heading>

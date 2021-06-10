@@ -1,17 +1,7 @@
-export default [
+const skills = [
   {
     key: '1',
-    name: 'React/Redux',
-    value: '95%',
-  },
-  {
-    key: '6',
-    name: 'Unit-testing (Jest)',
-    value: '91%',
-  },
-  {
-    key: '2',
-    name: 'JavaScript (ES6 +)',
+    name: 'React',
     value: '95%',
   },
   {
@@ -20,9 +10,9 @@ export default [
     value: '95%',
   },
   {
-    key: '3',
-    name: 'GraphQL',
-    value: '89%',
+    key: '2',
+    name: 'JavaScript (ES6 +)',
+    value: '95%',
   },
   {
     key: '8',
@@ -35,18 +25,20 @@ export default [
     value: '96%',
   },
   {
-    key: '9',
-    name: 'Git/Scrum',
-    value: '96%',
-  },
-  {
     key: '5',
-    name: 'Node/Express',
+    name: 'Node/Express/NestJS',
     value: '91%',
   },
   {
     key: '10',
     name: 'REST APIs',
-    value: '90%',
+    value: '94%',
+  },
+  {
+    key: '3',
+    name: 'GraphQL',
+    value: '89%',
   },
 ];
+
+export default skills;
