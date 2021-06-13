@@ -46,11 +46,12 @@ const Home = () => (
         <Heading>Recent Work Experiences</Heading>
         <List data={worksData} />
       </div>
+
       <div>
         <div style={{ marginBottom: 48 }}>
           <Heading>Recent Projects</Heading>
           <Paragraph style={{ fontSize: 14 }}>
-            Some of the projects I maintain during my free time:
+            Some of the projects I maintain during my free time (breakable toys):
           </Paragraph>
           <List data={projectsData} />
         </div>

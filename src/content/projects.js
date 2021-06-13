@@ -3,9 +3,9 @@ import { v4 as uuidv4 } from 'uuid';
 const projects = [
   {
     key: uuidv4(),
-    linkText: 'Widy app',
+    linkText: 'Widy',
     linkUrl: 'https://github.com/jcmnunes/widy',
-    auxInfo: 'Widy is a productivity app. On the frontend, Widy is a SPA React/Redux app. On the backend, Widy is a Node/Express/MongoDB app.',
+    auxInfo: 'Productivity app',
   },
   {
     key: uuidv4(),
@@ -15,15 +15,15 @@ const projects = [
   },
   {
     key: uuidv4(),
-    linkText: 'josenunes.dev',
-    linkUrl: 'https://github.com/jcmnunes/josenunesxyz',
-    auxInfo: 'Personal Website/Blog (Powered by Gatsby)',
+    linkText: 'Editor',
+    linkUrl: 'https://github.com/jcmnunes/editor',
+    auxInfo: 'Prosemirror based editor',
   },
   {
     key: uuidv4(),
-    linkText: 'BC Editor',
-    linkUrl: 'https://github.com/jcmnunes/editor',
-    auxInfo: 'Prosemirror based editor with markdown shortcuts and serialization.',
+    linkText: 'josenunes.dev',
+    linkUrl: 'https://github.com/jcmnunes/josenunesxyz',
+    auxInfo: '(This) Personal Website/Blog',
   },
 ];
 

@@ -1,7 +1,7 @@
 const skills = [
   {
     key: '1',
-    name: 'React',
+    name: 'React/React-Native',
     value: '95%',
   },
   {

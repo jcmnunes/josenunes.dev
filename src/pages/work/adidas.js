@@ -9,23 +9,13 @@ const ProjectAdidas = ({ data }) => (
     title="Adidas AG"
     subTitle="Frontend developer"
     auxInfo="Mar 2018 - Dec 2018"
-    techs={[
-      'React',
-      'Redux',
-      'Sass',
-      'Immutable',
-      'Jest',
-      'Enzyme',
-      'ESLint',
-      'Prettier',
-      'Webpack',
-    ]}
+    techs={['React', 'Redux', 'Sass', 'Immutable', 'Jest', 'Enzyme']}
   >
     <p>
-      adidas AG (<Anchor href="https://www.adidas-group.com">www.adidas-group.com</Anchor>) needs no
-      introduction. It is the largest sportswear manufacturer in Europe, and the second largest in
-      the world. With its headquarters in Herzogenaurach, Germany, employs nearly 57,000 people
-      around the world.
+      adidas AG (<Anchor href="https://www.adidas-group.com">https://www.adidas-group.com</Anchor>)
+      needs no introduction. It is the largest sportswear manufacturer in Europe, and the second
+      largest in the world. With its headquarters in Herzogenaurach, Germany, employs nearly 57,000
+      people around the world.
     </p>
     <figure>
       <Img fluid={data.adidasGym.childImageSharp.fluid} />
