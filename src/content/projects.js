@@ -5,7 +5,7 @@ const projects = [
     key: uuidv4(),
     linkText: 'Widy',
     linkUrl: 'https://github.com/jcmnunes/widy',
-    auxInfo: 'Productivity app',
+    auxInfo: 'Widy is a productivity app. On the frontend, Widy is a SPA React/Redux app. On the backend, Widy is a Node/Express/MongoDB app.',
   },
   {
     key: uuidv4(),
@@ -17,7 +17,7 @@ const projects = [
     key: uuidv4(),
     linkText: 'Editor',
     linkUrl: 'https://github.com/jcmnunes/editor',
-    auxInfo: 'Prosemirror based editor',
+    auxInfo: 'Prosemirror based editor with markdown shortcuts and serialization.',
   },
   {
     key: uuidv4(),
