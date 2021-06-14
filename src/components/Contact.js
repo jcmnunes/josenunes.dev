@@ -1,14 +1,12 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import LinkButton from './LinkButton';
 import { Anchor } from './Anchor';
 import { personalInfo } from '../content/personalInfo';
 import Heading from '../styles/Heading';
-import iconMail from '../images/icon-mail.svg';
-import iconCloudDownload from '../images/icon-cloud-download.svg';
 import IconLinkedIn from '../images/linkedin';
 import IconGithub from '../images/github';
+import { CTAs } from './CTAs';
 
 const Actions = styled.div`
   display: inline-flex;
@@ -38,29 +36,17 @@ class Contact extends Component {
     return (
       <div style={{ marginBottom: '48px' }}>
         <Heading>Get in touch</Heading>
+
         <Actions>
-          <LinkButton
-            to={'/assets/JoseNunes-CV.pdf'}
-            icon={iconCloudDownload}
-            iconAltText="icon-cloud-download"
-            small
-          >
-            Download my CV
-          </LinkButton>
-          <LinkButton
-            to={`mailto:${personalInfo.email}`}
-            icon={iconMail}
-            iconAltText="icon-mail"
-            small
-          >
-            {personalInfo.email}
-          </LinkButton>
+          <CTAs />
         </Actions>
+
         {this.props.socialLinks && (
           <SocialLinks>
             <Anchor href={personalInfo.linkedIn}>
               <IconLinkedIn />
             </Anchor>
+
             <Anchor href={personalInfo.github}>
               <IconGithub />
             </Anchor>

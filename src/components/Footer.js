@@ -8,6 +8,7 @@ import iconMail from '../images/icon-mail.svg';
 import IconLinkedIn from '../images/linkedin';
 import IconGithub from '../images/github';
 import { personalInfo } from '../content/personalInfo';
+import { CTAs } from './CTAs';
 
 const StyledFooter = styled.footer`
   position: relative;
@@ -84,29 +85,17 @@ const Footer = () => {
         <StyledLink to="/about">About</StyledLink>
         <StyledLink to="/blog">Blog</StyledLink>
       </Header>
+
       <LinksContainer>
         <Links>
-          <LinkButton
-            to={'/assets/JoseNunes-CV.pdf'}
-            icon={iconCloudDownload}
-            iconAltText="icon-cloud-download"
-            small
-          >
-            Download my CV
-          </LinkButton>
-          <LinkButton
-            to={`mailto:${personalInfo.email}`}
-            icon={iconMail}
-            iconAltText="icon-mail"
-            small
-          >
-            {personalInfo.email}
-          </LinkButton>
+          <CTAs />
         </Links>
+
         <SocialLinks>
           <Anchor href={personalInfo.linkedIn}>
             <IconLinkedIn />
           </Anchor>
+
           <Anchor href={personalInfo.github}>
             <IconGithub />
           </Anchor>

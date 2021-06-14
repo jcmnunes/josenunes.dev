@@ -2,20 +2,17 @@ import React from 'react';
 import { graphql, navigate } from 'gatsby';
 import Img from 'gatsby-image';
 import styled from 'styled-components';
-
 import Skill from '../../components/Skill';
 import List from '../../components/List';
 import Contact from '../../components/Contact';
-
 import Heading from '../../styles/Heading';
 import Paragraph from '../../styles/Paragraph';
-import Primary from '../../styles/Primary';
 import TwoColumnGrid from '../../styles/TwoColumnGrid';
 import TerciaryButton from '../../styles/TerciaryButton';
-
 import coursesData from '../../content/courses';
 import articlesData from '../../content/articles';
 import skillsData from '../../content/skills';
+import { personalInfo } from '../../content/personalInfo';
 
 const AboutCard = styled.div`
   display: flex;
@@ -101,6 +98,7 @@ const About = ({ data }) => (
       <Avatar>
         <Img fluid={data.profile.childImageSharp.fluid} />
       </Avatar>
+
       <div>
         <h2>
           Hello,
@@ -112,23 +110,29 @@ const About = ({ data }) => (
         </h1>
       </div>
     </AboutCard>
+
+    <Paragraph>Hi, my name is Jose Nunes, I'm a Frontend Developer from Portugal.</Paragraph>
+
     <Paragraph>
-      Hi, my name is Jose Nunes, I'm a (<Primary>React</Primary>) frontend developer from Portugal.
-      I love working for the web and I'm a big fan of React and all the React ecosystem.
+      I've been a Frontend developer for more than {personalInfo.feYearsExperience} years. I love to
+      build usable, accessible, and beautiful interfaces. I'm a big fan of clean, reusable, and
+      maintainable code.
     </Paragraph>
+
     <Paragraph>
-      Although I started my IT career as a Python developer, I’ve been working as a frontend
-      developer for the past 7 years. My initial tech stack was focused on vanilla JavaScript and
-      jQuery. Nowadays, I work mainly with modern frontend web technologies in the React ecosystem.
-      I’ve been working as a React developer for almost 5 years now.
+      Although I started my Frontend career working with vanilla JavaScript and jQuery, I've been
+      working with React for almost {personalInfo.reactYearsExperience} years now.
     </Paragraph>
+
     <Contact />
+
     <Heading>Skills</Heading>
     <Skills>
       {skillsData.map(skill => (
         <Skill key={skill.key} name={skill.name} value={skill.value} />
       ))}
     </Skills>
+
     <TwoColumnGrid>
       <div>
         <Heading>Recent courses I took</Heading>

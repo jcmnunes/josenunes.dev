@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import { navigate } from 'gatsby';
-
 import TerciaryButton from '../styles/TerciaryButton';
+import { personalInfo } from '../content/personalInfo';
 
 const StyledManifest = styled.div`
   color: ${props => props.theme.neutral400};
@@ -31,9 +31,9 @@ class Manifest extends Component {
   render() {
     return (
       <StyledManifest>
-        Being a developer for 8 years now, I stumbled across several challenging and interesting
-        projects. As a <span className="color-primary">React developer</span>, I'm constantly trying
-        to improve and to learn new things.
+        I've been a Frontend developer for more than {personalInfo.feYearsExperience} years now. I
+        love to build usable, accessible, and beautiful interfaces. I'm a big fan of clean,
+        reusable, and maintainable code.
         <div>
           <TerciaryButton onClick={this.goToAbout}>About Me ➜</TerciaryButton>
         </div>

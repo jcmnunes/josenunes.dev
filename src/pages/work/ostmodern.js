@@ -9,22 +9,12 @@ const ProjectF1 = ({ data }) => (
     title="Ostmodern / Formula 1"
     subTitle="Frontend developer"
     auxInfo="Jan 2019 - Mar 2019"
-    techs={[
-      'React',
-      'Redux',
-      'RxJS/redux-observable',
-      'Sass',
-      'CSS Modules',
-      'Jest',
-      'Enzyme',
-      'ESLint',
-      'Webpack',
-    ]}
+    techs={['React', 'Redux', 'RxJS/redux-observable', 'Sass', 'CSS Modules', 'Jest', 'Enzyme']}
   >
     <p>
-      Ostmodern (<Anchor href="https://www.ostmodern.co.uk/">www.ostmodern.co.uk</Anchor>), a London
-      based company, are digital product designers and content delivery experts specializing in
-      video-centric products. Ostmodern’s client list includes big names, such as Arsenal FC, BBC
+      Ostmodern (<Anchor href="https://www.ostmodern.co.uk/">https://ostmodern.co.uk/</Anchor>), a
+      London based company, are digital product designers and content delivery experts specializing
+      in video-centric products. Ostmodern’s client list includes big names, such as Arsenal FC, BBC
       and Formula 1.
     </p>
     <figure>

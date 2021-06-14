@@ -31,9 +31,11 @@ const StyledWorkLayout = styled.div`
   }
 
   .body {
-    p {
+    color: ${props => props.theme.neutral400};
+
+    p,
+    ul li {
       font-size: 18px;
-      color: ${props => props.theme.neutral400};
     }
   }
 

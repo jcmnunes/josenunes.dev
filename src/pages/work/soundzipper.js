@@ -12,9 +12,9 @@ const ProjectSoundzipper = ({ data }) => (
     techs={['HTML5', 'jQuery', 'Sass', 'PHP', 'Wordpress']}
   >
     <p>
-      Soundzipper (<Anchor href="https://www.soundzipper.com/">www.soundzipper.com</Anchor>) is a
-      Singapore based acoustics consultancy company. In mid-2015 I started working with Soundzipper
-      to develop and maintain the company's website.
+      Soundzipper (<Anchor href="https://www.soundzipper.com/">https://soundzipper.com</Anchor>) is
+      a Singapore based acoustics consultancy company. In mid-2015 I started working with
+      Soundzipper to develop and maintain the company's website.
     </p>
     <figure>
       <Img fluid={data.homepage.childImageSharp.fluid} />

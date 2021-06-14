@@ -9,23 +9,13 @@ const ProjectDoDoc = ({ data }) => (
     title="doDOC Corp"
     subTitle="Frontend developer"
     auxInfo="Oct 2016 - Feb 2018"
-    techs={[
-      'React',
-      'Redux',
-      'CSS Modules',
-      'PostCSS',
-      'Mocha',
-      'Enzyme',
-      'ESLint',
-      'Stylelint',
-      'Prettier',
-      'Webpack',
-    ]}
+    techs={['React', 'Redux', 'CSS Modules', 'PostCSS', 'Mocha', 'Enzyme']}
   >
     <p>
-      doDOC (<Anchor href="https://www.dodoc.com">www.dodoc.com</Anchor>) is software development
-      company with headquarters in Boston (USA) and Coimbra (Portugal). doDOC product is a single
-      platform solution for secure collaboration when working with complex and regulated documents.
+      doDOC (<Anchor href="https://www.dodoc.com">https://dodoc.com</Anchor>) is software
+      development company with headquarters in Boston (USA) and Coimbra (Portugal). doDOC product is
+      a single platform solution for secure collaboration when working with complex and regulated
+      documents.
     </p>
     <figure>
       <Img fluid={data.poster.childImageSharp.fluid} />
