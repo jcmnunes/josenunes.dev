@@ -26,6 +26,7 @@
     "gatsby": "^3.3.0",
     "gatsby-image": "^3.3.0",
     "gatsby-plugin-manifest": "^3.3.0",
+    "gatsby-plugin-nprogress": "^3.7.1",
     "gatsby-plugin-sharp": "^3.3.0",
     "gatsby-plugin-styled-components": "^4.3.0",
     "gatsby-plugin-typography": "^3.3.0",

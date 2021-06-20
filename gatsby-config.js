@@ -71,5 +71,12 @@ module.exports = {
         icon: `src/favicon.png`,
       },
     },
+    {
+      resolve: `gatsby-plugin-nprogress`,
+      options: {
+        color: `#f45c43`,
+        showSpinner: false,
+      },
+    },
   ],
 };
