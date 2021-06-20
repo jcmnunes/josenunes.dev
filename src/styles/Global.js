@@ -38,10 +38,6 @@ const GlobalStyle = createGlobalStyle`
     }
   }
   
-  ::selection {
-    background: ${props => props.theme.primary300};
-  }
-  
   figcaption {
     font-size: 14px;
     font-weight: 400;

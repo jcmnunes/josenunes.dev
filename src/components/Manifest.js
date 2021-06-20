@@ -31,9 +31,9 @@ class Manifest extends Component {
   render() {
     return (
       <StyledManifest>
-        I've been a Frontend developer for more than {personalInfo.feYearsExperience} years now. I
-        love to build usable, accessible, and beautiful interfaces. I'm a big fan of clean,
-        reusable, and maintainable code.
+        I've been a Frontend developer for more than {personalInfo.feYearsExperience} years. I love
+        to build usable, accessible, and beautiful interfaces. I'm a big fan of clean, reusable, and
+        maintainable code.
         <div>
           <TerciaryButton onClick={this.goToAbout}>About Me ➜</TerciaryButton>
         </div>

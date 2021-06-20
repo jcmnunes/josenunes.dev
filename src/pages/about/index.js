@@ -111,12 +111,15 @@ const About = ({ data }) => (
       </div>
     </AboutCard>
 
-    <Paragraph>Hi, my name is Jose Nunes, I'm a Frontend Developer from Portugal.</Paragraph>
+    <Paragraph>
+      Hi, my name is Jose Nunes, I'm a Frontend Developer from Portugal. Being a developer for more
+      than {personalInfo.feYearsExperience} years now, I've worked on several challenging and
+      interesting projects.
+    </Paragraph>
 
     <Paragraph>
-      I've been a Frontend developer for more than {personalInfo.feYearsExperience} years. I love to
-      build usable, accessible, and beautiful interfaces. I'm a big fan of clean, reusable, and
-      maintainable code.
+      I love to build usable, accessible, and beautiful interfaces. I'm a big fan of clean,
+      reusable, and maintainable code. I'm constantly trying to improve and to learn new things.
     </Paragraph>
 
     <Paragraph>

@@ -3,6 +3,13 @@ import { v4 as uuidv4 } from 'uuid';
 const articles = [
   {
     key: uuidv4(),
+    linkText: 'Why using object spread with reduce probably a bad idea',
+    linkUrl: 'https://prateeksurana.me/blog/why-using-object-spread-with-reduce-bad-idea/',
+    secondaryInfo: 'Prateek Surana',
+    auxInfo: 'An interesting article from Prateek Surana regarding performance of the object spread operator and its use in Array.reduce.',
+  },
+  {
+    key: uuidv4(),
     linkText: 'Using WebSockets with React Query',
     linkUrl: 'https://tkdodo.eu/blog/using-web-sockets-with-react-query',
     secondaryInfo: 'TkDodo',

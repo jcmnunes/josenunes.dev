@@ -45,7 +45,7 @@ const StyledLink = styled(Link)`
   ${LinkStyles}
 `;
 
-const StyledAnchor = styled.a`
+const StyledAnchor = styled.a.attrs({ rel: 'noopener noreferrer' })`
   ${LinkStyles}
 `;
 
