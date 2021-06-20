@@ -1,4 +1,4 @@
-export default {
+export const theme = {
   /* Colors */
   // Primary
   primary100: '#FFE3E3',
@@ -29,3 +29,5 @@ export default {
   bp_medium: '720px',
   bp_small: '450px',
 };
+
+export default theme;
