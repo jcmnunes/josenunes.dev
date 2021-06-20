@@ -82,6 +82,4 @@ time. An app can benefit a lot from using a form library in this case.
 Considering the various state types of a typical app, it is obvious that a good
 architecture can benefit a lot from choosing the right tool for the job. Not
 only does the code become more concise as well as it tends to scale much better,
-especially in large teams and complex codebases. As such, trying to find a
-one-size-fits-all solution is probably never the right thing to do in these
-cases.
+especially in large teams and complex codebases.
