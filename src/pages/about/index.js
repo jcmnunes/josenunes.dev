@@ -1,5 +1,5 @@
 import React from 'react';
-import { graphql, navigate } from 'gatsby';
+import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import styled from 'styled-components';
 import Skill from '../../components/Skill';
@@ -8,7 +8,6 @@ import Contact from '../../components/Contact';
 import Heading from '../../styles/Heading';
 import Paragraph from '../../styles/Paragraph';
 import TwoColumnGrid from '../../styles/TwoColumnGrid';
-import TerciaryButton from '../../styles/TerciaryButton';
 import coursesData from '../../content/courses';
 import articlesData from '../../content/articles';
 import skillsData from '../../content/skills';
@@ -140,10 +139,14 @@ const About = ({ data }) => (
       <div>
         <Heading>Recent courses I took</Heading>
         <List data={recentCourses} />
-        <TerciaryButton onClick={() => navigate('/about/courses')}>
-          Show all courses ➜
-        </TerciaryButton>
+
+        {/*
+          <TerciaryButton onClick={() => navigate('/about/courses')}>
+            Show all courses ➜
+          </TerciaryButton>
+        */}
       </div>
+
       <div>
         <Heading>
           Recent articles I{' '}
@@ -152,9 +155,12 @@ const About = ({ data }) => (
           </span>
         </Heading>
         <List data={recentArticles} />
-        <TerciaryButton onClick={() => navigate('/about/articles')}>
-          Show all articles ➜
-        </TerciaryButton>
+
+        {/*
+          <TerciaryButton onClick={() => navigate('/about/articles')}>
+            Show all articles ➜
+          </TerciaryButton>
+        */}
       </div>
     </TwoColumnGrid>
   </>

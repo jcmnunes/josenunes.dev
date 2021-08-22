@@ -3,6 +3,20 @@ import { v4 as uuidv4 } from 'uuid';
 const articles = [
   {
     key: uuidv4(),
+    linkText: 'React Query as a State Manager',
+    linkUrl: 'https://prateeksurana.me/blog/why-using-object-spread-with-reduce-bad-idea/',
+    secondaryInfo: 'TkDodo',
+    auxInfo: 'Part #10 of TkDoddo’s article collection about react-query. As usual, a mandatory read.',
+  },
+  {
+    key: uuidv4(),
+    linkText: 'The magic of react-query and supabase',
+    linkUrl: 'https://dev.to/ankitjey/the-magic-of-react-query-and-supabase-1pom',
+    secondaryInfo: 'Ankit Jena',
+    auxInfo: 'Extensive and well written article about combining react-query and Supabase.',
+  },
+  {
+    key: uuidv4(),
     linkText: 'Why using object spread with reduce probably a bad idea',
     linkUrl: 'https://prateeksurana.me/blog/why-using-object-spread-with-reduce-bad-idea/',
     secondaryInfo: 'Prateek Surana',

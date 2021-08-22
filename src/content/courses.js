@@ -3,6 +3,20 @@ import { v4 as uuidv4 } from 'uuid';
 const courses = [
   {
     key: uuidv4(),
+    linkText: 'Just Javascript',
+    linkUrl: 'https://justjavascript.com/',
+    secondaryInfo: 'Dan Abramov and Maggie Appleton',
+    auxInfo: 'Dan and Maggie offer us a fresh way to visualise and develop bullet proof mental models about JavaScript.',
+  },
+  {
+    key: uuidv4(),
+    linkText: 'Create a Database Schema using the Amplify Admin UI',
+    linkUrl: 'https://egghead.io/lessons/aws-create-a-database-schema-using-the-amplify-admin-ui',
+    secondaryInfo: 'Ali Spittel',
+    auxInfo: 'An excellent and concise course about AWS Amplify Admin UI.',
+  },
+  {
+    key: uuidv4(),
     linkText: 'Learn CSS',
     linkUrl: 'https://web.dev/learn/css/',
     secondaryInfo: 'web.dev',
