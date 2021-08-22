@@ -2,7 +2,7 @@
   "name": "josenunesxyz",
   "description": "Jose Nunes personal website and vCard",
   "repository": "https://github.com/jcmnunes/josenunesxyz",
-  "version": "0.9.1",
+  "version": "0.13.0",
   "license": "MIT",
   "scripts": {
     "develop": "gatsby develop",
