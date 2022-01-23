@@ -5,7 +5,7 @@ const projects = [
     key: uuidv4(),
     linkText: 'Widy',
     linkUrl: 'https://github.com/BinaryCapsule/widy-web',
-    auxInfo: 'Widy is a (breakable toy) productivity app.',
+    auxInfo: 'Productivity app.',
   },
   {
     key: uuidv4(),
