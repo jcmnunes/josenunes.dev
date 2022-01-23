@@ -5,7 +5,7 @@ const projects = [
     key: uuidv4(),
     linkText: 'Widy',
     linkUrl: 'https://github.com/BinaryCapsule/widy-web',
-    auxInfo: 'Productivity app.',
+    auxInfo: 'Productivity app',
   },
   {
     key: uuidv4(),
@@ -17,7 +17,7 @@ const projects = [
     key: uuidv4(),
     linkText: 'Editor',
     linkUrl: 'https://github.com/jcmnunes/editor',
-    auxInfo: 'Prosemirror based editor with markdown shortcuts and serialization.',
+    auxInfo: 'Prosemirror based editor with markdown shortcuts and serialization',
   },
   {
     key: uuidv4(),
