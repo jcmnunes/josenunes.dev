@@ -4,8 +4,8 @@ const projects = [
   {
     key: uuidv4(),
     linkText: 'Widy',
-    linkUrl: 'https://github.com/jcmnunes/widy',
-    auxInfo: 'Widy is a productivity app. On the frontend, Widy is a SPA React/Redux app. On the backend, Widy is a Node/Express/MongoDB app.',
+    linkUrl: 'https://github.com/BinaryCapsule/widy-web',
+    auxInfo: 'Widy is a (breakable toy) productivity app.',
   },
   {
     key: uuidv4(),
