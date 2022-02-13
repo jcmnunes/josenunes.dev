@@ -5,13 +5,21 @@
 }
 
 .heading1 {
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 600;
+
+  @media (min-width: 640px) {
+    font-size: 1.25rem;
+  }
 }
 
 .heading2 {
-  font-size: 2rem;
+  font-size: 1.25rem;
   font-weight: 600;
+
+  @media (min-width: 640px) {
+    font-size: 2rem;
+  }
 
   span {
     color: var(--colors-primary500);

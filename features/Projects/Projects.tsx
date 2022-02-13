@@ -1,6 +1,7 @@
 import React from 'react';
 import { SectionTitle } from '../../components/SectionTitle/SectionTitle';
 import { ListItem } from '../../components/ListItem/ListItem';
+import { List } from '../../components/List/List';
 import styles from './Projects.module.scss';
 import { projects } from './Projects.meta';
 
@@ -13,7 +14,7 @@ const Projects = () => {
         Some of the projects I maintain during my free time (breakable toys):
       </p>
 
-      <ul className={styles.list}>
+      <List>
         {projects.map(project => (
           <ListItem
             key={project.key}
@@ -24,7 +25,7 @@ const Projects = () => {
             isExternal
           />
         ))}
-      </ul>
+      </List>
     </section>
   );
 };

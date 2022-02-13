@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { LinkButton } from '../../components/LinkButton/LinkButton';
 import { CloudDownloadIcon } from '../../icons/CloudDownloadIcon';
 import { EnvelopeIcon } from '../../icons/EnvelopeIcon';
+import { personalInfo } from '../../content/personalInfo';
 
 export const Contacts = () => {
   return (
@@ -13,9 +14,9 @@ export const Contacts = () => {
         </a>
       </Link>
 
-      <Link href="mailto:josenunes@hey.com">
+      <Link href={`mailto:${personalInfo.email}`}>
         <a rel="noreferrer noopener" target="_blank">
-          <LinkButton icon={<EnvelopeIcon />}>josenunes@hey.com</LinkButton>
+          <LinkButton icon={<EnvelopeIcon />}>{personalInfo.email}</LinkButton>
         </a>
       </Link>
     </>

@@ -5,6 +5,10 @@ import { Skills } from '../../features/Skills/Skills';
 import { VCard } from '../../features/VCard/VCard';
 import styles from './index.module.scss';
 import { GetInTouch } from '../../features/GetInTouch/GetInTouch';
+import { Columns } from '../../components/Columns/Columns';
+import { Courses } from '../../features/Courses/Courses';
+import { Articles } from '../../features/Articles/Articles';
+import { personalInfo } from '../../content/personalInfo';
 
 const AboutPage: NextPage = () => {
   return (
@@ -18,8 +22,8 @@ const AboutPage: NextPage = () => {
 
         <p className={styles.paragraph}>
           Hi, my name is Jose Nunes, I&apos;m a Frontend Developer from Portugal. Being a developer
-          for more than 7 years now, I&apos;ve worked on several challenging and interesting
-          projects.
+          for more than {personalInfo.feYearsExperience} years now, I&apos;ve worked on several
+          challenging and interesting projects.
         </p>
 
         <p className={styles.paragraph}>
@@ -30,7 +34,8 @@ const AboutPage: NextPage = () => {
 
         <p className={styles.paragraph}>
           Although I started my Frontend career working with vanilla JavaScript and jQuery,
-          I&apos;ve been working with React for almost 5 years now.
+          I&apos;ve been working with React for almost {personalInfo.reactYearsExperience} years
+          now.
         </p>
       </section>
 
@@ -41,6 +46,12 @@ const AboutPage: NextPage = () => {
       <section className="section">
         <Skills />
       </section>
+
+      <Columns>
+        <Courses />
+
+        <Articles />
+      </Columns>
     </main>
   );
 };

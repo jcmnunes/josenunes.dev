@@ -4,7 +4,9 @@ import Link from 'next/link';
 import { Works } from '../features/Works/Works';
 import Projects from '../features/Projects/Projects';
 import { VCard } from '../features/VCard/VCard';
+import { Columns } from '../components/Columns/Columns';
 import styles from './index.module.scss';
+import { personalInfo } from '../content/personalInfo';
 
 const HomePage: NextPage = () => {
   return (
@@ -20,9 +22,9 @@ const HomePage: NextPage = () => {
         <VCard />
 
         <p className={styles.introduction}>
-          I&apos;ve been a Frontend developer for more than 7 years. I love to build usable,
-          accessible, and beautiful interfaces. I&apos;m a big fan of clean, reusable, and
-          maintainable code.
+          I&apos;ve been a Frontend developer for more than {personalInfo.feYearsExperience} years.
+          I love to build usable, accessible, and beautiful interfaces. I&apos;m a big fan of clean,
+          reusable, and maintainable code.
         </p>
 
         <Link href="/about">
@@ -30,11 +32,11 @@ const HomePage: NextPage = () => {
         </Link>
       </section>
 
-      <section className={styles.sections}>
+      <Columns>
         <Works />
 
         <Projects />
-      </section>
+      </Columns>
     </main>
   );
 };

@@ -34,6 +34,7 @@
   svg {
     margin-left: 4px;
     transition: all 0.2s ease;
+    flex-shrink: 0;
   }
 
   &:hover {
