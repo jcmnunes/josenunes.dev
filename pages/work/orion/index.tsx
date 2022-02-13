@@ -1,7 +1,7 @@
 import { NextPage } from 'next';
 import Head from 'next/head';
 
-const Orion: NextPage = () => {
+const OrionPage: NextPage = () => {
   return (
     <div>
       <Head>
@@ -13,4 +13,4 @@ const Orion: NextPage = () => {
   );
 };
 
-export default Orion;
+export default OrionPage;

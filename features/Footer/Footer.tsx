@@ -1,12 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
 import styles from './Footer.module.scss';
-import { LinkButton } from '../../components/LinkButton/LinkButton';
-import { CloudDownloadIcon } from '../../icons/CloudDownloadIcon';
-import { EnvelopeIcon } from '../../icons/EnvelopeIcon';
-import { GitHubIcon } from '../../icons/GitHubIcon';
-import { LinkedInIcon } from '../../icons/LinkedInIcon';
-import { IconLink } from '../../components/IconLink/IconLink';
+import { Contacts } from '../Contacts/Contacts';
+import { SocialLinks } from '../SocialLinks/SocialLinks';
 
 export const Footer = () => {
   return (
@@ -27,35 +23,11 @@ export const Footer = () => {
         </Link>
       </div>
 
-      <div className={styles.ctas}>
-        <Link href="/assets/JoseNunes-CV.pdf">
-          <a rel="noreferrer noopener" target="_blank">
-            <LinkButton icon={<CloudDownloadIcon />}>Download my CV</LinkButton>
-          </a>
-        </Link>
-
-        <Link href="mailto:josenunes@hey.com">
-          <a rel="noreferrer noopener" target="_blank">
-            <LinkButton icon={<EnvelopeIcon />}>josenunes@hey.com</LinkButton>
-          </a>
-        </Link>
+      <div className={styles.contacts}>
+        <Contacts />
 
         <div className={styles.socialLinks}>
-          <IconLink
-            aria-label="GitHub link"
-            href="https://github.com/jcmnunes"
-            className={styles.github}
-          >
-            <GitHubIcon />
-          </IconLink>
-
-          <IconLink
-            style={{ marginLeft: 4 }}
-            aria-label="LinkedIn link"
-            href="https://www.linkedin.com/in/jnunes-jn/"
-          >
-            <LinkedInIcon />
-          </IconLink>
+          <SocialLinks />
         </div>
       </div>
     </footer>

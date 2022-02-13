@@ -170,3 +170,7 @@ a {
   text-decoration: none;
   color: var(--colors-neutral300);
 }
+
+section.section {
+  margin: 48px 0;
+}

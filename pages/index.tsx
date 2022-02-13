@@ -1,13 +1,14 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import Link from 'next/link';
-import styles from '../styles/index.module.scss';
 import { Works } from '../features/Works/Works';
 import Projects from '../features/Projects/Projects';
+import { VCard } from '../features/VCard/VCard';
+import styles from './index.module.scss';
 
-const Home: NextPage = () => {
+const HomePage: NextPage = () => {
   return (
-    <div>
+    <main>
       <Head>
         <title>JN | Jose Nunes</title>
         <meta name="description" content="Personal website" />
@@ -15,16 +16,8 @@ const Home: NextPage = () => {
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
       </Head>
 
-      <main>
-        <h1 className={styles.title}>
-          Hello,
-          <br />
-          I&apos;m <span>Jose Nunes</span>
-        </h1>
-
-        <h2 className={styles.subtitle}>
-          <span>Frontend</span> Developer
-        </h2>
+      <section className="section">
+        <VCard />
 
         <p className={styles.introduction}>
           I&apos;ve been a Frontend developer for more than 7 years. I love to build usable,
@@ -35,15 +28,15 @@ const Home: NextPage = () => {
         <Link href="/about">
           <a className={styles.link}>About Me →</a>
         </Link>
+      </section>
 
-        <div className={styles.sections}>
-          <Works />
+      <section className={styles.sections}>
+        <Works />
 
-          <Projects />
-        </div>
-      </main>
-    </div>
+        <Projects />
+      </section>
+    </main>
   );
 };
 
-export default Home;
+export default HomePage;
