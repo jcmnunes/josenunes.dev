@@ -1,0 +1,21 @@
+.wrapper {
+  font-weight: 500;
+  color: var(--colors-neutral400);
+}
+
+.title {
+  font-weight: 500;
+  color: var(--colors-neutral400);
+  font-size: 1rem;
+}
+
+.techs {
+  display: flex;
+  font-weight: 500;
+  color: var(--colors-neutral400);
+  flex-wrap: wrap;
+}
+
+.separator {
+  margin: 0 8px;
+}

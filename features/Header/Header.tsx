@@ -12,7 +12,9 @@ const Header = () => {
     if (route === '/') {
       return (
         <>
-          <div className={styles.separator}>/</div>
+          <div role="separator" className={styles.separator}>
+            /
+          </div>
 
           <Link href="/">
             <a className={styles.breadcrumb}>Home</a>
@@ -29,7 +31,6 @@ const Header = () => {
         return (
           <React.Fragment key={`${item}${index}`}>
             <div className={styles.separator}>/</div>
-
             <Link href={path}>
               <a className={styles.breadcrumb}>{item}</a>
             </Link>{' '}
