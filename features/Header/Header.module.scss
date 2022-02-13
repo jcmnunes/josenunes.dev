@@ -1,0 +1,22 @@
+.nav {
+  display: flex;
+  align-items: center;
+  margin-bottom: 48px;
+}
+
+.logo {
+  height: 50px;
+}
+
+.separator {
+  margin: 0 8px;
+  font-weight: 500;
+  color: var(--colors-neutral200);
+}
+
+.breadcrumb {
+  font-weight: 500;
+  color: var(--colors-neutral200);
+  text-decoration: none;
+  text-transform: capitalize;
+}

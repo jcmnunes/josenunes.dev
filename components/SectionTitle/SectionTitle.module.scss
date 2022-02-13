@@ -1,0 +1,16 @@
+.sectionTitle {
+  font-size: 20px;
+  font-weight: 600;
+  position: relative;
+  margin-bottom: 32px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background: var(--colors-primary500);
+  }
+}

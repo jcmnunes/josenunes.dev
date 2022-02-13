@@ -1,0 +1,18 @@
+.wrapper {
+  height: 4px;
+  border-radius: 2px;
+  background: var(--colors-neutral400);
+  position: relative;
+  overflow: hidden;
+}
+
+.progress {
+  position: absolute;
+  height: 4px;
+  border-radius: 2px;
+  top: 0;
+  left: 0;
+  width: 50%;
+  background: var(--colors-primary500);
+}
+
