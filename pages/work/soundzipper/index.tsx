@@ -1,6 +1,6 @@
 import { NextPage } from 'next';
-import Head from 'next/head';
 import Image from 'next/image';
+import { Head } from '../../../components/Head/Head';
 import { PageTitle } from '../../../components/PageTitle/PageTitle';
 import { PageSubTitle } from '../../../components/PageSubTitle/PageSubTitle';
 import { Techs } from '../../../components/Techs/Techs';

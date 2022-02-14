@@ -4,13 +4,13 @@ import { Works } from '../../features/Works/Works';
 
 const WorksPage: NextPage = () => {
   return (
-    <div>
+    <main>
       <Head>
         <title>JN | Work</title>
       </Head>
 
       <Works />
-    </div>
+    </main>
   );
 };
 
