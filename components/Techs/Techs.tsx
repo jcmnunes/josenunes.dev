@@ -12,15 +12,15 @@ export const Techs: React.FC<Props> = ({ techs }) => {
 
       <div className={styles.techs}>
         {techs.map((tech, index) => (
-          <>
-            <span key={tech}>{tech}</span>
+          <React.Fragment key={tech}>
+            <span>{tech}</span>
 
             {index !== techs.length - 1 && (
               <div role="separator" className={styles.separator}>
                 |
               </div>
             )}
-          </>
+          </React.Fragment>
         ))}
       </div>
     </section>

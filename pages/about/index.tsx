@@ -1,6 +1,5 @@
 import React from 'react';
 import { NextPage } from 'next';
-import Head from 'next/head';
 import { Skills } from '../../features/Skills/Skills';
 import { VCard } from '../../features/VCard/VCard';
 import styles from './index.module.scss';
@@ -9,6 +8,7 @@ import { Columns } from '../../components/Columns/Columns';
 import { Courses } from '../../features/Courses/Courses';
 import { Articles } from '../../features/Articles/Articles';
 import { personalInfo } from '../../content/personalInfo';
+import { Head } from '../../components/Head/Head';
 
 const AboutPage: NextPage = () => {
   return (

@@ -1,15 +1,11 @@
-<img src="https://raw.githubusercontent.com/jcmnunes/josenunesxyz/master/src/favicon.png" width="100px" height="100px">
+<img src="https://raw.githubusercontent.com/jcmnunes/josenunesxyz/master/favicon.png" alt="JN logo" width="100px" height="100px">
 
 # My Personal Website
 
-<div>
-    <a href="https://github.com/prettier/prettier"><img src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square" /></a>
-    <a href="https://github.com/styled-components/styled-components"><img src="https://img.shields.io/badge/style-%F0%9F%92%85%20styled--components-orange.svg?colorB=daa357&colorA=db748e" /></a>
-</div>
+This is my personal website ([josenunes.dev](https://www.josenunes.dev/)).
 
-This is my personal website ([josenunes.dev](https://www.josenunes.dev/)). It is
-a [Gatsby](https://www.gatsbyjs.org/) blog with
-[Netlify](https://www.netlify.com) hosting.
+It is a [Next.js](https://nextjs.org/) static site deployed to
+[Vercel](https://vercel.com/).
 
 ## Available npm scripts
 
@@ -28,13 +24,8 @@ $ npm run build
 To test the build by starting a local HTML server:
 
 ```
-$ npm run serve
+$ npm run start
 ```
-
-## Hosting
-
-The website is hosted on Netlify. The production branch is `master` and deploys
-will happen automatically when pushing into it.
 
 ## Licensing
 
