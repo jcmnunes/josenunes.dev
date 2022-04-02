@@ -121,12 +121,12 @@ body {
   position: relative;
   max-width: 716px;
   margin: 0 auto;
-  padding: 48px 32px 24px;
+  padding: 48px 32px;
 }
 
 @media (min-width: 640px) {
   #__next {
-    padding: 96px 32px 24px;
+    padding: 96px 32px 48px;
   }
 }
 

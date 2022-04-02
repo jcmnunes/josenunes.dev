@@ -7,6 +7,27 @@ interface Course {
 
 export const courses: Course[] = [
   {
+    linkText: 'Understanding HTML and CSS',
+    url: 'https://www.udemy.com/course/understanding-html-and-css/',
+    helpText: 'Anthony Alicea',
+    auxInfo:
+      'Anthony Alicea is simply a phenomenal teacher. He one more time manages to deliver a course with several eye opening moments, even for experienced web developers.',
+  },
+  {
+    linkText: 'CSS for JavaScript Developers',
+    url: 'https://css-for-js.dev/',
+    helpText: 'Josh Comeau',
+    auxInfo:
+      'Probably one of the best courses I took. Super high-quality material inside, with a bunch of extremely valuable extras. I highly recommend this course.',
+  },
+  {
+    linkText: 'Epic React',
+    url: 'https://epicreact.dev/',
+    helpText: 'Kent C. Dodds',
+    auxInfo:
+      'There is not much left to say about Kent C. Dodds. He is one of the best teachers and content creators in the React ecosystem. This course is a masterpiece.',
+  },
+  {
     linkText: 'Just Javascript',
     url: 'https://justjavascript.com/',
     helpText: 'Dan Abramov and Maggie Appleton',
