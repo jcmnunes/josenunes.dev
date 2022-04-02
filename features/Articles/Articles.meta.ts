@@ -7,6 +7,19 @@ interface Article {
 
 export const articles: Article[] = [
   {
+    linkText: 'Mac Setup for Web Development [2022]',
+    url: 'https://www.robinwieruch.de/mac-setup-web-development/',
+    helpText: 'Robin Wieruch',
+    auxInfo: 'Robin Wieruch shares his Mac setup for web development.',
+  },
+  {
+    linkText: 'My Custom CSS Reset',
+    url: 'https://www.joshwcomeau.com/css/custom-css-reset/',
+    helpText: 'Josh Comeau',
+    auxInfo:
+      'Not only does Josh shares a very useful CSS reset as well as he goes the extra mile in explaining what each piece of code is doing.',
+  },
+  {
     linkText: 'React Query as a State Manager',
     url: 'https://prateeksurana.me/blog/why-using-object-spread-with-reduce-bad-idea/',
     helpText: 'TkDodo',
