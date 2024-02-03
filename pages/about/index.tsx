@@ -4,9 +4,7 @@ import { Skills } from '../../features/Skills/Skills';
 import { VCard } from '../../features/VCard/VCard';
 import styles from './index.module.scss';
 import { GetInTouch } from '../../features/GetInTouch/GetInTouch';
-import { Columns } from '../../components/Columns/Columns';
 import { Courses } from '../../features/Courses/Courses';
-import { Articles } from '../../features/Articles/Articles';
 import { personalInfo } from '../../content/personalInfo';
 import { Head } from '../../components/Head/Head';
 
@@ -47,11 +45,7 @@ const AboutPage: NextPage = () => {
         <Skills />
       </section>
 
-      <Columns>
-        <Courses />
-
-        <Articles />
-      </Columns>
+      <Courses />
     </main>
   );
 };

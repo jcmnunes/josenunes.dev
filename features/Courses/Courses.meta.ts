@@ -7,6 +7,34 @@ interface Course {
 
 export const courses: Course[] = [
   {
+    linkText: 'Practical UI - User interface design book',
+    url: 'https://www.practical-ui.com/',
+    helpText: 'Adham Dannaway',
+    auxInfo:
+      'This comprehensive book guides us on a journey through the principles and practices that form the foundation of exceptional user interface (UI) design.',
+  },
+  {
+    linkText: 'The Ultimate Guide To ChatGPT & Midjourney',
+    url: 'https://www.udemy.com/course/the-ultimate-guide-to-chatgpt-midjourney-prompt-engineering-openai-gpt/',
+    helpText: 'Colt Steele',
+    auxInfo:
+      'Practical course, focused on teaching how to use ChatGPT and Midjourney to improve life and productivity.',
+  },
+  {
+    linkText: 'JavaScript: Understanding ES6 and Beyond',
+    url: 'https://www.udemy.com/course/javascript-understanding-es6-and-beyond/',
+    helpText: 'Anthony Alicea',
+    auxInfo:
+      'This comprehensive course, curated by Anthony Alicea, is designed to equip learners with a deep understanding of modern JavaScript.',
+  },
+  {
+    linkText: 'The Joy of React',
+    url: 'https://www.joyofreact.com/',
+    helpText: 'Josh W Comeau',
+    auxInfo:
+      '"The Joy of React" is an online course created by Josh Comeau. This course is designed to take learners on a delightful journey into the world of React.',
+  },
+  {
     linkText: 'Understanding HTML and CSS',
     url: 'https://www.udemy.com/course/understanding-html-and-css/',
     helpText: 'Anthony Alicea',

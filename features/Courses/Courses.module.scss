@@ -1,0 +1,11 @@
+.coursesList {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 0 54px;
+  list-style: none;
+  padding-inline-start: 24px;
+
+  @media (min-width: 640px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
