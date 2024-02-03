@@ -21,7 +21,7 @@ export const projects: Project[] = [
     linkText: 'UI-Capsules',
     helpText: 'React UI kit',
     auxInfo:
-      'UI-Capsules is a collection of reusable and accessible components to build UIs with React. It is similar in nature to some popular projects like Chakra UI.',
+      'UI-Capsules is a collection of reusable and accessible components to build UIs with React. It is similar in nature to some popular projects like Chakra UI or Mantine.',
   },
   {
     key: 'editor',
@@ -35,6 +35,7 @@ export const projects: Project[] = [
     url: 'https://github.com/jcmnunes/josenunesxyz',
     linkText: 'josenunes.dev',
     helpText: 'Personal Website',
-    auxInfo: 'My personal website (you are looking at it). It is static site powered by Next.js.',
+    auxInfo:
+      'My personal website (you are looking at it). It is  a static site powered by Next.js.',
   },
 ];
